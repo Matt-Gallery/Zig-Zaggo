@@ -1,6 +1,5 @@
-# Plpak
+# ZigZaggo
 ![palm trees](./static%20assets/tropical-sea-beach-palms-and-sunny-5120x3200.jpg)
-
 
 ## Project Description
 
@@ -8,80 +7,11 @@
 
 ## Application Description
 
-### Game Setup:
+The point of the application is to make it easy for travelers who want to visit multiple destinations in a single trip and who don't require a specific itinerary to find the optimally priced trip based on how many days they want to spend at each destination and the class of flights and hotels they desire.  Until now this sort of optimization could only be done manually by searching every possible permutaion of trip legs manually one by one in a legacy traval booking aggregator.
 
-1. 4 players are required
-2. The game is played with reqular playing cards with cards numbered 2 - 6 of each suit removed from the deck (no jokers)
-3. The remaining 32 cards are all dealt out to the players for each hand - 8 per player
-4. Each player deals 5 consecutive hands and then the deal rotates to the player to the left, for a total of 20 hands in the game
-
-### Objective of the Game
-
-* The objectvie is to end up with the fewest points
-* Points are awarded based on the outcome of each hand
-
-### Defenitions
-
-* **Round of Play** - Each cycle of each player playing 1 card
-* **Trick** - In each **round of play** the group of 4 cards played is a `Trick`
-* **Lead Suit** - The suit of the first card played in each round of play
-
-### Rules of Play:
-
-#### MVP
-* Each of the 5 hands that each player deals has its own rules and objective:
-1. Don't take any `Tricks`- the objective is to avoid taking any tricks
-        * Each `trick` is worth *1 point*
-        * The player to the left of the dealer leads off play
-        * Each subsequent player must play a card of the **lead suit** if they have a card of that suit in their hand
-        * If a player doesn't have a card of the **lead suit** they may play a card of any suit
-        * Whichever player plays the highest card of the **lead suit** takes the `trick`
-        * Whichever player took the `trick` leads of the next **round of play**
-        * The round is scored by assigning *1 point* per `trick` taken by each player
-        * After all 8 rounds have been played the dealer deals the next hand
-
-#### Stretch Goals
-2. Don't take any `Hearts` - the objective is to avoid taking any cards in the heart suit
-        * Each `heart` is worth *1 point*
-        * The player to the left of the dealer leads off play
-        * Each subsequent player must play a card of the **lead suit** if they have a card of that suit in their hand
-        * If a player doesn't have a card of the **lead suit** they may play a card of any suit
-        * Whichever player plays the highest card of the **lead suit** takes the `trick`
-        * Whichever player took the `trick` leads of the next **round of play**
-        * The round is scored by assigning *1 point* per `heart` taken by each player (taking tricks is irrelevant for scoring as long as they contain no `hearts`)
-        * After all 8 rounds have been played the dealer deals the next hand
-3. Don't take any `Queens` - the objective is to avoid taking any queen cards
-        * Each `queen` is worth *2 points*
-        * The player to the left of the dealer leads off play
-        * Each subsequent player must play a card of the **lead suit** if they have a card of that suit in their hand
-        * If a player doesn't have a card of the **lead suit** they may play a card of any suit
-        * Whichever player plays the highest card of the **lead suit** takes the `trick`
-        * Whichever player took the `trick` leads of the next **round of play**
-        * The round is scored by assigning *2 points* per `queen` taken by each player (taking tricks is irrelevant for scoring as long as they contain no `queens`)
-        * After all 8 rounds have been played the dealer deals the next hand
-4. Don't take the `King of Hearts` - the objective is to avoid taking the `king of hearts`
-        * The `king of hearts` is worth *8 points*
-        * The player to the left of the dealer leads off play
-        * The player leading off my not lead with a heart
-        * Each subsequent player must play a card of the **lead suit** if they have a card of that suit in their hand
-        * If a player doesn't have a card of the **lead suit** they may play a card of any suit
-        * Whichever player plays the highest card of the **lead suit** takes the `trick`
-        * Whichever player took the `trick` leads of the next **round of play**
-        * The hand ends after a **round of play** where the `king of hearts` is played is complete
-        * The round is scored by assigning *8 points* to the player who took the `king of hearts` (taking tricks is irrelevant for scoring as long as they don't contain the `king of hearts`)
-        * After the **round of play** where the `king of hearts` is played is complete the dealer deals the next hand
-5. `Solitaire` - the objective is to get rid of all the cards in your hand as quickly as possible
-        * The player with the jack of spades leads off play
-        * Play rotates to the left
-        * The next player can play another one of the jacks (laid out next to the jack of spades), a 10 of spades or a queen of spades (build down/up from the jack of spades)
-        * Each subsequent player can play a jack or can build up or down on the 4 sets of suited cards already played (ultimately building each complete suit up and down from the 4 jacks until all cards are played)
-        * A player who is unable to play (because they have no jack and are blocked from building on the cards that have been played) is skipped
-        * The round is scored by:
-            * Subtracting 5 points from the player who got rid of all their cards first
-            * Subtracting 3 points from the player who got rid of all their cards second
-            * Subtracting 1 points from the player who got rid of all their cards third
-
-* The game ends after all 20 hands have been played.  The winner is the the player with the fewest points
+## MVP Assumptions
+ - User will be limited to choosing a maximum of 4 city stops in a search
+ - Seach will be conducted against a mock MongoDB database containing roughly 1 month of flight and hotel data created by ChatGPT using actual sample data and following normal travel booking conventions
 
 ## User Stories
 
@@ -149,33 +79,77 @@
 
 ## Entity Relationship Diagrams (ERDs)
 
+![ERD](./static%20assets/ERD.png)
 
 
+## Directory Structure
+
+```bash
+├── controllers
+│   ├── auth.js
+│   ├── user.js
+│   ├── search.js
+├── db
+│   ├── connection.js
+├── middleware
+│   ├── isSignedIn.js
+│   ├── passUserToViews.js
+├── models
+│   ├── user.js
+├── node_modules
+├── views
+│   ├── auth
+│   │   ├── sign-in.ejs
+│   │   ├── sign-in.ejs
+│   ├── userAccount
+│   │   ├── index.ejs
+│   ├── search
+│   │   ├── index.ejs
+│   │   ├── results.ejs
+│   │   ├── show.ejs
+│   ├── partials
+│   │   ├── _navbar.ejs
+│   ├── index.ejs
+├── .env
+├── .gitignore
+├── README.md
+├── package-lock.json
+├── package.json
+├── server.js
+
+```
 
 ## Pseudocode
 ```js
-/*-------------------------------- Constants --------------------------------*/
-// all 32 cards
+/*-------------------------------- Import --------------------------------*/
+// express
+// mongoose
+// dotenv
+// method-override
+// morgan
+// express-session
+// bcrypt
 
-/*---------------------------- Variables (state) ----------------------------*/
-// What cards are remaining in each player's hand
-// What cards are currently in play
-// Each trick and which player took it (or discard after it's been scored?)
-// The current score for each player
-// which player's turn is it?
-// Is it time to deal a new hand?
-// is the game complete?
-// Display result message? - either who won or who tied
+/*------------------------------- Views -------------------------------*/
+// Landing/Login
+// Search
+// Search Results/Edit Search
+// Show Trip Details
+// Create/Edit/Delete Account
 
-/*-------------------------------- Functions --------------------------------*/
-// Handle player clicking deal and starting the game
-// Handle player clicking a card to play
-// Logic to determine what card the 3 computer players play
-// Display messages to prompt player to play their turn and the result message - either who won or who tied
-
-/*----------------------------- Event Listeners -----------------------------*/
-// Player clicks the start/restart button
-// Player clicks a card to be played
+/*-------------------------------- Routes --------------------------------*/
+// GET Landing/Sign in
+// POST Sign in
+// GET Sign up
+// POST Sign up
+// PUT Edit Account
+// DELETE Account
+// GET Sign out
+// GET Search
+// POST Search
+// GET Search Results
+// PUT Edit Search
+// GET Show Trip Details
 
 ```
 
@@ -184,9 +158,9 @@
 | Day        |   | Task                               | Blockers | Notes/ Thoughts |
 |------------|---|------------------------------------|----------|-----------------|
 | Monday     |   | Create and present proposal        |          |                 |
-| Tuesday    |   | Create HTML & CSS                  |          |                 |
-| Wedenesday |   | Work on JavaScript                 |          |                 |
-| Thursday   |   | Work on JavaScript                 |          |                 |
+| Tuesday    |   | Create HTML & JavaScript           |          |                 |
+| Wedenesday |   | Work on JavaScript& CSS            |          |                 |
+| Thursday   |   | Work on JavaScript& CSS            |          |                 |
 | Friday     |   | Test and finalize MVP              |          |                 |
 | Saturday   |   | Work on stretch goals              |          |                 |
 | Sunday     |   | Final testing and styling          |          |                 |
