@@ -46,15 +46,16 @@ The point of the application is to make it easy for travelers who want to visit 
         * City stops (max of 4, min of 2)
         * Number of days in each city
         * Final arrival city
-- **Edit the Current Search and Re-Submit**
- - As a user, I want to be able to edit my current search and resubmit it, so that I can get new search results without having to create a new search from scratch.
-
-### Stretch Goals
 - **Receive Search Results**
  - As a user, I want to be able to view my search results, so that I can see what trip options are available and ultimately book travel.
  - The search results can return any combination of dates, cities, flights and hotels that fit the search.
 - **Drill Down of Each Search Result Trip Detail**
     - As a user, I want to be able to drill down on each trip in my search results, so that I can see the details of each flight and hotel included in the itinerary.
+- **Edit the Current Search and Re-Submit**
+ - As a user, I want to be able to edit my current search and resubmit it, so that I can get new search results without having to create a new search from scratch.
+    - This should be implemented using local storage.
+
+### Stretch Goals
 - **Allow Flexible Total Trip Length**
     - As a user, I want to be able to search for trips with a fixed total length and variable numbers of days in each city, so that I can find better deals when I have flexibility in my plans and don’t care exactly how many days I spend in each city.
     - This should include:
@@ -83,8 +84,15 @@ The point of the application is to make it easy for travelers who want to visit 
 
 ## Entity Relationship Diagrams (ERDs)
 
-![ERD](./static%20assets/ERD.png)
+![userERD](./static%20assets/userERD.jpg)
 
+![flightERD](./static%20assets/flightERD.jpg)
+
+![hotelERD](./static%20assets/hotelERD.jpg)
+
+## Routing Table
+
+![Routing Table](./static%20assets/routingTable.jpg)
 
 ## Directory Structure
 
@@ -107,7 +115,7 @@ The point of the application is to make it easy for travelers who want to visit 
 ├── views
 │   ├── auth
 │   │   ├── sign-in.ejs
-│   │   ├── sign-in.ejs
+│   │   ├── sign-up.ejs
 │   ├── userAccount
 │   │   ├── index.ejs
 │   ├── search
@@ -155,9 +163,7 @@ The point of the application is to make it easy for travelers who want to visit 
 // DELETE Account
 // GET Sign out
 // GET Search
-// POST Search
 // GET Search Results
-// PUT Edit Search
 // GET Show Trip Details
 
 ```
