@@ -1,5 +1,5 @@
 # ZigZaggo
-![palm trees](./static%20assets/tropical-sea-beach-palms-and-sunny-5120x3200.jpg)
+![palm trees](./public/static%20assets/tropical-sea-beach-palms-and-sunny-5120x3200.jpg)
 
 ## Project Description
 
@@ -70,29 +70,29 @@ The point of the application is to make it easy for travelers who want to visit 
 ## Wire Frames
 ### Application Web Pages
 
-![Landing/Login Page](./static%20assets/WireFrame1.png)
+![Landing/Login Page](./public/static%20assets/WireFrame1.png)
 
-![Search Page](./static%20assets/WireFrame2.png)
+![Search Page](./public/static%20assets/WireFrame2.png)
 
-![Search Results/Search Update Page](./static%20assets/WireFrame3.png)
+![Search Results/Search Update Page](./public/static%20assets/WireFrame3.png)
 
-![Show Trip Detail Page](./static%20assets/WireFrame4.png)
+![Show Trip Detail Page](./public/static%20assets/WireFrame4.png)
 
-![Create/Edit/Delete Account Page](./static%20assets/WireFrame5.png)
+![Create/Edit/Delete Account Page](./public/static%20assets/WireFrame5.png)
 
 [Link to Mockflow Wireframe](https://app.mockflow.com/view/MG0tpEREQrb/)
 
 ## Entity Relationship Diagrams (ERDs)
 
-![userERD](./static%20assets/userERD.jpg)
+![userERD](./public/static%20assets/userERD.jpg)
 
-![flightERD](./static%20assets/flightERD.jpg)
+![flightERD](./public/static%20assets/flightERD.jpg)
 
-![hotelERD](./static%20assets/hotelERD.jpg)
+![hotelERD](./public/static%20assets/hotelERD.jpg)
 
 ## Routing Table
 
-![Routing Table](./static%20assets/routingTable.jpg)
+![Routing Table](./public/static%20assets/routingTable.jpg)
 
 ## Directory Structure
 

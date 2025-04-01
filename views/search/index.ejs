@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>ZigZaggo - Search</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">ZigZaggo</h1>
+
+    <% if (!user) { %>
+      <div class="auth-buttons">
+        <a href="/auth/sign-in"><button class="btn login-btn">Login</button></a>
+        <a href="/auth/sign-up"><button class="btn signup-btn">Create Account</button></a>
+      </div>
+    <% } %>
+
+    <% if (user) { %>
+      <div class="logout-button">
+        <form action="/auth/sign-out" method="GET">
+          <button type="submit" class="btn logout-btn">Logout</button>
+        </form>
+      </div>
+    <% } %>
+
+    <form action="/search" method="POST" class="search-form">
+      <table class="search-table">
+        <tr>
+          <td><label for="departureAirport">Departure Airport</label></td>
+          <td><input type="text" id="departureAirport" name="departureAirport" class="input" /></td>
+          <td><label for="departureDate">Departure Date</label></td>
+          <td><input type="date" id="departureDate" name="departureDate" class="input" /></td>
+        </tr>
+
+        <% for (let i = 0; i < 4; i++) { %>
+          <tr class="stop-row">
+            <td><label>City Stop</label></td>
+            <td><input type="text" name="cityStops[]" class="city" /></td>
+            <td><label>Number of Days</label></td>
+            <td><input type="number" name="days[]" min="1" value="5" class="days" /></td>
+            <td><label>Minimum Hotel</label></td>
+            <td class="rating-inputs">
+              <% for (let j = 1; j <= 5; j++) { %>
+                <label>
+                  <input type="radio" name="hotelRatings[<%= i %>]" class="star" value="<%= j %>" />
+                  ★
+                </label>
+              <% } %>
+            </td>
+          </tr>
+        <% } %>
+
+        <tr>
+          <td><label for="returnAirport">Return Airport</label></td>
+          <td><input type="text" id="returnAirport" name="returnAirport" class="input" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4" class="submit-row">
+            <button type="submit" class="btn search-btn">Search</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

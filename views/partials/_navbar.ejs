@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+      <li><a href="/search">Search</a></li>
+  
+      <% if (typeof user !== 'undefined' && user) { %>
+        <li><a href="/auth/sign-out">Logout</a></li>
+      <% } else { %>
+        <li><a href="/auth/sign-in">Login</a></li>
+        <li><a href="/auth/sign-up">Sign Up</a></li>
+      <% } %>
+    </ul>
+  </nav>
+  

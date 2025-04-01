@@ -1,0 +1,123 @@
+/* ===== General Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+  
+  /* ===== Container ===== */
+  .container {
+    width: 90%; /* Use 90% of the viewport width */
+    max-width: 1200px; /* Limit the maximum width to 1200px */
+    margin: 20px auto; /* Center the container with vertical margin */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+
+  /* ===== Title ===== */
+  .title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  /* ===== Auth Buttons ===== */
+  .auth-buttons,
+  .logout-button {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #555;
+    background-color: #f8f8f8;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .login-btn {
+    border-color: #007bff;
+    color: #007bff;
+  }
+  
+  .signup-btn {
+    border-color: #28a745;
+    color: #28a745;
+  }
+  
+  .logout-btn {
+    border-color: #dc3545;
+    color: #dc3545;
+  }
+  
+  .search-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  
+  .search-btn:hover {
+    background-color: #555;
+  }
+  
+  /* ===== Input Fields ===== */
+  .input {
+    padding: 6px 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .days {
+    padding: 6px 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 35%;
+  }
+
+  .star {
+    margin: 0 -4px;
+  }
+  
+
+  /* ===== Table Layout ===== */
+  .search-table {
+    width: 100%;
+    border-spacing: 10px;
+  }
+  
+  .search-table td {
+    padding: 8px;
+    vertical-align: top;
+  }
+  
+  /* ===== Rating Stars ===== */
+  .rating-inputs label {
+    margin-right: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-row {
+    text-align: center;
+    padding-top: 20px;
+  }
+  

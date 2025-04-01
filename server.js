@@ -1,13 +1,17 @@
-const dotenv = require('dotenv');
+import dotenv from 'dotenv';
 dotenv.config();
-const express = require('express');
-const app = express();
-const mongoose = require('mongoose');
-const methodOverride = require('method-override');
-const morgan = require('morgan');
-const session = require('express-session');
 
-const authController = require('./controllers/auth.js');
+import express from 'express';
+const app = express();
+
+import mongoose from 'mongoose';
+import methodOverride from 'method-override';
+import morgan from 'morgan';
+import session from 'express-session';
+
+import authRoutes from './controllers/auth.js'; // ✅ adjust path as needed
+
+
 
 const port = process.env.PORT ? process.env.PORT : '3000';
 
@@ -17,8 +21,12 @@ mongoose.connection.on('connected', () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
 
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
+app.use(express.static('public'));
 // app.use(morgan('dev'));
 app.use(
   session({
@@ -34,15 +42,17 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/vip-lounge', (req, res) => {
-  if (req.session.user) {
-    res.send(`Welcome to the party ${req.session.user.username}.`);
-  } else {
-    res.send('Sorry, no guests allowed.');
+app.get('/search', (req, res) => {
+  if (!req.session.user) {
+    return res.redirect('/auth/sign-in'); // 👮 redirect if not logged in
   }
+
+  res.render('search/index.ejs', {
+    user: req.session.user
+  });
 });
 
-app.use('/auth', authController);
+app.use('/auth', authRoutes);
 
 app.listen(port, () => {
   console.log(`The express app is ready on port ${port}!`);
