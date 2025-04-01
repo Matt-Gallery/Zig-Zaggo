@@ -7,23 +7,10 @@
 </head>
 
 <body>
-  <%- include('partials/_navbar') %>
+  <%- include('../partials/_navbar') %>
   <div class="container">
+   
 
-    <% if (!user) { %>
-      <div class="auth-buttons">
-        <a href="/auth/sign-in"><button class="btn login-btn">Login</button></a>
-        <a href="/auth/sign-up"><button class="btn signup-btn">Create Account</button></a>
-      </div>
-    <% } %>
-
-    <% if (user) { %>
-      <div class="logout-button">
-        <form action="/auth/sign-out" method="GET">
-          <button type="submit" class="btn logout-bn">Logout</button>
-        </form>
-      </div>
-    <% } %>
 
     <form action="/search" method="POST" class="search-form">
       <table class="departure-table">

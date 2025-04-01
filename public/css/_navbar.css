@@ -11,7 +11,7 @@
   }
   
   .nav-logo {
-    height: 50px;
+    height: 70px;
     width: auto;
     display: block;
   }
@@ -34,6 +34,7 @@
     color: #18683c;
     font-weight: bold;
     transition: color 0.2s;
+    font-size: 20px;
   }
   
   ul.nav-links li a:hover {
