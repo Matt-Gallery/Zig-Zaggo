@@ -5,6 +5,7 @@
 
 #### My application if called ZigZaggo. It is a travel booking aggregator that is unique in that it optimizes searches based on how many days you want to spend in each location you want to visit instead of searching for individual trip legs one-by-one based on specific dates.
 
+![ZigZaggo logo](./public/static%20assets/ZigZaggoHorizRectLogo.jpg)
 ## Application Description
 
 The point of the application is to make it easy for travelers who want to visit multiple destinations in a single trip and who don't require a specific itinerary to find the optimally priced trip based on how many days they want to spend at each destination and the class of flights and hotels they desire.  Until now this sort of optimization could only be done manually by searching every possible permutaion of trip legs manually one by one in a legacy traval booking aggregator.
@@ -89,6 +90,8 @@ The point of the application is to make it easy for travelers who want to visit 
 ![flightERD](./public/static%20assets/flightERD.jpg)
 
 ![hotelERD](./public/static%20assets/hotelERD.jpg)
+
+![bookingERD](./public/static%20assets/bookingERD.jpg)
 
 ## Routing Table
 
