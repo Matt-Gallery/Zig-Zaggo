@@ -5,9 +5,10 @@
   <link rel="stylesheet" href="/css/style.css" />
   <title>ZigZaggo - Search</title>
 </head>
+
 <body>
+  <%- include('partials/_navbar') %>
   <div class="container">
-    <h1 class="title">ZigZaggo</h1>
 
     <% if (!user) { %>
       <div class="auth-buttons">
@@ -19,7 +20,7 @@
     <% if (user) { %>
       <div class="logout-button">
         <form action="/auth/sign-out" method="GET">
-          <button type="submit" class="btn logout-btn">Logout</button>
+          <button type="submit" class="btn logout-bn">Logout</button>
         </form>
       </div>
     <% } %>
@@ -32,7 +33,7 @@
           <td><label for="departureDate">Departure Date</label></td>
           <td><input type="date" id="departureDate" name="departureDate" class="input" /></td>
         </tr>
-        <table class="search-table">
+      <table class="search-table">
         <% for (let i = 0; i < 4; i++) { %>
           <tr class="stop-row">
             <td><label>City Stop</label></td>
@@ -63,7 +64,7 @@
             <button type="submit" class="btn search-btn">Search</button>
           </td>
         </tr>
-      </table>
+    </table>
     </form>
   </div>
 </body>

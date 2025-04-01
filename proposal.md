@@ -20,13 +20,10 @@ The point of the application is to make it easy for travelers who want to visit 
 - **Create Account**
     - As a user, I want to be able to create an account, so that I can save my searches and ultimately book travel.
     - This should include:
-        * First Name
-        * Last Name
+        * Username
+        * Password
+        * Full Name
         * Email Address
-        * Phone Number
-        * Mailing Address
-        * Preferred Home Airport
-        * Preferred Class of Hotel
 - **Log In**
     -As a user, I want to be able to log in to my account, so that I can save my searches and ultimately book travel.
 - **View Account Details**
@@ -57,6 +54,8 @@ The point of the application is to make it easy for travelers who want to visit 
     - This should be implemented using local storage.
 
 ### Stretch Goals
+- **Save Booking Request**
+    - As a user, I want my booking requests to be saved so they can be transmitted to the individual airlines and hotels to book each leg of my trip.
 - **Allow Flexible Total Trip Length**
     - As a user, I want to be able to search for trips with a fixed total length and variable numbers of days in each city, so that I can find better deals when I have flexibility in my plans and don’t care exactly how many days I spend in each city.
     - This should include:

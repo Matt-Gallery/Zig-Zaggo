@@ -28,7 +28,7 @@ router.post('/sign-in', async (req, res) => {
       _id: userInDatabase._id,
     };
 
-    res.redirect('/search'); // ✅ redirect after successful login
+    res.redirect('/search');
   } catch (error) {
     console.log(error);
     res.redirect('/');

@@ -6,8 +6,8 @@
   <title>ZigZaggo - Login</title>
 </head>
 <body>
+  <%- include('partials/_navbar') %>
   <div>
-    <h1>ZigZaggo</h1>
 
     <form action="/auth/sign-in" method="POST">
       <div>
@@ -22,7 +22,7 @@
     </form>
 
     <div>
-      <a href="/register">Create Account</a>
+      <a href="/auth/sign-up">Sign Up</a>
     </div>
   </div>
 </body>

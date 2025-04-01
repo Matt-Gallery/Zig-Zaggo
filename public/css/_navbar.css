@@ -1,0 +1,42 @@
+/* ===== Top Navbar Styling ===== */
+.top-navbar {
+    background-color: #d5ecb0;
+    padding: 10px 20px;
+  }
+  
+  /* Smaller logo aligned left */
+  .nav-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+  }
+  
+  /* Horizontal nav links below logo */
+  ul.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0 0 0;
+    margin: 0;
+    gap: 20px;
+  }
+  
+  /* Nav link styles */
+  ul.nav-links li a {
+    text-decoration: none;
+    color: #18683c;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  ul.nav-links li a:hover {
+    color: #cceabb;
+  }
+  
