@@ -25,20 +25,22 @@
     <% } %>
 
     <form action="/search" method="POST" class="search-form">
-      <table class="search-table">
+      <table class="departure-table">
         <tr>
           <td><label for="departureAirport">Departure Airport</label></td>
           <td><input type="text" id="departureAirport" name="departureAirport" class="input" /></td>
           <td><label for="departureDate">Departure Date</label></td>
           <td><input type="date" id="departureDate" name="departureDate" class="input" /></td>
         </tr>
-
+        <table class="search-table">
         <% for (let i = 0; i < 4; i++) { %>
           <tr class="stop-row">
             <td><label>City Stop</label></td>
             <td><input type="text" name="cityStops[]" class="city" /></td>
             <td><label>Number of Days</label></td>
-            <td><input type="number" name="days[]" min="1" value="5" class="days" /></td>
+            <td class="days-cell">
+              <input type="number" name="days[]" min="1" value="5" class="days" />
+            </td>  
             <td><label>Minimum Hotel</label></td>
             <td class="rating-inputs">
               <% for (let j = 1; j <= 5; j++) { %>
