@@ -7,28 +7,54 @@
 </head>
 
 <body>
-  <%- include('../partials/_navbar') %>
+  
   <div class="container">
    
-
+    <%- include('../partials/_navbar') %>
 
     <form action="/search" method="POST" class="search-form">
       <table class="departure-table">
         <tr>
           <td><label for="departureAirport">Departure Airport</label></td>
-          <td><input type="text" id="departureAirport" name="departureAirport" class="input" /></td>
+          <td>
+            <input type="text" id="airport-search" name="departureAirport" />
+            <ul id="airport-results"></ul>
+          </td>
+        
+          <td><label for="departureFlightClass">Flight Class</label></td>
+          <td>
+            <select name="departureFlightClass" id="departureFlightClass" class="input">
+              <option value="economy">Economy</option>
+              <option value="business">Business</option>
+            </select>
+          </td>
+        
           <td><label for="departureDate">Departure Date</label></td>
-          <td><input type="date" id="departureDate" name="departureDate" class="input" /></td>
+          <td>
+            <input type="date" id="departureDate" name="departureDate" class="input" />
+          </td>
         </tr>
+      </table>
+    
       <table class="search-table">
         <% for (let i = 0; i < 4; i++) { %>
           <tr class="stop-row">
             <td><label>City Stop</label></td>
             <td><input type="text" name="cityStops[]" class="city" /></td>
+      
+            <td><label>Flight Class</label></td>
+            <td>
+              <select name="flightClass[]" class="input">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+              </select>
+            </td>
+      
             <td><label>Number of Days</label></td>
             <td class="days-cell">
-              <input type="number" name="days[]" min="1" value="5" class="days" />
+              <input type="number" name="days[]" min="1" value="3" class="days" />
             </td>  
+      
             <td><label>Minimum Hotel</label></td>
             <td class="rating-inputs">
               <% for (let j = 1; j <= 5; j++) { %>
@@ -40,19 +66,35 @@
             </td>
           </tr>
         <% } %>
+      </table>
 
+      <table class="return-table">
         <tr>
           <td><label for="returnAirport">Return Airport</label></td>
-          <td><input type="text" id="returnAirport" name="returnAirport" class="input" /></td>
-        </tr>
-
-        <tr>
-          <td colspan="4" class="submit-row">
-            <button type="submit" class="btn search-btn">Search</button>
+          <td>
+            <input type="text" id="airport-search" name="returnAirport" />
+            <ul id="airport-results"></ul>
+          </td>
+        
+          <td><label for="returnFlightClass">Flight Class</label></td>
+          <td>
+            <select name="returnFlightClass" id="returnFlightClass" class="input">
+              <option value="economy">Economy</option>
+              <option value="business">Business</option>
+            </select>
+          </td>
+        
+          <td><label for="returnDate">Departure Date</label></td>
+          <td>
+            <input type="date" id="returnDate" name="returnDate" class="input" />
           </td>
         </tr>
-    </table>
+      </table>
+
     </form>
+    
   </div>
+  <script src="/airportSearch.js"></script>
+
 </body>
 </html>

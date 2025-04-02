@@ -1,0 +1,4394 @@
+[
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T07:00:00Z",
+    "arrivalDateTime":"2025-08-01T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":612
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T07:00:00Z",
+    "arrivalDateTime":"2025-08-01T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3059
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T13:00:00Z",
+    "arrivalDateTime":"2025-08-02T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":683
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T13:00:00Z",
+    "arrivalDateTime":"2025-08-02T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2996
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T18:00:00Z",
+    "arrivalDateTime":"2025-08-02T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":658
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T18:00:00Z",
+    "arrivalDateTime":"2025-08-02T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3169
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T23:00:00Z",
+    "arrivalDateTime":"2025-08-02T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":581
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-01T23:00:00Z",
+    "arrivalDateTime":"2025-08-02T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2947
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T07:00:00Z",
+    "arrivalDateTime":"2025-08-02T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":641
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T07:00:00Z",
+    "arrivalDateTime":"2025-08-02T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2853
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T13:00:00Z",
+    "arrivalDateTime":"2025-08-03T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":638
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T13:00:00Z",
+    "arrivalDateTime":"2025-08-03T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3291
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T18:00:00Z",
+    "arrivalDateTime":"2025-08-03T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":647
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T18:00:00Z",
+    "arrivalDateTime":"2025-08-03T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3079
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T23:00:00Z",
+    "arrivalDateTime":"2025-08-03T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":680
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-02T23:00:00Z",
+    "arrivalDateTime":"2025-08-03T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3390
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T07:00:00Z",
+    "arrivalDateTime":"2025-08-03T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":626
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T07:00:00Z",
+    "arrivalDateTime":"2025-08-03T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3266
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T13:00:00Z",
+    "arrivalDateTime":"2025-08-04T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":674
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T13:00:00Z",
+    "arrivalDateTime":"2025-08-04T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3395
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T18:00:00Z",
+    "arrivalDateTime":"2025-08-04T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":658
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T18:00:00Z",
+    "arrivalDateTime":"2025-08-04T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3149
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T23:00:00Z",
+    "arrivalDateTime":"2025-08-04T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":746
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-03T23:00:00Z",
+    "arrivalDateTime":"2025-08-04T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2799
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T07:00:00Z",
+    "arrivalDateTime":"2025-08-04T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":692
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T07:00:00Z",
+    "arrivalDateTime":"2025-08-04T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2876
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T13:00:00Z",
+    "arrivalDateTime":"2025-08-05T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":613
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T13:00:00Z",
+    "arrivalDateTime":"2025-08-05T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2790
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T18:00:00Z",
+    "arrivalDateTime":"2025-08-05T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":747
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T18:00:00Z",
+    "arrivalDateTime":"2025-08-05T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2620
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T23:00:00Z",
+    "arrivalDateTime":"2025-08-05T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":618
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-04T23:00:00Z",
+    "arrivalDateTime":"2025-08-05T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3089
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T07:00:00Z",
+    "arrivalDateTime":"2025-08-05T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":663
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T07:00:00Z",
+    "arrivalDateTime":"2025-08-05T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2741
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T13:00:00Z",
+    "arrivalDateTime":"2025-08-06T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":677
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T13:00:00Z",
+    "arrivalDateTime":"2025-08-06T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2752
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T18:00:00Z",
+    "arrivalDateTime":"2025-08-06T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":536
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T18:00:00Z",
+    "arrivalDateTime":"2025-08-06T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3076
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T23:00:00Z",
+    "arrivalDateTime":"2025-08-06T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":570
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-05T23:00:00Z",
+    "arrivalDateTime":"2025-08-06T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2695
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T07:00:00Z",
+    "arrivalDateTime":"2025-08-06T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":594
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T07:00:00Z",
+    "arrivalDateTime":"2025-08-06T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3124
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T13:00:00Z",
+    "arrivalDateTime":"2025-08-07T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":719
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T13:00:00Z",
+    "arrivalDateTime":"2025-08-07T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2998
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T18:00:00Z",
+    "arrivalDateTime":"2025-08-07T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":584
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T18:00:00Z",
+    "arrivalDateTime":"2025-08-07T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2843
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T23:00:00Z",
+    "arrivalDateTime":"2025-08-07T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":582
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-06T23:00:00Z",
+    "arrivalDateTime":"2025-08-07T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2715
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T07:00:00Z",
+    "arrivalDateTime":"2025-08-07T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":734
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T07:00:00Z",
+    "arrivalDateTime":"2025-08-07T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2722
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T13:00:00Z",
+    "arrivalDateTime":"2025-08-08T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":544
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T13:00:00Z",
+    "arrivalDateTime":"2025-08-08T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3186
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T18:00:00Z",
+    "arrivalDateTime":"2025-08-08T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":665
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T18:00:00Z",
+    "arrivalDateTime":"2025-08-08T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3250
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T23:00:00Z",
+    "arrivalDateTime":"2025-08-08T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":577
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-07T23:00:00Z",
+    "arrivalDateTime":"2025-08-08T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2918
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T07:00:00Z",
+    "arrivalDateTime":"2025-08-08T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":542
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T07:00:00Z",
+    "arrivalDateTime":"2025-08-08T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2952
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T13:00:00Z",
+    "arrivalDateTime":"2025-08-09T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":675
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T13:00:00Z",
+    "arrivalDateTime":"2025-08-09T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3279
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T18:00:00Z",
+    "arrivalDateTime":"2025-08-09T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":668
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T18:00:00Z",
+    "arrivalDateTime":"2025-08-09T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3160
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T23:00:00Z",
+    "arrivalDateTime":"2025-08-09T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":605
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-08T23:00:00Z",
+    "arrivalDateTime":"2025-08-09T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3298
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T07:00:00Z",
+    "arrivalDateTime":"2025-08-09T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":665
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T07:00:00Z",
+    "arrivalDateTime":"2025-08-09T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3302
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T13:00:00Z",
+    "arrivalDateTime":"2025-08-10T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":697
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T13:00:00Z",
+    "arrivalDateTime":"2025-08-10T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3361
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T18:00:00Z",
+    "arrivalDateTime":"2025-08-10T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":537
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T18:00:00Z",
+    "arrivalDateTime":"2025-08-10T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3330
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T23:00:00Z",
+    "arrivalDateTime":"2025-08-10T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":532
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-09T23:00:00Z",
+    "arrivalDateTime":"2025-08-10T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3400
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T07:00:00Z",
+    "arrivalDateTime":"2025-08-10T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":621
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T07:00:00Z",
+    "arrivalDateTime":"2025-08-10T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2932
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T13:00:00Z",
+    "arrivalDateTime":"2025-08-11T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":723
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T13:00:00Z",
+    "arrivalDateTime":"2025-08-11T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2776
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T18:00:00Z",
+    "arrivalDateTime":"2025-08-11T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":547
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T18:00:00Z",
+    "arrivalDateTime":"2025-08-11T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3399
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T23:00:00Z",
+    "arrivalDateTime":"2025-08-11T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":651
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-10T23:00:00Z",
+    "arrivalDateTime":"2025-08-11T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2861
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T07:00:00Z",
+    "arrivalDateTime":"2025-08-11T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":638
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T07:00:00Z",
+    "arrivalDateTime":"2025-08-11T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2698
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T13:00:00Z",
+    "arrivalDateTime":"2025-08-12T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":636
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T13:00:00Z",
+    "arrivalDateTime":"2025-08-12T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2810
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T18:00:00Z",
+    "arrivalDateTime":"2025-08-12T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":618
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T18:00:00Z",
+    "arrivalDateTime":"2025-08-12T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2944
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T23:00:00Z",
+    "arrivalDateTime":"2025-08-12T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":653
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-11T23:00:00Z",
+    "arrivalDateTime":"2025-08-12T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2707
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T07:00:00Z",
+    "arrivalDateTime":"2025-08-12T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":630
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T07:00:00Z",
+    "arrivalDateTime":"2025-08-12T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2756
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T13:00:00Z",
+    "arrivalDateTime":"2025-08-13T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":626
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T13:00:00Z",
+    "arrivalDateTime":"2025-08-13T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3152
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T18:00:00Z",
+    "arrivalDateTime":"2025-08-13T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":560
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T18:00:00Z",
+    "arrivalDateTime":"2025-08-13T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2816
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T23:00:00Z",
+    "arrivalDateTime":"2025-08-13T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":566
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-12T23:00:00Z",
+    "arrivalDateTime":"2025-08-13T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2946
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T07:00:00Z",
+    "arrivalDateTime":"2025-08-13T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":576
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T07:00:00Z",
+    "arrivalDateTime":"2025-08-13T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2751
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T13:00:00Z",
+    "arrivalDateTime":"2025-08-14T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":537
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T13:00:00Z",
+    "arrivalDateTime":"2025-08-14T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3344
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T18:00:00Z",
+    "arrivalDateTime":"2025-08-14T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":689
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T18:00:00Z",
+    "arrivalDateTime":"2025-08-14T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3304
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T23:00:00Z",
+    "arrivalDateTime":"2025-08-14T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":713
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-13T23:00:00Z",
+    "arrivalDateTime":"2025-08-14T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2731
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T07:00:00Z",
+    "arrivalDateTime":"2025-08-14T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":564
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T07:00:00Z",
+    "arrivalDateTime":"2025-08-14T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2963
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T13:00:00Z",
+    "arrivalDateTime":"2025-08-15T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":699
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T13:00:00Z",
+    "arrivalDateTime":"2025-08-15T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3351
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T18:00:00Z",
+    "arrivalDateTime":"2025-08-15T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":589
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T18:00:00Z",
+    "arrivalDateTime":"2025-08-15T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3297
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T23:00:00Z",
+    "arrivalDateTime":"2025-08-15T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":710
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-14T23:00:00Z",
+    "arrivalDateTime":"2025-08-15T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3373
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T07:00:00Z",
+    "arrivalDateTime":"2025-08-15T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":627
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T07:00:00Z",
+    "arrivalDateTime":"2025-08-15T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3379
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T13:00:00Z",
+    "arrivalDateTime":"2025-08-16T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":589
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T13:00:00Z",
+    "arrivalDateTime":"2025-08-16T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3370
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T18:00:00Z",
+    "arrivalDateTime":"2025-08-16T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":557
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T18:00:00Z",
+    "arrivalDateTime":"2025-08-16T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3288
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T23:00:00Z",
+    "arrivalDateTime":"2025-08-16T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":713
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-15T23:00:00Z",
+    "arrivalDateTime":"2025-08-16T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3260
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T07:00:00Z",
+    "arrivalDateTime":"2025-08-16T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":650
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T07:00:00Z",
+    "arrivalDateTime":"2025-08-16T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3198
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T13:00:00Z",
+    "arrivalDateTime":"2025-08-17T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":738
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T13:00:00Z",
+    "arrivalDateTime":"2025-08-17T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2744
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T18:00:00Z",
+    "arrivalDateTime":"2025-08-17T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":689
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T18:00:00Z",
+    "arrivalDateTime":"2025-08-17T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3317
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T23:00:00Z",
+    "arrivalDateTime":"2025-08-17T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":600
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-16T23:00:00Z",
+    "arrivalDateTime":"2025-08-17T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2845
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T07:00:00Z",
+    "arrivalDateTime":"2025-08-17T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":698
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T07:00:00Z",
+    "arrivalDateTime":"2025-08-17T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2742
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T13:00:00Z",
+    "arrivalDateTime":"2025-08-18T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":663
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T13:00:00Z",
+    "arrivalDateTime":"2025-08-18T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3036
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T18:00:00Z",
+    "arrivalDateTime":"2025-08-18T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":627
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T18:00:00Z",
+    "arrivalDateTime":"2025-08-18T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2728
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T23:00:00Z",
+    "arrivalDateTime":"2025-08-18T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":620
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-17T23:00:00Z",
+    "arrivalDateTime":"2025-08-18T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3059
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T07:00:00Z",
+    "arrivalDateTime":"2025-08-18T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":698
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T07:00:00Z",
+    "arrivalDateTime":"2025-08-18T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3078
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T13:00:00Z",
+    "arrivalDateTime":"2025-08-19T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":655
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T13:00:00Z",
+    "arrivalDateTime":"2025-08-19T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2753
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T18:00:00Z",
+    "arrivalDateTime":"2025-08-19T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":572
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T18:00:00Z",
+    "arrivalDateTime":"2025-08-19T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3332
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T23:00:00Z",
+    "arrivalDateTime":"2025-08-19T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":531
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-18T23:00:00Z",
+    "arrivalDateTime":"2025-08-19T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2861
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T07:00:00Z",
+    "arrivalDateTime":"2025-08-19T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":711
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T07:00:00Z",
+    "arrivalDateTime":"2025-08-19T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3222
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T13:00:00Z",
+    "arrivalDateTime":"2025-08-20T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":576
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T13:00:00Z",
+    "arrivalDateTime":"2025-08-20T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3135
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T18:00:00Z",
+    "arrivalDateTime":"2025-08-20T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":569
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T18:00:00Z",
+    "arrivalDateTime":"2025-08-20T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3392
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T23:00:00Z",
+    "arrivalDateTime":"2025-08-20T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":549
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-19T23:00:00Z",
+    "arrivalDateTime":"2025-08-20T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3141
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T07:00:00Z",
+    "arrivalDateTime":"2025-08-20T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":621
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T07:00:00Z",
+    "arrivalDateTime":"2025-08-20T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2887
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T13:00:00Z",
+    "arrivalDateTime":"2025-08-21T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":619
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T13:00:00Z",
+    "arrivalDateTime":"2025-08-21T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3136
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T18:00:00Z",
+    "arrivalDateTime":"2025-08-21T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":567
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T18:00:00Z",
+    "arrivalDateTime":"2025-08-21T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3156
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T23:00:00Z",
+    "arrivalDateTime":"2025-08-21T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":653
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-20T23:00:00Z",
+    "arrivalDateTime":"2025-08-21T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2766
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T07:00:00Z",
+    "arrivalDateTime":"2025-08-21T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":545
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T07:00:00Z",
+    "arrivalDateTime":"2025-08-21T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3095
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T13:00:00Z",
+    "arrivalDateTime":"2025-08-22T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":583
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T13:00:00Z",
+    "arrivalDateTime":"2025-08-22T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3192
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T18:00:00Z",
+    "arrivalDateTime":"2025-08-22T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":613
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T18:00:00Z",
+    "arrivalDateTime":"2025-08-22T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3027
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T23:00:00Z",
+    "arrivalDateTime":"2025-08-22T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":708
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-21T23:00:00Z",
+    "arrivalDateTime":"2025-08-22T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2960
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T07:00:00Z",
+    "arrivalDateTime":"2025-08-22T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":587
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T07:00:00Z",
+    "arrivalDateTime":"2025-08-22T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2834
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T13:00:00Z",
+    "arrivalDateTime":"2025-08-23T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":618
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T13:00:00Z",
+    "arrivalDateTime":"2025-08-23T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2725
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T18:00:00Z",
+    "arrivalDateTime":"2025-08-23T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":542
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T18:00:00Z",
+    "arrivalDateTime":"2025-08-23T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3393
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T23:00:00Z",
+    "arrivalDateTime":"2025-08-23T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":647
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-22T23:00:00Z",
+    "arrivalDateTime":"2025-08-23T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3065
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T07:00:00Z",
+    "arrivalDateTime":"2025-08-23T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":716
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T07:00:00Z",
+    "arrivalDateTime":"2025-08-23T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2623
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T13:00:00Z",
+    "arrivalDateTime":"2025-08-24T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":699
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T13:00:00Z",
+    "arrivalDateTime":"2025-08-24T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3041
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T18:00:00Z",
+    "arrivalDateTime":"2025-08-24T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":588
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T18:00:00Z",
+    "arrivalDateTime":"2025-08-24T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2839
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T23:00:00Z",
+    "arrivalDateTime":"2025-08-24T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":543
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-23T23:00:00Z",
+    "arrivalDateTime":"2025-08-24T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2924
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T07:00:00Z",
+    "arrivalDateTime":"2025-08-24T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":565
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T07:00:00Z",
+    "arrivalDateTime":"2025-08-24T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2624
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T13:00:00Z",
+    "arrivalDateTime":"2025-08-25T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":729
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T13:00:00Z",
+    "arrivalDateTime":"2025-08-25T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2872
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T18:00:00Z",
+    "arrivalDateTime":"2025-08-25T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":692
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T18:00:00Z",
+    "arrivalDateTime":"2025-08-25T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3105
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T23:00:00Z",
+    "arrivalDateTime":"2025-08-25T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":562
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-24T23:00:00Z",
+    "arrivalDateTime":"2025-08-25T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3009
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T07:00:00Z",
+    "arrivalDateTime":"2025-08-25T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":641
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T07:00:00Z",
+    "arrivalDateTime":"2025-08-25T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2964
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T13:00:00Z",
+    "arrivalDateTime":"2025-08-26T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":567
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T13:00:00Z",
+    "arrivalDateTime":"2025-08-26T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3103
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T18:00:00Z",
+    "arrivalDateTime":"2025-08-26T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":577
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T18:00:00Z",
+    "arrivalDateTime":"2025-08-26T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3045
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T23:00:00Z",
+    "arrivalDateTime":"2025-08-26T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":730
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-25T23:00:00Z",
+    "arrivalDateTime":"2025-08-26T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2727
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T07:00:00Z",
+    "arrivalDateTime":"2025-08-26T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":539
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T07:00:00Z",
+    "arrivalDateTime":"2025-08-26T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2985
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T13:00:00Z",
+    "arrivalDateTime":"2025-08-27T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":736
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T13:00:00Z",
+    "arrivalDateTime":"2025-08-27T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2800
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T18:00:00Z",
+    "arrivalDateTime":"2025-08-27T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":743
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T18:00:00Z",
+    "arrivalDateTime":"2025-08-27T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3216
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T23:00:00Z",
+    "arrivalDateTime":"2025-08-27T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":740
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-26T23:00:00Z",
+    "arrivalDateTime":"2025-08-27T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3393
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T07:00:00Z",
+    "arrivalDateTime":"2025-08-27T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":705
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T07:00:00Z",
+    "arrivalDateTime":"2025-08-27T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2953
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T13:00:00Z",
+    "arrivalDateTime":"2025-08-28T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":702
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T13:00:00Z",
+    "arrivalDateTime":"2025-08-28T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2857
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T18:00:00Z",
+    "arrivalDateTime":"2025-08-28T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":639
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T18:00:00Z",
+    "arrivalDateTime":"2025-08-28T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2716
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T23:00:00Z",
+    "arrivalDateTime":"2025-08-28T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":565
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-27T23:00:00Z",
+    "arrivalDateTime":"2025-08-28T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3210
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T07:00:00Z",
+    "arrivalDateTime":"2025-08-28T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":625
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T07:00:00Z",
+    "arrivalDateTime":"2025-08-28T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3071
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T13:00:00Z",
+    "arrivalDateTime":"2025-08-29T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":711
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T13:00:00Z",
+    "arrivalDateTime":"2025-08-29T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3398
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T18:00:00Z",
+    "arrivalDateTime":"2025-08-29T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":583
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T18:00:00Z",
+    "arrivalDateTime":"2025-08-29T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3354
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T23:00:00Z",
+    "arrivalDateTime":"2025-08-29T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":537
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-28T23:00:00Z",
+    "arrivalDateTime":"2025-08-29T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2718
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T07:00:00Z",
+    "arrivalDateTime":"2025-08-29T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":596
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T07:00:00Z",
+    "arrivalDateTime":"2025-08-29T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2808
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T13:00:00Z",
+    "arrivalDateTime":"2025-08-30T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":530
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T13:00:00Z",
+    "arrivalDateTime":"2025-08-30T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3296
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T18:00:00Z",
+    "arrivalDateTime":"2025-08-30T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":722
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T18:00:00Z",
+    "arrivalDateTime":"2025-08-30T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2910
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T23:00:00Z",
+    "arrivalDateTime":"2025-08-30T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":654
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-29T23:00:00Z",
+    "arrivalDateTime":"2025-08-30T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2932
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T07:00:00Z",
+    "arrivalDateTime":"2025-08-30T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":541
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T07:00:00Z",
+    "arrivalDateTime":"2025-08-30T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3055
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T13:00:00Z",
+    "arrivalDateTime":"2025-08-31T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":548
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T13:00:00Z",
+    "arrivalDateTime":"2025-08-31T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3366
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T18:00:00Z",
+    "arrivalDateTime":"2025-08-31T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":568
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T18:00:00Z",
+    "arrivalDateTime":"2025-08-31T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3004
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T23:00:00Z",
+    "arrivalDateTime":"2025-08-31T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":714
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-30T23:00:00Z",
+    "arrivalDateTime":"2025-08-31T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3336
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T07:00:00Z",
+    "arrivalDateTime":"2025-08-31T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":567
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T07:00:00Z",
+    "arrivalDateTime":"2025-08-31T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2891
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T13:00:00Z",
+    "arrivalDateTime":"2025-09-01T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":648
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T13:00:00Z",
+    "arrivalDateTime":"2025-09-01T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2822
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T18:00:00Z",
+    "arrivalDateTime":"2025-09-01T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":618
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T18:00:00Z",
+    "arrivalDateTime":"2025-09-01T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3250
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T23:00:00Z",
+    "arrivalDateTime":"2025-09-01T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":665
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-08-31T23:00:00Z",
+    "arrivalDateTime":"2025-09-01T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3385
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T07:00:00Z",
+    "arrivalDateTime":"2025-09-01T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":694
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T07:00:00Z",
+    "arrivalDateTime":"2025-09-01T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2842
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T13:00:00Z",
+    "arrivalDateTime":"2025-09-02T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":613
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T13:00:00Z",
+    "arrivalDateTime":"2025-09-02T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3289
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T18:00:00Z",
+    "arrivalDateTime":"2025-09-02T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":542
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T18:00:00Z",
+    "arrivalDateTime":"2025-09-02T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2925
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T23:00:00Z",
+    "arrivalDateTime":"2025-09-02T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":584
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-01T23:00:00Z",
+    "arrivalDateTime":"2025-09-02T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3286
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T07:00:00Z",
+    "arrivalDateTime":"2025-09-02T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":560
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T07:00:00Z",
+    "arrivalDateTime":"2025-09-02T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3327
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T13:00:00Z",
+    "arrivalDateTime":"2025-09-03T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":561
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T13:00:00Z",
+    "arrivalDateTime":"2025-09-03T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2971
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T18:00:00Z",
+    "arrivalDateTime":"2025-09-03T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":577
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T18:00:00Z",
+    "arrivalDateTime":"2025-09-03T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3310
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T23:00:00Z",
+    "arrivalDateTime":"2025-09-03T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":641
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-02T23:00:00Z",
+    "arrivalDateTime":"2025-09-03T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3212
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T07:00:00Z",
+    "arrivalDateTime":"2025-09-03T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":744
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T07:00:00Z",
+    "arrivalDateTime":"2025-09-03T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2647
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T13:00:00Z",
+    "arrivalDateTime":"2025-09-04T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":626
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T13:00:00Z",
+    "arrivalDateTime":"2025-09-04T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3200
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T18:00:00Z",
+    "arrivalDateTime":"2025-09-04T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":588
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T18:00:00Z",
+    "arrivalDateTime":"2025-09-04T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3099
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T23:00:00Z",
+    "arrivalDateTime":"2025-09-04T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":632
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-03T23:00:00Z",
+    "arrivalDateTime":"2025-09-04T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2703
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T07:00:00Z",
+    "arrivalDateTime":"2025-09-04T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":610
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T07:00:00Z",
+    "arrivalDateTime":"2025-09-04T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2614
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T13:00:00Z",
+    "arrivalDateTime":"2025-09-05T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":575
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T13:00:00Z",
+    "arrivalDateTime":"2025-09-05T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3342
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T18:00:00Z",
+    "arrivalDateTime":"2025-09-05T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":712
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T18:00:00Z",
+    "arrivalDateTime":"2025-09-05T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2609
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T23:00:00Z",
+    "arrivalDateTime":"2025-09-05T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":720
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-04T23:00:00Z",
+    "arrivalDateTime":"2025-09-05T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2781
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T07:00:00Z",
+    "arrivalDateTime":"2025-09-05T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":532
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T07:00:00Z",
+    "arrivalDateTime":"2025-09-05T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3275
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T13:00:00Z",
+    "arrivalDateTime":"2025-09-06T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":677
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T13:00:00Z",
+    "arrivalDateTime":"2025-09-06T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3354
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T18:00:00Z",
+    "arrivalDateTime":"2025-09-06T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":694
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T18:00:00Z",
+    "arrivalDateTime":"2025-09-06T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2693
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T23:00:00Z",
+    "arrivalDateTime":"2025-09-06T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":603
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-05T23:00:00Z",
+    "arrivalDateTime":"2025-09-06T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2702
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T07:00:00Z",
+    "arrivalDateTime":"2025-09-06T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":693
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T07:00:00Z",
+    "arrivalDateTime":"2025-09-06T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3199
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T13:00:00Z",
+    "arrivalDateTime":"2025-09-07T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":535
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T13:00:00Z",
+    "arrivalDateTime":"2025-09-07T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2994
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T18:00:00Z",
+    "arrivalDateTime":"2025-09-07T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":618
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T18:00:00Z",
+    "arrivalDateTime":"2025-09-07T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2917
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T23:00:00Z",
+    "arrivalDateTime":"2025-09-07T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":623
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-06T23:00:00Z",
+    "arrivalDateTime":"2025-09-07T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2839
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T07:00:00Z",
+    "arrivalDateTime":"2025-09-07T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":696
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T07:00:00Z",
+    "arrivalDateTime":"2025-09-07T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3251
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T13:00:00Z",
+    "arrivalDateTime":"2025-09-08T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":567
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T13:00:00Z",
+    "arrivalDateTime":"2025-09-08T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3248
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T18:00:00Z",
+    "arrivalDateTime":"2025-09-08T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":725
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T18:00:00Z",
+    "arrivalDateTime":"2025-09-08T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2948
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T23:00:00Z",
+    "arrivalDateTime":"2025-09-08T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":668
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-07T23:00:00Z",
+    "arrivalDateTime":"2025-09-08T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3023
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T07:00:00Z",
+    "arrivalDateTime":"2025-09-08T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":612
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T07:00:00Z",
+    "arrivalDateTime":"2025-09-08T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2955
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T13:00:00Z",
+    "arrivalDateTime":"2025-09-09T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":730
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T13:00:00Z",
+    "arrivalDateTime":"2025-09-09T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3073
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T18:00:00Z",
+    "arrivalDateTime":"2025-09-09T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":646
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T18:00:00Z",
+    "arrivalDateTime":"2025-09-09T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2746
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T23:00:00Z",
+    "arrivalDateTime":"2025-09-09T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":700
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-08T23:00:00Z",
+    "arrivalDateTime":"2025-09-09T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3306
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T07:00:00Z",
+    "arrivalDateTime":"2025-09-09T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":671
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T07:00:00Z",
+    "arrivalDateTime":"2025-09-09T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2942
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T13:00:00Z",
+    "arrivalDateTime":"2025-09-10T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":549
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T13:00:00Z",
+    "arrivalDateTime":"2025-09-10T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2674
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T18:00:00Z",
+    "arrivalDateTime":"2025-09-10T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":713
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T18:00:00Z",
+    "arrivalDateTime":"2025-09-10T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2793
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T23:00:00Z",
+    "arrivalDateTime":"2025-09-10T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":558
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-09T23:00:00Z",
+    "arrivalDateTime":"2025-09-10T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2658
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T07:00:00Z",
+    "arrivalDateTime":"2025-09-10T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":746
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T07:00:00Z",
+    "arrivalDateTime":"2025-09-10T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3178
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T13:00:00Z",
+    "arrivalDateTime":"2025-09-11T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":744
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T13:00:00Z",
+    "arrivalDateTime":"2025-09-11T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3065
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T18:00:00Z",
+    "arrivalDateTime":"2025-09-11T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":730
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T18:00:00Z",
+    "arrivalDateTime":"2025-09-11T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2612
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T23:00:00Z",
+    "arrivalDateTime":"2025-09-11T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":542
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-10T23:00:00Z",
+    "arrivalDateTime":"2025-09-11T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3068
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T07:00:00Z",
+    "arrivalDateTime":"2025-09-11T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":602
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T07:00:00Z",
+    "arrivalDateTime":"2025-09-11T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2932
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T13:00:00Z",
+    "arrivalDateTime":"2025-09-12T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":568
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T13:00:00Z",
+    "arrivalDateTime":"2025-09-12T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2986
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T18:00:00Z",
+    "arrivalDateTime":"2025-09-12T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":723
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T18:00:00Z",
+    "arrivalDateTime":"2025-09-12T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3185
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T23:00:00Z",
+    "arrivalDateTime":"2025-09-12T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":537
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-11T23:00:00Z",
+    "arrivalDateTime":"2025-09-12T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3202
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T07:00:00Z",
+    "arrivalDateTime":"2025-09-12T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":553
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T07:00:00Z",
+    "arrivalDateTime":"2025-09-12T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3196
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T13:00:00Z",
+    "arrivalDateTime":"2025-09-13T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":690
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T13:00:00Z",
+    "arrivalDateTime":"2025-09-13T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2884
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T18:00:00Z",
+    "arrivalDateTime":"2025-09-13T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":745
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T18:00:00Z",
+    "arrivalDateTime":"2025-09-13T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2911
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T23:00:00Z",
+    "arrivalDateTime":"2025-09-13T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":560
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-12T23:00:00Z",
+    "arrivalDateTime":"2025-09-13T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3151
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T07:00:00Z",
+    "arrivalDateTime":"2025-09-13T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":573
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T07:00:00Z",
+    "arrivalDateTime":"2025-09-13T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2796
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T13:00:00Z",
+    "arrivalDateTime":"2025-09-14T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":640
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T13:00:00Z",
+    "arrivalDateTime":"2025-09-14T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2889
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T18:00:00Z",
+    "arrivalDateTime":"2025-09-14T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":668
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T18:00:00Z",
+    "arrivalDateTime":"2025-09-14T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2654
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T23:00:00Z",
+    "arrivalDateTime":"2025-09-14T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":537
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-13T23:00:00Z",
+    "arrivalDateTime":"2025-09-14T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3252
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T07:00:00Z",
+    "arrivalDateTime":"2025-09-14T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":643
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T07:00:00Z",
+    "arrivalDateTime":"2025-09-14T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3360
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T13:00:00Z",
+    "arrivalDateTime":"2025-09-15T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":712
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T13:00:00Z",
+    "arrivalDateTime":"2025-09-15T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3345
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T18:00:00Z",
+    "arrivalDateTime":"2025-09-15T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":719
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T18:00:00Z",
+    "arrivalDateTime":"2025-09-15T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2788
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T23:00:00Z",
+    "arrivalDateTime":"2025-09-15T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":644
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-14T23:00:00Z",
+    "arrivalDateTime":"2025-09-15T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3188
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T07:00:00Z",
+    "arrivalDateTime":"2025-09-15T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":730
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T07:00:00Z",
+    "arrivalDateTime":"2025-09-15T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3396
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T13:00:00Z",
+    "arrivalDateTime":"2025-09-16T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":685
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T13:00:00Z",
+    "arrivalDateTime":"2025-09-16T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3287
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T18:00:00Z",
+    "arrivalDateTime":"2025-09-16T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":665
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T18:00:00Z",
+    "arrivalDateTime":"2025-09-16T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2836
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T23:00:00Z",
+    "arrivalDateTime":"2025-09-16T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":647
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-15T23:00:00Z",
+    "arrivalDateTime":"2025-09-16T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3125
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T07:00:00Z",
+    "arrivalDateTime":"2025-09-16T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":539
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T07:00:00Z",
+    "arrivalDateTime":"2025-09-16T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2740
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T13:00:00Z",
+    "arrivalDateTime":"2025-09-17T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":668
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T13:00:00Z",
+    "arrivalDateTime":"2025-09-17T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3145
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T18:00:00Z",
+    "arrivalDateTime":"2025-09-17T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":545
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T18:00:00Z",
+    "arrivalDateTime":"2025-09-17T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2732
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T23:00:00Z",
+    "arrivalDateTime":"2025-09-17T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":710
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-16T23:00:00Z",
+    "arrivalDateTime":"2025-09-17T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2619
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T07:00:00Z",
+    "arrivalDateTime":"2025-09-17T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":722
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T07:00:00Z",
+    "arrivalDateTime":"2025-09-17T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3114
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T13:00:00Z",
+    "arrivalDateTime":"2025-09-18T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":666
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T13:00:00Z",
+    "arrivalDateTime":"2025-09-18T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3042
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T18:00:00Z",
+    "arrivalDateTime":"2025-09-18T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":701
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T18:00:00Z",
+    "arrivalDateTime":"2025-09-18T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2924
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T23:00:00Z",
+    "arrivalDateTime":"2025-09-18T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":750
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-17T23:00:00Z",
+    "arrivalDateTime":"2025-09-18T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3283
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T07:00:00Z",
+    "arrivalDateTime":"2025-09-18T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":708
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T07:00:00Z",
+    "arrivalDateTime":"2025-09-18T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3343
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T13:00:00Z",
+    "arrivalDateTime":"2025-09-19T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":613
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T13:00:00Z",
+    "arrivalDateTime":"2025-09-19T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3133
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T18:00:00Z",
+    "arrivalDateTime":"2025-09-19T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":703
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T18:00:00Z",
+    "arrivalDateTime":"2025-09-19T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3266
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T23:00:00Z",
+    "arrivalDateTime":"2025-09-19T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":574
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-18T23:00:00Z",
+    "arrivalDateTime":"2025-09-19T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3258
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T07:00:00Z",
+    "arrivalDateTime":"2025-09-19T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":674
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T07:00:00Z",
+    "arrivalDateTime":"2025-09-19T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2649
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T13:00:00Z",
+    "arrivalDateTime":"2025-09-20T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":684
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T13:00:00Z",
+    "arrivalDateTime":"2025-09-20T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3332
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T18:00:00Z",
+    "arrivalDateTime":"2025-09-20T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":716
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T18:00:00Z",
+    "arrivalDateTime":"2025-09-20T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2669
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T23:00:00Z",
+    "arrivalDateTime":"2025-09-20T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":547
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-19T23:00:00Z",
+    "arrivalDateTime":"2025-09-20T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3268
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T07:00:00Z",
+    "arrivalDateTime":"2025-09-20T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":673
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T07:00:00Z",
+    "arrivalDateTime":"2025-09-20T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2921
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T13:00:00Z",
+    "arrivalDateTime":"2025-09-21T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":660
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T13:00:00Z",
+    "arrivalDateTime":"2025-09-21T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3056
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T18:00:00Z",
+    "arrivalDateTime":"2025-09-21T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":609
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T18:00:00Z",
+    "arrivalDateTime":"2025-09-21T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3306
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T23:00:00Z",
+    "arrivalDateTime":"2025-09-21T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":690
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-20T23:00:00Z",
+    "arrivalDateTime":"2025-09-21T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2748
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T07:00:00Z",
+    "arrivalDateTime":"2025-09-21T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":628
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T07:00:00Z",
+    "arrivalDateTime":"2025-09-21T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2879
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T13:00:00Z",
+    "arrivalDateTime":"2025-09-22T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":738
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T13:00:00Z",
+    "arrivalDateTime":"2025-09-22T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3354
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T18:00:00Z",
+    "arrivalDateTime":"2025-09-22T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":530
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T18:00:00Z",
+    "arrivalDateTime":"2025-09-22T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2994
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T23:00:00Z",
+    "arrivalDateTime":"2025-09-22T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":698
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-21T23:00:00Z",
+    "arrivalDateTime":"2025-09-22T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2936
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T07:00:00Z",
+    "arrivalDateTime":"2025-09-22T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":744
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T07:00:00Z",
+    "arrivalDateTime":"2025-09-22T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2894
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T13:00:00Z",
+    "arrivalDateTime":"2025-09-23T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":703
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T13:00:00Z",
+    "arrivalDateTime":"2025-09-23T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2891
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T18:00:00Z",
+    "arrivalDateTime":"2025-09-23T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":531
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T18:00:00Z",
+    "arrivalDateTime":"2025-09-23T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3122
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T23:00:00Z",
+    "arrivalDateTime":"2025-09-23T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":609
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-22T23:00:00Z",
+    "arrivalDateTime":"2025-09-23T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3116
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T07:00:00Z",
+    "arrivalDateTime":"2025-09-23T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":555
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T07:00:00Z",
+    "arrivalDateTime":"2025-09-23T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3348
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T13:00:00Z",
+    "arrivalDateTime":"2025-09-24T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":604
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T13:00:00Z",
+    "arrivalDateTime":"2025-09-24T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3286
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T18:00:00Z",
+    "arrivalDateTime":"2025-09-24T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":579
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T18:00:00Z",
+    "arrivalDateTime":"2025-09-24T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3187
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T23:00:00Z",
+    "arrivalDateTime":"2025-09-24T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":669
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-23T23:00:00Z",
+    "arrivalDateTime":"2025-09-24T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2808
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T07:00:00Z",
+    "arrivalDateTime":"2025-09-24T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":627
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T07:00:00Z",
+    "arrivalDateTime":"2025-09-24T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2758
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T13:00:00Z",
+    "arrivalDateTime":"2025-09-25T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":578
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T13:00:00Z",
+    "arrivalDateTime":"2025-09-25T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2826
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T18:00:00Z",
+    "arrivalDateTime":"2025-09-25T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":712
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T18:00:00Z",
+    "arrivalDateTime":"2025-09-25T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3229
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T23:00:00Z",
+    "arrivalDateTime":"2025-09-25T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":599
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-24T23:00:00Z",
+    "arrivalDateTime":"2025-09-25T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3289
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T07:00:00Z",
+    "arrivalDateTime":"2025-09-25T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":711
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T07:00:00Z",
+    "arrivalDateTime":"2025-09-25T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2907
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T13:00:00Z",
+    "arrivalDateTime":"2025-09-26T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":672
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T13:00:00Z",
+    "arrivalDateTime":"2025-09-26T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2663
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T18:00:00Z",
+    "arrivalDateTime":"2025-09-26T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":608
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T18:00:00Z",
+    "arrivalDateTime":"2025-09-26T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3136
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T23:00:00Z",
+    "arrivalDateTime":"2025-09-26T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":598
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-25T23:00:00Z",
+    "arrivalDateTime":"2025-09-26T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2958
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T07:00:00Z",
+    "arrivalDateTime":"2025-09-26T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":536
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T07:00:00Z",
+    "arrivalDateTime":"2025-09-26T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3015
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T13:00:00Z",
+    "arrivalDateTime":"2025-09-27T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":658
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T13:00:00Z",
+    "arrivalDateTime":"2025-09-27T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3092
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T18:00:00Z",
+    "arrivalDateTime":"2025-09-27T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":665
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T18:00:00Z",
+    "arrivalDateTime":"2025-09-27T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2685
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T23:00:00Z",
+    "arrivalDateTime":"2025-09-27T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":543
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-26T23:00:00Z",
+    "arrivalDateTime":"2025-09-27T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2870
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T07:00:00Z",
+    "arrivalDateTime":"2025-09-27T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":710
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T07:00:00Z",
+    "arrivalDateTime":"2025-09-27T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3091
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T13:00:00Z",
+    "arrivalDateTime":"2025-09-28T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":654
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T13:00:00Z",
+    "arrivalDateTime":"2025-09-28T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3010
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T18:00:00Z",
+    "arrivalDateTime":"2025-09-28T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":719
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T18:00:00Z",
+    "arrivalDateTime":"2025-09-28T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2689
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T23:00:00Z",
+    "arrivalDateTime":"2025-09-28T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":680
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-27T23:00:00Z",
+    "arrivalDateTime":"2025-09-28T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3080
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T07:00:00Z",
+    "arrivalDateTime":"2025-09-28T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":750
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T07:00:00Z",
+    "arrivalDateTime":"2025-09-28T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2646
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T13:00:00Z",
+    "arrivalDateTime":"2025-09-29T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":588
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T13:00:00Z",
+    "arrivalDateTime":"2025-09-29T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2694
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T18:00:00Z",
+    "arrivalDateTime":"2025-09-29T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":568
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T18:00:00Z",
+    "arrivalDateTime":"2025-09-29T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":2625
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T23:00:00Z",
+    "arrivalDateTime":"2025-09-29T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":606
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-28T23:00:00Z",
+    "arrivalDateTime":"2025-09-29T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":2987
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T07:00:00Z",
+    "arrivalDateTime":"2025-09-29T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":627
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T07:00:00Z",
+    "arrivalDateTime":"2025-09-29T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":3049
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T13:00:00Z",
+    "arrivalDateTime":"2025-09-30T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":613
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T13:00:00Z",
+    "arrivalDateTime":"2025-09-30T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":2651
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T18:00:00Z",
+    "arrivalDateTime":"2025-09-30T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":730
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T18:00:00Z",
+    "arrivalDateTime":"2025-09-30T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3252
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T23:00:00Z",
+    "arrivalDateTime":"2025-09-30T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":683
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-29T23:00:00Z",
+    "arrivalDateTime":"2025-09-30T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3173
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T07:00:00Z",
+    "arrivalDateTime":"2025-09-30T19:00:00Z",
+    "airline":"Air France",
+    "class":"Economy",
+    "price":563
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T07:00:00Z",
+    "arrivalDateTime":"2025-09-30T19:00:00Z",
+    "airline":"Air France",
+    "class":"Business",
+    "price":2904
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T13:00:00Z",
+    "arrivalDateTime":"2025-10-01T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Economy",
+    "price":578
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T13:00:00Z",
+    "arrivalDateTime":"2025-10-01T01:00:00Z",
+    "airline":"Delta Airlines",
+    "class":"Business",
+    "price":3315
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T18:00:00Z",
+    "arrivalDateTime":"2025-10-01T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Economy",
+    "price":694
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T18:00:00Z",
+    "arrivalDateTime":"2025-10-01T06:00:00Z",
+    "airline":"American Airlines",
+    "class":"Business",
+    "price":3344
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T23:00:00Z",
+    "arrivalDateTime":"2025-10-01T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Economy",
+    "price":705
+  },
+  {
+    "departureAirport":"JFK",
+    "arrivalAirport":"NCE",
+    "departureDateTime":"2025-09-30T23:00:00Z",
+    "arrivalDateTime":"2025-10-01T11:00:00Z",
+    "airline":"Norwegian Air Shuttle",
+    "class":"Business",
+    "price":3280
+  }
+]

@@ -1,0 +1,3002 @@
+[
+  {
+    "hotelName": "The Savoy",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 114.0
+  },
+  {
+    "hotelName": "Claridge's",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 137.0
+  },
+  {
+    "hotelName": "The Ritz",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 112.0
+  },
+  {
+    "hotelName": "The Dorchester",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 126.0
+  },
+  {
+    "hotelName": "The Langham",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 601.0
+  },
+  {
+    "hotelName": "The Ned",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 116.0
+  },
+  {
+    "hotelName": "Sea Containers",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 55.0
+  },
+  {
+    "hotelName": "Ham Yard Hotel",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 837.0
+  },
+  {
+    "hotelName": "The Berkeley",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 809.0
+  },
+  {
+    "hotelName": "Rosewood London",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 66.0
+  },
+  {
+    "hotelName": "Hotel Caf\u00e9 Royal",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 217.0
+  },
+  {
+    "hotelName": "The Connaught",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 373.0
+  },
+  {
+    "hotelName": "Mandarin Oriental",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 263.0
+  },
+  {
+    "hotelName": "The May Fair",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 88.0
+  },
+  {
+    "hotelName": "The Stafford",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 230.0
+  },
+  {
+    "hotelName": "St. Pancras Renaissance",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 953.0
+  },
+  {
+    "hotelName": "The Goring",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 87.0
+  },
+  {
+    "hotelName": "The Hoxton",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 659.0
+  },
+  {
+    "hotelName": "Corinthia London",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 302.0
+  },
+  {
+    "hotelName": "Sofitel St James",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 194.0
+  },
+  {
+    "hotelName": "Sheraton Grand",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "Kimpton Fitzroy",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "The Tower Hotel",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 807.0
+  },
+  {
+    "hotelName": "Park Plaza Westminster",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 74.0
+  },
+  {
+    "hotelName": "Hilton London Bankside",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 65.0
+  },
+  {
+    "hotelName": "ME London",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 129.0
+  },
+  {
+    "hotelName": "The Montcalm",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 218.0
+  },
+  {
+    "hotelName": "The Royal Horseguards",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 113.0
+  },
+  {
+    "hotelName": "London Marriott County Hall",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 89.0
+  },
+  {
+    "hotelName": "The Trafalgar St. James",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 315.0
+  },
+  {
+    "hotelName": "Hotel Indigo London",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 109.0
+  },
+  {
+    "hotelName": "Radisson Blu Edwardian",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 727.0
+  },
+  {
+    "hotelName": "NH London Kensington",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 229.0
+  },
+  {
+    "hotelName": "Crowne Plaza London",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 53.0
+  },
+  {
+    "hotelName": "Novotel London West",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 350.0
+  },
+  {
+    "hotelName": "Pullman London",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 369.0
+  },
+  {
+    "hotelName": "Premier Inn Kensington",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 134.0
+  },
+  {
+    "hotelName": "Travelodge Covent Garden",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 458.0
+  },
+  {
+    "hotelName": "Z Hotel Shoreditch",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 783.0
+  },
+  {
+    "hotelName": "CitizenM Tower of London",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 101.0
+  },
+  {
+    "hotelName": "The Zetter Hotel",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 74.0
+  },
+  {
+    "hotelName": "The Good Hotel",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 700.0
+  },
+  {
+    "hotelName": "The Curtain",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 101.0
+  },
+  {
+    "hotelName": "Treehouse Hotel",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 126.0
+  },
+  {
+    "hotelName": "The Standard",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 55.0
+  },
+  {
+    "hotelName": "Mama Shelter",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 150.0
+  },
+  {
+    "hotelName": "Leman Locke",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 91.0
+  },
+  {
+    "hotelName": "Hotel 41",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 77.0
+  },
+  {
+    "hotelName": "The Resident Soho",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 93.0
+  },
+  {
+    "hotelName": "The Nadler Victoria",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 172.0
+  },
+  {
+    "hotelName": "K+K Hotel George",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 358.0
+  },
+  {
+    "hotelName": "The Pilgrm",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 251.0
+  },
+  {
+    "hotelName": "Eccleston Square Hotel",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 71.0
+  },
+  {
+    "hotelName": "The Z Hotel Holborn",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 403.0
+  },
+  {
+    "hotelName": "The Mandrake",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 56.0
+  },
+  {
+    "hotelName": "Hazlitt's",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 76.0
+  },
+  {
+    "hotelName": "The Laslett",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 242.0
+  },
+  {
+    "hotelName": "Chiltern Firehouse",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 64.0
+  },
+  {
+    "hotelName": "Roomzzz London Stratford",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 91.0
+  },
+  {
+    "hotelName": "Montcalm Royal London",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 94.0
+  },
+  {
+    "hotelName": "Point A Hotel",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "Holiday Inn London",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 681.0
+  },
+  {
+    "hotelName": "Marlin Waterloo",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 70.0
+  },
+  {
+    "hotelName": "The Marble Arch London",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 161.0
+  },
+  {
+    "hotelName": "Strand Palace Hotel",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 190.0
+  },
+  {
+    "hotelName": "The Park City Grand",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "The Belgrave",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 159.0
+  },
+  {
+    "hotelName": "Wellington Hotel",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 220.0
+  },
+  {
+    "hotelName": "The Bailey\u2019s Hotel",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "The Rockwell",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 283.0
+  },
+  {
+    "hotelName": "The Caesar Hotel",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "My Chelsea",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 224.0
+  },
+  {
+    "hotelName": "The Hux Hotel",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 340.0
+  },
+  {
+    "hotelName": "The Franklin London",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 860.0
+  },
+  {
+    "hotelName": "Hotel Xanadu",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 235.0
+  },
+  {
+    "hotelName": "The Lodge Hotel",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 134.0
+  },
+  {
+    "hotelName": "TheWesley",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 945.0
+  },
+  {
+    "hotelName": "Hotel Rafayel",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 209.0
+  },
+  {
+    "hotelName": "Hotel Shepherds Bush",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 138.0
+  },
+  {
+    "hotelName": "Dorsett Shepherds Bush",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 222.0
+  },
+  {
+    "hotelName": "Hotel Lily",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 285.0
+  },
+  {
+    "hotelName": "Ibis London Earls Court",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 246.0
+  },
+  {
+    "hotelName": "Millennium Gloucester",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 141.0
+  },
+  {
+    "hotelName": "Copthorne Tara",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 100.0
+  },
+  {
+    "hotelName": "Royal Garden Hotel",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 98.0
+  },
+  {
+    "hotelName": "Kensington Close",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 136.0
+  },
+  {
+    "hotelName": "Park Grand London Hyde Park",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 193.0
+  },
+  {
+    "hotelName": "Grange City Hotel",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 205.0
+  },
+  {
+    "hotelName": "Britannia International",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 782.0
+  },
+  {
+    "hotelName": "Town Hall Hotel",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 451.0
+  },
+  {
+    "hotelName": "Grange Holborn",
+    "hotelCity": "London",
+    "hotelStars": 3,
+    "pricePerNight": 155.0
+  },
+  {
+    "hotelName": "St Giles London",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 150.0
+  },
+  {
+    "hotelName": "The Crescent Hyde Park",
+    "hotelCity": "London",
+    "hotelStars": 1,
+    "pricePerNight": 87.0
+  },
+  {
+    "hotelName": "The Marble Arch",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 231.0
+  },
+  {
+    "hotelName": "Hyatt Regency Churchill",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 398.0
+  },
+  {
+    "hotelName": "London Hilton Park Lane",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 293.0
+  },
+  {
+    "hotelName": "DoubleTree Tower Hill",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 963.0
+  },
+  {
+    "hotelName": "Apex Temple Court",
+    "hotelCity": "London",
+    "hotelStars": 4,
+    "pricePerNight": 331.0
+  },
+  {
+    "hotelName": "Bankside Hotel",
+    "hotelCity": "London",
+    "hotelStars": 2,
+    "pricePerNight": 130.0
+  },
+  {
+    "hotelName": "The Chamberlain",
+    "hotelCity": "London",
+    "hotelStars": 5,
+    "pricePerNight": 468.0
+  },
+  {
+    "hotelName": "Rome Hotel 1",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 852.0
+  },
+  {
+    "hotelName": "Rome Hotel 2",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 111.0
+  },
+  {
+    "hotelName": "Rome Hotel 3",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 871.0
+  },
+  {
+    "hotelName": "Rome Hotel 4",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 194.0
+  },
+  {
+    "hotelName": "Rome Hotel 5",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 191.0
+  },
+  {
+    "hotelName": "Rome Hotel 6",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 99.0
+  },
+  {
+    "hotelName": "Rome Hotel 7",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 869.0
+  },
+  {
+    "hotelName": "Rome Hotel 8",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 258.0
+  },
+  {
+    "hotelName": "Rome Hotel 9",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 84.0
+  },
+  {
+    "hotelName": "Rome Hotel 10",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 746.0
+  },
+  {
+    "hotelName": "Rome Hotel 11",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 189.0
+  },
+  {
+    "hotelName": "Rome Hotel 12",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 224.0
+  },
+  {
+    "hotelName": "Rome Hotel 13",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 522.0
+  },
+  {
+    "hotelName": "Rome Hotel 14",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 51.0
+  },
+  {
+    "hotelName": "Rome Hotel 15",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 198.0
+  },
+  {
+    "hotelName": "Rome Hotel 16",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 74.0
+  },
+  {
+    "hotelName": "Rome Hotel 17",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 102.0
+  },
+  {
+    "hotelName": "Rome Hotel 18",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 59.0
+  },
+  {
+    "hotelName": "Rome Hotel 19",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 420.0
+  },
+  {
+    "hotelName": "Rome Hotel 20",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 128.0
+  },
+  {
+    "hotelName": "Rome Hotel 21",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 243.0
+  },
+  {
+    "hotelName": "Rome Hotel 22",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 708.0
+  },
+  {
+    "hotelName": "Rome Hotel 23",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 118.0
+  },
+  {
+    "hotelName": "Rome Hotel 24",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 127.0
+  },
+  {
+    "hotelName": "Rome Hotel 25",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 323.0
+  },
+  {
+    "hotelName": "Rome Hotel 26",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 398.0
+  },
+  {
+    "hotelName": "Rome Hotel 27",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 253.0
+  },
+  {
+    "hotelName": "Rome Hotel 28",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 108.0
+  },
+  {
+    "hotelName": "Rome Hotel 29",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 152.0
+  },
+  {
+    "hotelName": "Rome Hotel 30",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 59.0
+  },
+  {
+    "hotelName": "Rome Hotel 31",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 231.0
+  },
+  {
+    "hotelName": "Rome Hotel 32",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 347.0
+  },
+  {
+    "hotelName": "Rome Hotel 33",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 532.0
+  },
+  {
+    "hotelName": "Rome Hotel 34",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 210.0
+  },
+  {
+    "hotelName": "Rome Hotel 35",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 806.0
+  },
+  {
+    "hotelName": "Rome Hotel 36",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 119.0
+  },
+  {
+    "hotelName": "Rome Hotel 37",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 75.0
+  },
+  {
+    "hotelName": "Rome Hotel 38",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 662.0
+  },
+  {
+    "hotelName": "Rome Hotel 39",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 123.0
+  },
+  {
+    "hotelName": "Rome Hotel 40",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "Rome Hotel 41",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 96.0
+  },
+  {
+    "hotelName": "Rome Hotel 42",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 302.0
+  },
+  {
+    "hotelName": "Rome Hotel 43",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 486.0
+  },
+  {
+    "hotelName": "Rome Hotel 44",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 75.0
+  },
+  {
+    "hotelName": "Rome Hotel 45",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 182.0
+  },
+  {
+    "hotelName": "Rome Hotel 46",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 575.0
+  },
+  {
+    "hotelName": "Rome Hotel 47",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "Rome Hotel 48",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 179.0
+  },
+  {
+    "hotelName": "Rome Hotel 49",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 234.0
+  },
+  {
+    "hotelName": "Rome Hotel 50",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 398.0
+  },
+  {
+    "hotelName": "Rome Hotel 51",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 63.0
+  },
+  {
+    "hotelName": "Rome Hotel 52",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 97.0
+  },
+  {
+    "hotelName": "Rome Hotel 53",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 264.0
+  },
+  {
+    "hotelName": "Rome Hotel 54",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 139.0
+  },
+  {
+    "hotelName": "Rome Hotel 55",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 324.0
+  },
+  {
+    "hotelName": "Rome Hotel 56",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 64.0
+  },
+  {
+    "hotelName": "Rome Hotel 57",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 92.0
+  },
+  {
+    "hotelName": "Rome Hotel 58",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 83.0
+  },
+  {
+    "hotelName": "Rome Hotel 59",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 65.0
+  },
+  {
+    "hotelName": "Rome Hotel 60",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "Rome Hotel 61",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 158.0
+  },
+  {
+    "hotelName": "Rome Hotel 62",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 399.0
+  },
+  {
+    "hotelName": "Rome Hotel 63",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 228.0
+  },
+  {
+    "hotelName": "Rome Hotel 64",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 117.0
+  },
+  {
+    "hotelName": "Rome Hotel 65",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 960.0
+  },
+  {
+    "hotelName": "Rome Hotel 66",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 203.0
+  },
+  {
+    "hotelName": "Rome Hotel 67",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "Rome Hotel 68",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 84.0
+  },
+  {
+    "hotelName": "Rome Hotel 69",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 257.0
+  },
+  {
+    "hotelName": "Rome Hotel 70",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 247.0
+  },
+  {
+    "hotelName": "Rome Hotel 71",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 379.0
+  },
+  {
+    "hotelName": "Rome Hotel 72",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 490.0
+  },
+  {
+    "hotelName": "Rome Hotel 73",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 185.0
+  },
+  {
+    "hotelName": "Rome Hotel 74",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 112.0
+  },
+  {
+    "hotelName": "Rome Hotel 75",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 105.0
+  },
+  {
+    "hotelName": "Rome Hotel 76",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 61.0
+  },
+  {
+    "hotelName": "Rome Hotel 77",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 545.0
+  },
+  {
+    "hotelName": "Rome Hotel 78",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 694.0
+  },
+  {
+    "hotelName": "Rome Hotel 79",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 381.0
+  },
+  {
+    "hotelName": "Rome Hotel 80",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 383.0
+  },
+  {
+    "hotelName": "Rome Hotel 81",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 68.0
+  },
+  {
+    "hotelName": "Rome Hotel 82",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 118.0
+  },
+  {
+    "hotelName": "Rome Hotel 83",
+    "hotelCity": "Rome",
+    "hotelStars": 4,
+    "pricePerNight": 338.0
+  },
+  {
+    "hotelName": "Rome Hotel 84",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 228.0
+  },
+  {
+    "hotelName": "Rome Hotel 85",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 121.0
+  },
+  {
+    "hotelName": "Rome Hotel 86",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 633.0
+  },
+  {
+    "hotelName": "Rome Hotel 87",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 453.0
+  },
+  {
+    "hotelName": "Rome Hotel 88",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 148.0
+  },
+  {
+    "hotelName": "Rome Hotel 89",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 60.0
+  },
+  {
+    "hotelName": "Rome Hotel 90",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 94.0
+  },
+  {
+    "hotelName": "Rome Hotel 91",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 65.0
+  },
+  {
+    "hotelName": "Rome Hotel 92",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 144.0
+  },
+  {
+    "hotelName": "Rome Hotel 93",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 79.0
+  },
+  {
+    "hotelName": "Rome Hotel 94",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 114.0
+  },
+  {
+    "hotelName": "Rome Hotel 95",
+    "hotelCity": "Rome",
+    "hotelStars": 1,
+    "pricePerNight": 99.0
+  },
+  {
+    "hotelName": "Rome Hotel 96",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 720.0
+  },
+  {
+    "hotelName": "Rome Hotel 97",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 624.0
+  },
+  {
+    "hotelName": "Rome Hotel 98",
+    "hotelCity": "Rome",
+    "hotelStars": 5,
+    "pricePerNight": 808.0
+  },
+  {
+    "hotelName": "Rome Hotel 99",
+    "hotelCity": "Rome",
+    "hotelStars": 3,
+    "pricePerNight": 237.0
+  },
+  {
+    "hotelName": "Rome Hotel 100",
+    "hotelCity": "Rome",
+    "hotelStars": 2,
+    "pricePerNight": 129.0
+  },
+  {
+    "hotelName": "Parisian Stay 1",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 389.0
+  },
+  {
+    "hotelName": "Parisian Stay 2",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 207.0
+  },
+  {
+    "hotelName": "Parisian Stay 3",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 233.0
+  },
+  {
+    "hotelName": "Parisian Stay 4",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 846.0
+  },
+  {
+    "hotelName": "Parisian Stay 5",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 908.0
+  },
+  {
+    "hotelName": "Parisian Stay 6",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 168.0
+  },
+  {
+    "hotelName": "Parisian Stay 7",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 807.0
+  },
+  {
+    "hotelName": "Parisian Stay 8",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 66.0
+  },
+  {
+    "hotelName": "Parisian Stay 9",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 287.0
+  },
+  {
+    "hotelName": "Parisian Stay 10",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 225.0
+  },
+  {
+    "hotelName": "Parisian Stay 11",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 270.0
+  },
+  {
+    "hotelName": "Parisian Stay 12",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 114.0
+  },
+  {
+    "hotelName": "Parisian Stay 13",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 77.0
+  },
+  {
+    "hotelName": "Parisian Stay 14",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 253.0
+  },
+  {
+    "hotelName": "Parisian Stay 15",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 210.0
+  },
+  {
+    "hotelName": "Parisian Stay 16",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 224.0
+  },
+  {
+    "hotelName": "Parisian Stay 17",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 822.0
+  },
+  {
+    "hotelName": "Parisian Stay 18",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 982.0
+  },
+  {
+    "hotelName": "Parisian Stay 19",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 106.0
+  },
+  {
+    "hotelName": "Parisian Stay 20",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 80.0
+  },
+  {
+    "hotelName": "Parisian Stay 21",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 106.0
+  },
+  {
+    "hotelName": "Parisian Stay 22",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 154.0
+  },
+  {
+    "hotelName": "Parisian Stay 23",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 139.0
+  },
+  {
+    "hotelName": "Parisian Stay 24",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 243.0
+  },
+  {
+    "hotelName": "Parisian Stay 25",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 102.0
+  },
+  {
+    "hotelName": "Parisian Stay 26",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 200.0
+  },
+  {
+    "hotelName": "Parisian Stay 27",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 64.0
+  },
+  {
+    "hotelName": "Parisian Stay 28",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 588.0
+  },
+  {
+    "hotelName": "Parisian Stay 29",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 109.0
+  },
+  {
+    "hotelName": "Parisian Stay 30",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 84.0
+  },
+  {
+    "hotelName": "Parisian Stay 31",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 144.0
+  },
+  {
+    "hotelName": "Parisian Stay 32",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 70.0
+  },
+  {
+    "hotelName": "Parisian Stay 33",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 58.0
+  },
+  {
+    "hotelName": "Parisian Stay 34",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 134.0
+  },
+  {
+    "hotelName": "Parisian Stay 35",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 86.0
+  },
+  {
+    "hotelName": "Parisian Stay 36",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 250.0
+  },
+  {
+    "hotelName": "Parisian Stay 37",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "Parisian Stay 38",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 977.0
+  },
+  {
+    "hotelName": "Parisian Stay 39",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 181.0
+  },
+  {
+    "hotelName": "Parisian Stay 40",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 61.0
+  },
+  {
+    "hotelName": "Parisian Stay 41",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 400.0
+  },
+  {
+    "hotelName": "Parisian Stay 42",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 298.0
+  },
+  {
+    "hotelName": "Parisian Stay 43",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 396.0
+  },
+  {
+    "hotelName": "Parisian Stay 44",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 268.0
+  },
+  {
+    "hotelName": "Parisian Stay 45",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 662.0
+  },
+  {
+    "hotelName": "Parisian Stay 46",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 125.0
+  },
+  {
+    "hotelName": "Parisian Stay 47",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 133.0
+  },
+  {
+    "hotelName": "Parisian Stay 48",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 827.0
+  },
+  {
+    "hotelName": "Parisian Stay 49",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 917.0
+  },
+  {
+    "hotelName": "Parisian Stay 50",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 212.0
+  },
+  {
+    "hotelName": "Parisian Stay 51",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 273.0
+  },
+  {
+    "hotelName": "Parisian Stay 52",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 80.0
+  },
+  {
+    "hotelName": "Parisian Stay 53",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 114.0
+  },
+  {
+    "hotelName": "Parisian Stay 54",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 93.0
+  },
+  {
+    "hotelName": "Parisian Stay 55",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 238.0
+  },
+  {
+    "hotelName": "Parisian Stay 56",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 54.0
+  },
+  {
+    "hotelName": "Parisian Stay 57",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 87.0
+  },
+  {
+    "hotelName": "Parisian Stay 58",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 69.0
+  },
+  {
+    "hotelName": "Parisian Stay 59",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 118.0
+  },
+  {
+    "hotelName": "Parisian Stay 60",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 160.0
+  },
+  {
+    "hotelName": "Parisian Stay 61",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 223.0
+  },
+  {
+    "hotelName": "Parisian Stay 62",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 400.0
+  },
+  {
+    "hotelName": "Parisian Stay 63",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 837.0
+  },
+  {
+    "hotelName": "Parisian Stay 64",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 78.0
+  },
+  {
+    "hotelName": "Parisian Stay 65",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 50.0
+  },
+  {
+    "hotelName": "Parisian Stay 66",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 343.0
+  },
+  {
+    "hotelName": "Parisian Stay 67",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 847.0
+  },
+  {
+    "hotelName": "Parisian Stay 68",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 86.0
+  },
+  {
+    "hotelName": "Parisian Stay 69",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 140.0
+  },
+  {
+    "hotelName": "Parisian Stay 70",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 480.0
+  },
+  {
+    "hotelName": "Parisian Stay 71",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 344.0
+  },
+  {
+    "hotelName": "Parisian Stay 72",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 144.0
+  },
+  {
+    "hotelName": "Parisian Stay 73",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 117.0
+  },
+  {
+    "hotelName": "Parisian Stay 74",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "Parisian Stay 75",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 192.0
+  },
+  {
+    "hotelName": "Parisian Stay 76",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 92.0
+  },
+  {
+    "hotelName": "Parisian Stay 77",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 295.0
+  },
+  {
+    "hotelName": "Parisian Stay 78",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 151.0
+  },
+  {
+    "hotelName": "Parisian Stay 79",
+    "hotelCity": "Paris",
+    "hotelStars": 5,
+    "pricePerNight": 621.0
+  },
+  {
+    "hotelName": "Parisian Stay 80",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 127.0
+  },
+  {
+    "hotelName": "Parisian Stay 81",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 55.0
+  },
+  {
+    "hotelName": "Parisian Stay 82",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 296.0
+  },
+  {
+    "hotelName": "Parisian Stay 83",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 238.0
+  },
+  {
+    "hotelName": "Parisian Stay 84",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 74.0
+  },
+  {
+    "hotelName": "Parisian Stay 85",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 187.0
+  },
+  {
+    "hotelName": "Parisian Stay 86",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 108.0
+  },
+  {
+    "hotelName": "Parisian Stay 87",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 372.0
+  },
+  {
+    "hotelName": "Parisian Stay 88",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 51.0
+  },
+  {
+    "hotelName": "Parisian Stay 89",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 149.0
+  },
+  {
+    "hotelName": "Parisian Stay 90",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 373.0
+  },
+  {
+    "hotelName": "Parisian Stay 91",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 83.0
+  },
+  {
+    "hotelName": "Parisian Stay 92",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 143.0
+  },
+  {
+    "hotelName": "Parisian Stay 93",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 134.0
+  },
+  {
+    "hotelName": "Parisian Stay 94",
+    "hotelCity": "Paris",
+    "hotelStars": 1,
+    "pricePerNight": 61.0
+  },
+  {
+    "hotelName": "Parisian Stay 95",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 159.0
+  },
+  {
+    "hotelName": "Parisian Stay 96",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 147.0
+  },
+  {
+    "hotelName": "Parisian Stay 97",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 145.0
+  },
+  {
+    "hotelName": "Parisian Stay 98",
+    "hotelCity": "Paris",
+    "hotelStars": 2,
+    "pricePerNight": 143.0
+  },
+  {
+    "hotelName": "Parisian Stay 99",
+    "hotelCity": "Paris",
+    "hotelStars": 3,
+    "pricePerNight": 185.0
+  },
+  {
+    "hotelName": "Parisian Stay 100",
+    "hotelCity": "Paris",
+    "hotelStars": 4,
+    "pricePerNight": 223.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 1",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 249.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 2",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 68.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 3",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 324.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 4",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 81.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 5",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 144.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 6",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 72.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 7",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 183.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 8",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 288.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 9",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 203.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 10",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 11",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 677.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 12",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 999.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 13",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 653.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 14",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 133.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 15",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 734.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 16",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 207.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 17",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 413.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 18",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 165.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 19",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 249.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 20",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 383.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 21",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 81.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 22",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 169.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 23",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 86.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 24",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 161.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 25",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 152.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 26",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 148.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 27",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 68.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 28",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 187.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 29",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 99.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 30",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 79.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 31",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 265.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 32",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 125.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 33",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 106.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 34",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 248.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 35",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 175.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 36",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 157.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 37",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 98.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 38",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 52.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 39",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 123.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 40",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 287.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 41",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 82.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 42",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 84.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 43",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 137.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 44",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 183.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 45",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 89.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 46",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 59.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 47",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 414.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 48",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 738.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 49",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 188.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 50",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 54.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 51",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 188.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 52",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 633.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 53",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 154.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 54",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 138.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 55",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 225.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 56",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 308.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 57",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 218.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 58",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 131.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 59",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 98.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 60",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 92.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 61",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 89.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 62",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 113.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 63",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 788.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 64",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 478.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 65",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 218.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 66",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 364.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 67",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 194.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 68",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 504.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 69",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 340.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 70",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 133.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 71",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 670.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 72",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 91.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 73",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 89.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 74",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 95.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 75",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 164.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 76",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 67.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 77",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 172.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 78",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 99.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 79",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 301.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 80",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 74.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 81",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 467.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 82",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 135.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 83",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 112.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 84",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 507.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 85",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 67.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 86",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 93.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 87",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 111.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 88",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 327.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 89",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 135.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 90",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 91",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 65.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 92",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 133.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 93",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 56.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 94",
+    "hotelCity": "Nice",
+    "hotelStars": 5,
+    "pricePerNight": 973.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 95",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 243.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 96",
+    "hotelCity": "Nice",
+    "hotelStars": 4,
+    "pricePerNight": 214.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 97",
+    "hotelCity": "Nice",
+    "hotelStars": 3,
+    "pricePerNight": 237.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 98",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 100.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 99",
+    "hotelCity": "Nice",
+    "hotelStars": 2,
+    "pricePerNight": 126.0
+  },
+  {
+    "hotelName": "Nice Riviera Hotel 100",
+    "hotelCity": "Nice",
+    "hotelStars": 1,
+    "pricePerNight": 78.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 1",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 165.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 2",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 181.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 3",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 166.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 4",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 234.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 5",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 237.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 6",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 706.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 7",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 144.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 8",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 69.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 9",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 60.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 10",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 146.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 11",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 206.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 12",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 86.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 13",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 91.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 14",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 279.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 15",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 235.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 16",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 244.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 17",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 575.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 18",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 216.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 19",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 145.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 20",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 90.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 21",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 237.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 22",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 190.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 23",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 208.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 24",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 120.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 25",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 92.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 26",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 682.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 27",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 319.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 28",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 680.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 29",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 620.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 30",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 129.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 31",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 176.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 32",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 219.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 33",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 593.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 34",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 184.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 35",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 253.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 36",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 443.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 37",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 213.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 38",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 175.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 39",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 74.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 40",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 373.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 41",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 907.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 42",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 292.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 43",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 105.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 44",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 194.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 45",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 908.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 46",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 946.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 47",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 277.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 48",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 122.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 49",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 539.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 50",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 58.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 51",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 267.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 52",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 782.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 53",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 127.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 54",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 349.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 55",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 347.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 56",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 192.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 57",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 959.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 58",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 103.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 59",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 812.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 60",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 64.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 61",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 87.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 62",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 295.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 63",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 212.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 64",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 351.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 65",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 96.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 66",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 99.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 67",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 135.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 68",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 89.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 69",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 225.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 70",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 62.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 71",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 87.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 72",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 705.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 73",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 62.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 74",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 886.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 75",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 699.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 76",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 70.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 77",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 123.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 78",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 398.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 79",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 295.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 80",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 78.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 81",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 379.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 82",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 83.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 83",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 86.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 84",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 150.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 85",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 84.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 86",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 161.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 87",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 57.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 88",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 740.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 89",
+    "hotelCity": "Geneva",
+    "hotelStars": 2,
+    "pricePerNight": 150.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 90",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 190.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 91",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 174.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 92",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 63.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 93",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 274.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 94",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 79.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 95",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 169.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 96",
+    "hotelCity": "Geneva",
+    "hotelStars": 4,
+    "pricePerNight": 324.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 97",
+    "hotelCity": "Geneva",
+    "hotelStars": 1,
+    "pricePerNight": 57.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 98",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 887.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 99",
+    "hotelCity": "Geneva",
+    "hotelStars": 3,
+    "pricePerNight": 249.0
+  },
+  {
+    "hotelName": "Geneva Grand Hotel 100",
+    "hotelCity": "Geneva",
+    "hotelStars": 5,
+    "pricePerNight": 732.0
+  }
+]

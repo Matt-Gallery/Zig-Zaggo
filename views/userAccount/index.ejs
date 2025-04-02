@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/css/user.css" />
+
+  <title>Sign Up</title>
+</head>
+<body>
+  <%- include('../partials/_navbar') %>
+ 
+
+  <h2>Sign Up</h2>
+
+  <form action="/auth/sign-up" method="POST">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+    </div>
+
+    <div>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="confirmPassword" id="confirmPassword" name="confirmPassword" required />
+    </div>
+
+    <div>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div>
+      <label for="emailAddress">Email:</label>
+      <input type="email" id="emailAddress" name="emailAddress" required />
+    </div>
+
+    <div>
+      <button type="submit">Create Account</button>
+    </div>
+  </form>
+</body>
+</html>
