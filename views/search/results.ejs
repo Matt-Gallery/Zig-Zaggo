@@ -1,1 +1,58 @@
 <link rel="stylesheet" href="/css/style.css" />
+
+<% if (searchResults && searchResults.length > 0) { %>
+  <div class="search-results">
+    <% searchResults.forEach((result, i) => { %>
+      <div class="result-card">
+        <h3>Option <%= i + 1 %> – Total: $<%= result.totalPrice.toLocaleString() %></h3>
+
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Leg</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Departure Time</th>
+              <th>Arrival Time</th>
+              <th>Airline</th>
+              <th>Flight Duration</th>
+              <th>Hotel</th>
+              <th>Flight Price</th>
+              <th>Hotel Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% result.itinerary.forEach((leg, index) => { %>
+              <tr>
+                <td>
+                  <%= index === 0 
+                    ? "Departure" 
+                    : (index === result.itinerary.length - 1 
+                      ? "Return" 
+                      : `Stop ${index}`) %>
+                </td>
+                <td><%= leg.departureAirport || "–" %></td>
+                <td><%= leg.arrivalAirport || "–" %></td>
+                <td><%= new Date(leg.departureTime).toLocaleString() %></td>
+                <td><%= new Date(leg.arrivalTime).toLocaleString() %></td>
+                <td><%= leg.airline %></td>
+                <td><%= leg.flightTime %></td>
+                <td><%= leg.hotelName %></td>
+                <td>$<%= leg.flightPrice.toLocaleString() %></td>
+                <td>
+                  <%= leg.hotelPrice > 0 
+                      ? `$${leg.hotelPrice.toLocaleString()}` 
+                      : "-" %>
+                </td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    <% }) %>
+  </div>
+<% } else { %>
+  <div class="search-results-empty">
+    <p>No matching trip options found. Try adjusting your dates or city stops.</p>
+  </div>
+<% } %>

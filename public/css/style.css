@@ -164,3 +164,75 @@ td {
   text-align: center;
   padding-top: 20px;
 }
+
+.search-button-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.search-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #18683c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #d5ecb0;
+}
+
+/* ===== Search Results ===== */
+
+.search-results {
+  margin-top: 2rem;
+}
+
+.result-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result-table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.price {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.autocomplete-list {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  z-index: 10;
+}
+
+.autocomplete-list li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.autocomplete-list li:hover {
+  background-color: #f0f0f0;
+}

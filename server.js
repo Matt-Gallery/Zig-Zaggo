@@ -15,6 +15,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
 
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const port = process.env.PORT ? process.env.PORT : '3000';
@@ -27,8 +28,6 @@ mongoose.connection.on('connected', () => {
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
-
 
 app.use(express.urlencoded({ extended: false }));
 
