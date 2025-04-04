@@ -1,15 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const input = document.getElementById('departureAirport');
-  const results = document.getElementById('departure-suggestions');
-  if (!input || !results) return;
+  const departureInput = document.getElementById('departureAirport');
+  const returnInput = document.getElementById('returnAirport');
+  const departureResults = document.getElementById('departure-suggestions');
+  const returnResults = document.getElementById('return-suggestions');
 
-  input.addEventListener('input', debounce(fetchAirports, 300));
+  if (!departureInput || !departureResults || !returnInput || !returnResults) return;
 
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-    }
-  });
+  // Initialize autocomplete for both inputs
+  setupAutocomplete(departureInput, departureResults);
+  setupAutocomplete(returnInput, returnResults);
+
+  function setupAutocomplete(input, results) {
+    input.addEventListener('input', debounce(() => fetchAirports(input, results), 300));
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+      }
+    });
+  }
 
   function debounce(fn, delay) {
     let timeout;
@@ -19,23 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  async function fetchAirports() {
+  async function fetchAirports(input, results) {
     const query = input.value.trim();
     results.innerHTML = '';
 
-    // if (query.length <= 2) return;
-
     try {
-      // const res = await fetch(`/search/autocomplete-airports?term=${query}`);
       const res = await fetch(`/search/flights`);
       const data = await res.json();
-      const aiportCodes = data.map(airport => airport.departureAirport);
-      const filteredCodes = aiportCodes.filter(code => code.toLowerCase().includes(query.toLowerCase()));
+      const airportCodes = data.map((airport) => airport.departureAirport);
+      const filteredCodes = airportCodes.filter((code) =>
+        code.toLowerCase().includes(query.toLowerCase())
+      );
       const uniqueCodes = [...new Set(filteredCodes)];
-      console.log("Unique Codes: ", uniqueCodes);
 
       if (uniqueCodes.length) {
-        uniqueCodes.forEach(code => {
+        uniqueCodes.forEach((code) => {
           const li = document.createElement('li');
           li.textContent = code;
           li.style.cursor = 'pointer';
@@ -51,27 +58,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
-
-// const fetchAirports = async () => {
-//   const query = input.value.trim();
-//   results.innerHTML = '';
-
-//   if (query.length <= 2) return;
-
-//   try {
-//     const res = await fetch(`https://api.api-ninjas.com/v1/airportlist?access_key=${"wVYxOxSq73yh/M6yKMDLfA==jQLX9HtGFJQS6Jsr"}&search=${query}`);
-//     const data = await res.json();
-
-//     if (data.data) {
-//       data.data.forEach(airport => {
-//         const li = document.createElement('li');
-//         li.textContent = `${airport.iata_code} - ${airport.airport_name}, ${airport.city}`;
-//         results.appendChild(li);
-//       });
-//     }
-//   } catch (err) {
-//     console.error('Client fetch failed:', err);
-//   }
-// };
-
-

@@ -8,7 +8,7 @@ const airportToCityMap = {
   LHR: "London",
   FCO: "Rome",
   NCE: "Nice",
-  GVA: "Geneva",
+  GVE: "Geneva",
   JFK: "New York",
   CDG: "Paris",
   // Add other mappings as needed
@@ -22,7 +22,6 @@ router.get("/", (req, res) => {
 router.get("/flights", async (req, res) => {
   try {
     const flights = await Flights.find({});
-    console.log("Flights data:", flights);
     res.json(flights);
   } catch (error) {
     console.error("Error fetching flights:", error);

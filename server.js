@@ -13,8 +13,7 @@ import authRoutes from './controllers/auth.js';
 import searchController from './controllers/search.js';import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-
-
+import userRoutes from './routes/user.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -42,6 +41,13 @@ app.use(
   })
 );
 app.use(passUserToViews);
+
+// Add middleware to pass current path to all views
+app.use((req, res, next) => {
+  res.locals.path = req.path;
+  next();
+});
+
 app.use('/search', searchController);
 
 app.get('/', (req, res) => {
@@ -50,6 +56,7 @@ app.get('/', (req, res) => {
 
 
 app.use('/auth', authRoutes);
+app.use('/user', userRoutes);
 
 app.listen(port, () => {
   console.log(`The express app is ready on port ${port}!`);

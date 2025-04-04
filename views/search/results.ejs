@@ -26,10 +26,10 @@
               <tr>
                 <td>
                   <%= index === 0 
-                    ? "Departure" 
+                    ? "Leg 1" 
                     : (index === result.itinerary.length - 1 
                       ? "Return" 
-                      : `Stop ${index}`) %>
+                      : `Leg ${index + 1}`) %>
                 </td>
                 <td><%= leg.departureAirport || "–" %></td>
                 <td><%= leg.arrivalAirport || "–" %></td>
