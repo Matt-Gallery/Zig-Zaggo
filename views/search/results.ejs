@@ -56,3 +56,17 @@
     <p>No matching trip options found. Try adjusting your dates or city stops.</p>
   </div>
 <% } %>
+<% if (typeof hasMore !== 'undefined' && hasMore) { %>
+  <form method="POST" action="/search?page=<%= currentPage + 1 %>">
+    <% for (const key in requestBody) { %>
+      <% if (Array.isArray(requestBody[key])) { %>
+        <% requestBody[key].forEach(value => { %>
+          <input type="hidden" name="<%= key %>" value="<%= value %>" />
+        <% }) %>
+      <% } else { %>
+        <input type="hidden" name="<%= key %>" value="<%= requestBody[key] %>" />
+      <% } %>
+    <% } %>
+    <button type="submit" class="load-more">Load More Results</button>
+  </form>
+<% } %>
