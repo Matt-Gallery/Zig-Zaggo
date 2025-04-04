@@ -19,6 +19,17 @@ router.get("/", (req, res) => {
   res.render("search/index", { searchResults: [], errorMessage: null });
 });
 
+router.get("/flights", async (req, res) => {
+  try {
+    const flights = await Flights.find({});
+    console.log("Flights data:", flights);
+    res.json(flights);
+  } catch (error) {
+    console.error("Error fetching flights:", error);
+    res.status(500).send("Internal Server Error");
+  }
+})
+
 // Route to handle search submissions
 router.post("/", async (req, res) => {
   try {
@@ -258,6 +269,7 @@ function buildItineraries(
   startDate
 ) {
   const allResults = [];
+  
   permutations.forEach((stops) => {
     let currentDate = new Date(startDate);
     let prev = departureAirport;
@@ -332,7 +344,6 @@ function buildItineraries(
       itinerary.push(returnLeg);
       totalPrice += returnLeg.flightPrice;
       allResults.push({ itinerary, totalPrice });
-      console.log(itinerary);
     }
   });
 

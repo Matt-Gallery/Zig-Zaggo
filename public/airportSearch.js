@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const input = document.getElementById('airport-search');
-  const results = document.getElementById('airport-results');
+  const input = document.getElementById('departureAirport');
+  const results = document.getElementById('departure-suggestions');
   if (!input || !results) return;
 
   input.addEventListener('input', debounce(fetchAirports, 300));
@@ -23,14 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = input.value.trim();
     results.innerHTML = '';
 
-    if (query.length <= 2) return;
+    // if (query.length <= 2) return;
 
     try {
-      const res = await fetch(`/search/autocomplete-airports?term=${query}`);
+      // const res = await fetch(`/search/autocomplete-airports?term=${query}`);
+      const res = await fetch(`/search/flights`);
       const data = await res.json();
+      const aiportCodes = data.map(airport => airport.departureAirport);
+      const filteredCodes = aiportCodes.filter(code => code.toLowerCase().includes(query.toLowerCase()));
+      const uniqueCodes = [...new Set(filteredCodes)];
+      console.log("Unique Codes: ", uniqueCodes);
 
-      if (data.length) {
-        data.forEach(code => {
+      if (uniqueCodes.length) {
+        uniqueCodes.forEach(code => {
           const li = document.createElement('li');
           li.textContent = code;
           li.style.cursor = 'pointer';
