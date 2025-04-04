@@ -10,7 +10,7 @@
     <div class="container">
       <%- include('../partials/_navbar') %>
 
-      <form action="/search" method="POST" class="search-form">
+      <form action="/search" method="POST" class="search-form" id="searchForm">
         <table class="departure-table">
           <tr>
             <td><label for="departureAirport">Departure Airport</label></td>
@@ -21,6 +21,7 @@
                 id="departureAirport"
                 name="departureAirport"
                 autocomplete="off"
+                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureAirport ? requestBody.departureAirport : '') %>"
               />
               <ul id="departure-suggestions" class="autocomplete-list"></ul>
             </td>
@@ -32,8 +33,8 @@
                 id="departureFlightClass"
                 class="input"
               >
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
+                <option value="economy" <%= typeof clearForm !== 'undefined' && clearForm ? 'selected' : (typeof requestBody !== 'undefined' && requestBody.departureFlightClass === 'economy' ? 'selected' : '') %>>Economy</option>
+                <option value="business" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureFlightClass === 'business' ? 'selected' : '') %>>Business</option>
               </select>
             </td>
 
@@ -44,6 +45,7 @@
                 id="departureDate"
                 name="departureDate"
                 class="input"
+                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureDate ? requestBody.departureDate : '') %>"
               />
             </td>
           </tr>
@@ -53,13 +55,20 @@
           <% for (let i = 0; i < 4; i++) { %>
           <tr class="stop-row">
             <td><label>City Stop</label></td>
-            <td><input type="text" name="cityStops[]" class="city" /></td>
+            <td>
+              <input 
+                type="text" 
+                name="cityStops[]" 
+                class="city" 
+                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody['cityStops[]'] && requestBody['cityStops[]'][i] ? requestBody['cityStops[]'][i] : '') %>"
+              />
+            </td>
 
             <td><label>Flight Class</label></td>
             <td>
               <select name="flightClass[]" class="input">
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
+                <option value="economy" <%= typeof clearForm !== 'undefined' && clearForm ? 'selected' : (typeof requestBody !== 'undefined' && requestBody['flightClass[]'] && requestBody['flightClass[]'][i] === 'economy' ? 'selected' : '') %>>Economy</option>
+                <option value="business" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody['flightClass[]'] && requestBody['flightClass[]'][i] === 'business' ? 'selected' : '') %>>Business</option>
               </select>
             </td>
 
@@ -69,8 +78,9 @@
                 type="number"
                 name="days[]"
                 min="0"
-                value="3"
+                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody['days[]'] && requestBody['days[]'][i] ? requestBody['days[]'][i] : '') %>"
                 class="days"
+                data-default-value="3"
               />
             </td>
 
@@ -79,10 +89,11 @@
               <% for (let j = 1; j <= 5; j++) { %>
               <label>
                 <input
-                  type="radio"
+                  type="checkbox"
                   name="hotelRatings[<%= i %>]"
                   class="star"
                   value="<%= j %>"
+                  <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody && requestBody[`hotelRatings[${i}]`] && parseInt(requestBody[`hotelRatings[${i}]`]) === j ? 'checked' : '') %>
                 />
                 ★
               </label>
@@ -102,6 +113,7 @@
                 id="returnAirport"
                 name="returnAirport"
                 autocomplete="off"
+                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.returnAirport ? requestBody.returnAirport : '') %>"
               />
               <ul id="return-suggestions" class="autocomplete-list"></ul>
             </td>
@@ -113,8 +125,8 @@
                 id="returnFlightClass"
                 class="input"
               >
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
+                <option value="economy" <%= typeof clearForm !== 'undefined' && clearForm ? 'selected' : (typeof requestBody !== 'undefined' && requestBody.returnFlightClass === 'economy' ? 'selected' : '') %>>Economy</option>
+                <option value="business" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.returnFlightClass === 'business' ? 'selected' : '') %>>Business</option>
               </select>
             </td>
 

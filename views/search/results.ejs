@@ -36,7 +36,7 @@
                 <td><%= new Date(leg.departureTime).toLocaleString() %></td>
                 <td><%= new Date(leg.arrivalTime).toLocaleString() %></td>
                 <td><%= leg.airline %></td>
-                <td><%= leg.flightTime %></td>
+                <td><%= leg.flightDuration %></td>
                 <td><%= leg.hotelName %></td>
                 <td>$<%= leg.flightPrice.toLocaleString() %></td>
                 <td>
@@ -51,9 +51,9 @@
       </div>
     <% }) %>
   </div>
-<% } else { %>
+<% } else if (errorMessage) { %>
   <div class="search-results-empty">
-    <p>No matching trip options found. Try adjusting your dates or city stops.</p>
+    <p><%= errorMessage %></p>
   </div>
 <% } %>
 <% if (typeof hasMore !== 'undefined' && hasMore) { %>

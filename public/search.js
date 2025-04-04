@@ -7,6 +7,46 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.removeItem("zigzaggoSearchParams");
   }
 
+  // Handle city stop inputs to populate days with default value
+  const cityStopInputs = document.querySelectorAll('input[name="cityStops[]"]');
+  const daysInputs = document.querySelectorAll('input[name="days[]"]');
+  
+  cityStopInputs.forEach((input, index) => {
+    // Set up event listeners for input and change events
+    input.addEventListener('input', function() {
+      const daysInput = daysInputs[index];
+      if (this.value.trim() !== '' && daysInput.value === '') {
+        daysInput.value = daysInput.dataset.defaultValue || '3';
+      }
+    });
+    
+    // Check if city stop already has a value on page load
+    if (input.value.trim() !== '' && daysInputs[index].value === '') {
+      daysInputs[index].value = daysInputs[index].dataset.defaultValue || '3';
+    }
+  });
+
+  // Handle hotel star rating checkboxes
+  const ratingInputs = document.querySelectorAll('.rating-inputs');
+  
+  ratingInputs.forEach((ratingInput, rowIndex) => {
+    const checkboxes = ratingInput.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', function() {
+        // If this checkbox is being checked
+        if (this.checked) {
+          // Uncheck all other checkboxes in this row
+          checkboxes.forEach((cb) => {
+            if (cb !== this) {
+              cb.checked = false;
+            }
+          });
+        }
+      });
+    });
+  });
+
   // Save all input values to localStorage on submit
   form.addEventListener("submit", () => {
     const formData = new FormData(form);
@@ -24,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Save the hotelRatings selections manually
     document.querySelectorAll('.rating-inputs').forEach((ratingInput, index) => {
-      const selected = ratingInput.querySelector('input[type="radio"]:checked');
+      const selected = ratingInput.querySelector('input[type="checkbox"]:checked');
       if (selected) {
         entries[`hotelRatings[${index}]`] = selected.value;
       }
@@ -48,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const values = Array.isArray(data[key]) ? data[key] : [data[key]];
 
         if (key.startsWith("hotelRatings[")) {
-          // Handle radio button (star rating) restoration
+          // Handle checkbox (star rating) restoration
           inputs.forEach((input) => {
             if (input.value === data[key]) {
               input.checked = true;

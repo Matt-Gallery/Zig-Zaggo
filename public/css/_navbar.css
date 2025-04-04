@@ -2,6 +2,16 @@
 .top-navbar {
     background-color: #d5ecb0;
     padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  /* Left side of navbar containing logo and links */
+  .nav-left {
+    display: flex;
+    flex-direction: column;
   }
   
   /* Smaller logo aligned left */
@@ -39,5 +49,27 @@
   
   ul.nav-links li a:hover {
     color: #cceabb;
+  }
+  
+  /* Logout button styling */
+  .logout-container {
+    margin-left: auto;
+    padding-top: 10px;
+  }
+  
+  .logout-button {
+    text-decoration: none;
+    color: #18683c;
+    font-weight: bold;
+    transition: color 0.2s;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #cceabb;
+  }
+  
+  .logout-button:hover {
+    color: #ffffff;
+    background-color: #18683c;
   }
   

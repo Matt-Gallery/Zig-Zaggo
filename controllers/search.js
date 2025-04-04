@@ -16,7 +16,25 @@ const airportToCityMap = {
 
 // Route to render the search form
 router.get("/", (req, res) => {
-  res.render("search/index", { searchResults: [], errorMessage: null });
+  // Get data from session
+  const searchResults = req.session.searchResults || [];
+  const errorMessage = req.session.searchError || null;
+  const requestBody = req.session.searchData || {};
+  const hasSearched = req.session.hasSearched || false;
+  
+  // Clear session data after retrieving it
+  delete req.session.searchResults;
+  delete req.session.searchError;
+  delete req.session.searchData;
+  delete req.session.hasSearched;
+  
+  // Render the page with the data
+  res.render("search/index", { 
+    searchResults, 
+    errorMessage: hasSearched ? errorMessage : null,
+    requestBody,
+    clearForm: false
+  });
 });
 
 router.get("/flights", async (req, res) => {
@@ -51,10 +69,11 @@ router.post("/", async (req, res) => {
     const startDate = new Date(departureDate);
     if (isNaN(startDate)) {
       console.error("Invalid departure date provided.");
-      return res.render("search/index", {
-        searchResults: [],
-        errorMessage: "Invalid departure date.",
-      });
+      // Store error in session and redirect
+      req.session.searchError = "Invalid departure date.";
+      req.session.searchData = req.body;
+      req.session.hasSearched = true;
+      return res.redirect("/search");
     }
 
     // Construct city stops array - this contains how many days you want to stay in each city
@@ -110,20 +129,22 @@ router.post("/", async (req, res) => {
       startDate
     );
 
-    // Step 7: Return the trip options to the UI
-    res.render("search/index", {
-      searchResults: allResults,
-      errorMessage:
-        allResults.length === 0
-          ? "No matching trip options found. Try adjusting your dates or city stops."
-          : null,
-    });
+    // Step 7: Store search results in session and redirect to GET route
+    req.session.searchResults = allResults;
+    req.session.searchData = req.body;
+    req.session.hasSearched = true;
+    req.session.searchError = allResults.length === 0
+      ? "No matching trip options found. Try adjusting your dates or city stops."
+      : null;
+    
+    return res.redirect("/search");
   } catch (error) {
     console.error("Error during search processing:", error);
-    res.status(500).render("search/index", {
-      searchResults: [],
-      errorMessage: "An error occurred during the search. Please try again.",
-    });
+    // Store error in session and redirect
+    req.session.searchError = "An error occurred during the search. Please try again.";
+    req.session.searchData = req.body;
+    req.session.hasSearched = true;
+    return res.redirect("/search");
   }
 });
 
@@ -292,6 +313,12 @@ function buildItineraries(
             hotelPrice = selectedHotel.pricePerNight * stop.days;
           }
 
+          // Calculate flight duration
+          const flightDuration = calculateDuration(
+            selectedFlight.departureDateTime,
+            selectedFlight.arrivalDateTime
+          );
+
           // Continue building each itinerary leg
         const leg = {
           departureAirport: prev, // Previous stop or initial departure point
@@ -299,10 +326,8 @@ function buildItineraries(
           departureTime: selectedFlight.departureDateTime,
           arrivalTime: selectedFlight.arrivalDateTime,
           airline: selectedFlight.airline,
-          flightDuration: calculateDuration(
-            selectedFlight.departureDateTime,
-            selectedFlight.arrivalDateTime
-          ),
+          flightDuration: flightDuration,
+          flightTime: flightDuration, // Add this to match the property name in results.ejs
           flightPrice: selectedFlight.price,
           hotelName: selectedHotel ? selectedHotel.hotelName : null,
           hotelPrice: selectedHotel
@@ -325,16 +350,20 @@ function buildItineraries(
     if (returnFlights.length > 0) {
       const selectedReturnFlight = returnFlights[0];
 
+      // Calculate return flight duration
+      const returnFlightDuration = calculateDuration(
+        selectedReturnFlight.departureDateTime,
+        selectedReturnFlight.arrivalDateTime
+      );
+
       const returnLeg = {
         departureAirport: selectedReturnFlight.departureAirport,
         arrivalAirport: selectedReturnFlight.arrivalAirport,
         departureTime: selectedReturnFlight.departureDateTime,
         arrivalTime: selectedReturnFlight.arrivalDateTime,
         airline: selectedReturnFlight.airline,
-        flightDuration: calculateDuration(
-          selectedReturnFlight.departureDateTime,
-          selectedReturnFlight.arrivalDateTime
-        ),
+        flightDuration: returnFlightDuration,
+        flightTime: returnFlightDuration, // Add this to match the property name in results.ejs
         flightPrice: selectedReturnFlight.price,
         hotelName: null,
         hotelPrice: 0,
@@ -345,7 +374,6 @@ function buildItineraries(
       allResults.push({ itinerary, totalPrice });
     }
   });
-
 
   // Sort the results by totalPrice in ascending order
   allResults.sort((a, b) => a.totalPrice - b.totalPrice);
