@@ -16,6 +16,25 @@ document.addEventListener("DOMContentLoaded", () => {
     input.placeholder = '';
     input.value = '';
   });
+
+  // Function to disable/enable hotel rating checkboxes
+  function updateHotelRatingCheckboxes(cityStopInput) {
+    const index = cityStopInput.dataset.index;
+    const cityStopValue = cityStopInput.value.trim().toUpperCase();
+    const hotelRatingCheckboxes = document.querySelectorAll(`.city-stop:nth-child(${parseInt(index) + 1}) .hotel-rating input[type="checkbox"]`);
+    
+    // Check if the city stop has a valid value
+    const isValidAirport = window.airportToCityMap && 
+      (window.airportToCityMap[cityStopValue] || 
+       Object.values(window.airportToCityMap).includes(cityStopValue));
+
+    // Enable/disable checkboxes based on validity
+    hotelRatingCheckboxes.forEach(checkbox => {
+      checkbox.disabled = !isValidAirport;
+      checkbox.parentElement.style.opacity = isValidAirport ? '1' : '0.5';
+      checkbox.parentElement.style.cursor = isValidAirport ? 'pointer' : 'not-allowed';
+    });
+  }
   
   // Set up increment/decrement buttons for days inputs
   document.querySelectorAll('.days-increment').forEach(button => {
@@ -50,6 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   cityStopInputs.forEach((input, index) => {
+    // Initially disable hotel rating checkboxes
+    updateHotelRatingCheckboxes(input);
+
     // Set up event listeners for input and change events
     input.addEventListener('input', function() {
       const daysInput = daysInputs[index];
@@ -62,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // If city stop is empty, clear the value
         daysInput.value = '';
       }
+      
+      // Update hotel rating checkboxes when input changes
+      updateHotelRatingCheckboxes(this);
     });
     
     // Check if city stop already has a value on page load
@@ -88,14 +113,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
     checkboxes.forEach((checkbox) => {
       checkbox.addEventListener('change', function() {
-        // If this checkbox is being checked
-        if (this.checked) {
-          // Uncheck all other checkboxes in this row
-          checkboxes.forEach((cb) => {
-            if (cb !== this) {
-              cb.checked = false;
-            }
-          });
+        // Only handle change if checkbox is not disabled
+        if (!this.disabled) {
+          // If this checkbox is being checked
+          if (this.checked) {
+            // Uncheck all other checkboxes in this row
+            checkboxes.forEach((cb) => {
+              if (cb !== this) {
+                cb.checked = false;
+              }
+            });
+          }
         }
       });
     });
@@ -188,5 +216,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
+
+    // After restoring values, update hotel rating checkboxes
+    cityStopInputs.forEach(input => {
+      updateHotelRatingCheckboxes(input);
+    });
   }
 });
