@@ -47,6 +47,18 @@ router.get("/flights", async (req, res) => {
   }
 })
 
+// Route to get all airport codes for preloading
+router.get("/airport-codes", async (req, res) => {
+  try {
+    const flights = await Flights.find({}, 'departureAirport');
+    const airportCodes = [...new Set(flights.map(flight => flight.departureAirport))];
+    res.json(airportCodes);
+  } catch (err) {
+    console.error('Error fetching airport codes:', err);
+    res.status(500).json({ error: 'Failed to fetch airport codes' });
+  }
+});
+
 // Route to handle search submissions
 router.post("/", async (req, res) => {
   try {

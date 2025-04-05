@@ -15,15 +15,17 @@
           <tr>
             <td><label for="departureAirport">Departure Airport</label></td>
             <td>
-              <!-- Departure -->
-              <input
-                type="text"
-                id="departureAirport"
-                name="departureAirport"
-                autocomplete="off"
-                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureAirport ? requestBody.departureAirport : '') %>"
-              />
-              <ul id="departure-suggestions" class="autocomplete-list"></ul>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="departureAirport"
+                  name="departureAirport"
+                  class="input"
+                  autocomplete="off"
+                  value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureAirport ? requestBody.departureAirport : '') %>"
+                />
+                <ul id="departure-suggestions" class="autocomplete-list"></ul>
+              </div>
             </td>
 
             <td><label for="departureFlightClass">Flight Class</label></td>
@@ -51,71 +53,73 @@
           </tr>
         </table>
 
-        <table class="search-table">
-          <% for (let i = 0; i < 4; i++) { %>
-          <tr class="stop-row">
-            <td><label>City Stop</label></td>
-            <td>
-              <input 
-                type="text" 
-                name="cityStops[]" 
-                class="city" 
-                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody['cityStops[]'] && requestBody['cityStops[]'][i] ? requestBody['cityStops[]'][i] : '') %>"
-              />
-            </td>
-
-            <td><label>Flight Class</label></td>
-            <td>
-              <select name="flightClass[]" class="input">
-                <option value="economy" <%= typeof clearForm !== 'undefined' && clearForm ? 'selected' : (typeof requestBody !== 'undefined' && requestBody['flightClass[]'] && requestBody['flightClass[]'][i] === 'economy' ? 'selected' : '') %>>Economy</option>
-                <option value="business" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody['flightClass[]'] && requestBody['flightClass[]'][i] === 'business' ? 'selected' : '') %>>Business</option>
-              </select>
-            </td>
-
-            <td><label>Number of Days</label></td>
-            <td class="days-cell">
-              <input
-                type="number"
-                name="days[]"
-                min="0"
-                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody['days[]'] && requestBody['days[]'][i] ? requestBody['days[]'][i] : '') %>"
-                class="days"
-                data-default-value="3"
-              />
-            </td>
-
-            <td><label>Minimum Hotel</label></td>
-            <td class="rating-inputs">
-              <% for (let j = 1; j <= 5; j++) { %>
-              <label>
-                <input
-                  type="checkbox"
-                  name="hotelRatings[<%= i %>]"
-                  class="star"
-                  value="<%= j %>"
-                  <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody && requestBody[`hotelRatings[${i}]`] && parseInt(requestBody[`hotelRatings[${i}]`]) === j ? 'checked' : '') %>
-                />
-                ★
-              </label>
-              <% } %>
-            </td>
-          </tr>
+        <div class="city-stops">
+          <% for(let i = 0; i < 4; i++) { %>
+            <div class="city-stop">
+              <div class="form-group">
+                <label for="cityStop<%= i %>">City Stop <%= i + 1 %></label>
+                <input type="text" 
+                       id="cityStop<%= i %>" 
+                       name="cityStops[]" 
+                       class="form-control" 
+                       placeholder="Enter airport code"
+                       value="<%= requestBody && requestBody.cityStops && requestBody.cityStops[i] ? requestBody.cityStops[i] : '' %>"
+                       data-index="<%= i %>">
+              </div>
+              <div class="form-group">
+                <label for="days<%= i %>">Number of Days</label>
+                <input type="number" 
+                       id="days<%= i %>" 
+                       name="days[]" 
+                       class="form-control" 
+                       min="1" 
+                       value="<%= requestBody && requestBody.days && requestBody.days[i] ? requestBody.days[i] : '1' %>"
+                       data-index="<%= i %>">
+              </div>
+              <div class="form-group">
+                <label for="flightClass<%= i %>">Flight Class</label>
+                <select id="flightClass<%= i %>" 
+                        name="flightClass[]" 
+                        class="form-control"
+                        data-index="<%= i %>">
+                  <option value="economy" <%= requestBody && requestBody.flightClass && requestBody.flightClass[i] === 'economy' ? 'selected' : '' %>>Economy</option>
+                  <option value="business" <%= requestBody && requestBody.flightClass && requestBody.flightClass[i] === 'business' ? 'selected' : '' %>>Business</option>
+                  <option value="first" <%= requestBody && requestBody.flightClass && requestBody.flightClass[i] === 'first' ? 'selected' : '' %>>First Class</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Hotel Rating</label>
+                <div class="hotel-rating">
+                  <% for(let j = 1; j <= 5; j++) { %>
+                    <label class="rating-label">
+                      <input type="checkbox" 
+                             name="hotelRatings[<%= i %>]" 
+                             value="<%= j %>"
+                             <%= requestBody && requestBody.hotelRatings && requestBody.hotelRatings[i] == j ? 'checked' : '' %>>
+                      <%= j %>★
+                    </label>
+                  <% } %>
+                </div>
+              </div>
+            </div>
           <% } %>
-        </table>
+        </div>
 
         <table class="return-table">
           <tr>
             <td><label for="returnAirport">Return Airport</label></td>
             <td>
-              <!-- Return -->
-              <input
-                type="text"
-                id="returnAirport"
-                name="returnAirport"
-                autocomplete="off"
-                value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.returnAirport ? requestBody.returnAirport : '') %>"
-              />
-              <ul id="return-suggestions" class="autocomplete-list"></ul>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="returnAirport"
+                  name="returnAirport"
+                  class="input"
+                  autocomplete="off"
+                  value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.returnAirport ? requestBody.returnAirport : '') %>"
+                />
+                <ul id="return-suggestions" class="autocomplete-list"></ul>
+              </div>
             </td>
 
             <td><label for="returnFlightClass">Flight Class</label></td>
@@ -139,8 +143,117 @@
       <%- include('../search/results') %>
     </div>
     <script src="/airportSearch.js"></script>
-    <script src="/scripts/autocomplete.js"></script>
     <script src="/search.js"></script>
+
+    <script>
+      // Add the airportToCityMap to the window object
+      window.airportToCityMap = {
+        // International Airports
+        "LHR": "London",
+        "FCO": "Rome",
+        "NCE": "Nice",
+        "GVA": "Geneva",
+        "CDG": "Paris",
+        "FRA": "Frankfurt",
+        "MUC": "Munich",
+        "AMS": "Amsterdam",
+        "BRU": "Brussels",
+        "ZRH": "Zurich",
+        "MAD": "Madrid",
+        "BCN": "Barcelona",
+        "DUB": "Dublin",
+        "CPH": "Copenhagen",
+        "OSL": "Oslo",
+        "ARN": "Stockholm",
+        "HEL": "Helsinki",
+        "VIE": "Vienna",
+        "PRG": "Prague",
+        "BUD": "Budapest",
+        "WAW": "Warsaw",
+        "ATH": "Athens",
+        "IST": "Istanbul",
+        "DXB": "Dubai",
+        "AUH": "Abu Dhabi",
+        "DOH": "Doha",
+        "SIN": "Singapore",
+        "HKG": "Hong Kong",
+        "NRT": "Tokyo",
+        "ICN": "Seoul",
+        "PEK": "Beijing",
+        "PVG": "Shanghai",
+        "BKK": "Bangkok",
+        "KUL": "Kuala Lumpur",
+        "MEL": "Melbourne",
+        "SYD": "Sydney",
+        "YVR": "Vancouver",
+        "YYZ": "Toronto",
+        "YUL": "Montreal",
+        "MEX": "Mexico City",
+        "GRU": "São Paulo",
+        "EZE": "Buenos Aires",
+        "SCL": "Santiago",
+        "BOM": "Mumbai",
+        "DEL": "Delhi",
+        "CAI": "Cairo",
+        "JNB": "Johannesburg",
+        
+        // US Airports
+        "JFK": "New York",
+        "LAX": "Los Angeles",
+        "ORD": "Chicago",
+        "DFW": "Dallas",
+        "ATL": "Atlanta",
+        "SFO": "San Francisco",
+        "DEN": "Denver",
+        "SEA": "Seattle",
+        "MIA": "Miami",
+        "LAS": "Las Vegas",
+        "PHX": "Phoenix",
+        "EWR": "Newark",
+        "IAH": "Houston",
+        "MSP": "Minneapolis",
+        "DTW": "Detroit",
+        "BOS": "Boston",
+        "PHL": "Philadelphia",
+        "LGA": "New York",
+        "BWI": "Baltimore",
+        "IAD": "Washington",
+        "SLC": "Salt Lake City",
+        "DCA": "Washington",
+        "MDW": "Chicago",
+        "SAN": "San Diego",
+        "HNL": "Honolulu",
+        "PDX": "Portland",
+        "MCI": "Kansas City",
+        "RDU": "Raleigh",
+        "AUS": "Austin",
+        "MSY": "New Orleans",
+        "BNA": "Nashville",
+        "MCO": "Orlando",
+        "RSW": "Fort Myers",
+        "SAT": "San Antonio",
+        "IND": "Indianapolis",
+        "CMH": "Columbus",
+        "PIT": "Pittsburgh",
+        "CLE": "Cleveland",
+        "CVG": "Cincinnati",
+        "MKE": "Milwaukee",
+        "JAX": "Jacksonville",
+        "RNO": "Reno",
+        "SJC": "San Jose",
+        "SMF": "Sacramento",
+        "PBI": "West Palm Beach",
+        "TPA": "Tampa",
+        "HOU": "Houston",
+        "ONT": "Ontario",
+        "SNA": "Santa Ana",
+        "OAK": "Oakland",
+        "PVD": "Providence",
+        "RIC": "Richmond",
+        "BUF": "Buffalo",
+        "MEM": "Memphis"
+      };
+    </script>
 
   </body>
 </html>
