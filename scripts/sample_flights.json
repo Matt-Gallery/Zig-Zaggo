@@ -1,0 +1,38 @@
+[
+  {
+    "departureAirport": "LHR",
+    "arrivalAirport": "FCO",
+    "departureDateTime": "2025-04-07T08:30:00.000Z",
+    "arrivalDateTime": "2025-04-07T11:45:00.000Z",
+    "airline": "British Airways",
+    "class": "Economy",
+    "price": 180
+  },
+  {
+    "departureAirport": "LHR",
+    "arrivalAirport": "FCO",
+    "departureDateTime": "2025-04-07T10:15:00.000Z",
+    "arrivalDateTime": "2025-04-07T13:30:00.000Z",
+    "airline": "ITA Airways",
+    "class": "Business",
+    "price": 540
+  },
+  {
+    "departureAirport": "LHR",
+    "arrivalAirport": "FCO",
+    "departureDateTime": "2025-04-07T14:45:00.000Z",
+    "arrivalDateTime": "2025-04-07T18:00:00.000Z",
+    "airline": "British Airways",
+    "class": "First",
+    "price": 900
+  },
+  {
+    "departureAirport": "LHR",
+    "arrivalAirport": "FCO",
+    "departureDateTime": "2025-04-07T16:20:00.000Z",
+    "arrivalDateTime": "2025-04-07T19:35:00.000Z",
+    "airline": "Air France",
+    "class": "Economy",
+    "price": 175
+  }
+] 

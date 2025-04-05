@@ -28,7 +28,7 @@ const flightSchema = mongoose.Schema({
   class: {
     type: String,
     required: true,
-    enum: ["Economy", "Business"]
+    enum: ["Economy", "Business", "First"]
   },
   price: {
     type: Number,
@@ -41,21 +41,27 @@ const hotelSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  hotelCity :
-  {
+  hotelCity: {
     type: String,
     required: true,
   },
   hotelStars: {
     type: Number,
     required: true,
-    maxlength: 5,
-    minlength: 1,
+    min: 1,
+    max: 5
   },
-  pricePerNight: {
-    type: Number,
-    required: true,
-  },
+  availability: [{
+    date: {
+      type: Date,
+      required: true
+    },
+    priceForDate: {
+      type: Number,
+      required: true,
+      min: 0
+    }
+  }]
 });
 
 export const Flights = mongoose.model("Flights", flightSchema);
