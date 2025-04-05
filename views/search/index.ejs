@@ -25,8 +25,8 @@
                   placeholder="Enter city or airport code"
                   value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureAirport ? requestBody.departureAirport : '') %>"
                 />
-                <ul id="departure-suggestions" class="autocomplete-list"></ul>
               </div>
+              <ul id="departure-suggestions" class="autocomplete-list"></ul>
             </td>
 
             <td><label for="departureFlightClass">Flight Class</label></td>

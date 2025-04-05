@@ -79,6 +79,12 @@ body {
 }
 
 /* ===== Input Fields ===== */
+.input-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
 .input {
   padding: 6px 10px;
   border: 1px solid #aaa;
@@ -133,8 +139,8 @@ td {
 }
 
 /* Make inputs a bit narrower so everything breathes */
-.departure-table input,
-.departure-table select, .return-table input,
+.departure-table select,
+.return-table input,
 .return-table select {
   max-width: 200px;
   width: 100%;
@@ -239,6 +245,9 @@ td {
 /* Autocomplete styling */
 .autocomplete-list {
   position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   z-index: 1000;
   width: 100%;
   max-height: 200px;
@@ -246,11 +255,10 @@ td {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 0;
   list-style: none;
-  border-bottom: none;
 }
 
 /* Specific styling for return suggestions */
@@ -289,6 +297,8 @@ td {
 /* Position the input containers for proper autocomplete positioning */
 .input-container {
   position: relative;
+  width: 100%;
+  display: inline-block;
 }
 
 /* City Stops Styling */
@@ -719,14 +729,48 @@ td {
   padding-left: 0; /* Remove left padding from first cell (Departure Airport label) */
 }
 
-.departure-table td:nth-child(2) {
+.departure-table td:nth-child(2),
+.return-table td:nth-child(2) {
+  position: relative;
   padding-left: 1px;
   padding-right: 1px;
 }
 
 #departureAirport {
-  padding-left: 3px;
-  padding-right: 3px;
+  width: 100%;
+  padding: 6.3px 10.5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#departure-suggestions {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  left: 0;
+  margin: -10px 0 0 0;
+}
+
+#departure-suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#departure-suggestions li:last-child {
+  border-bottom: none;
+}
+
+#departure-suggestions li:hover,
+#departure-suggestions li.active {
+  background-color: #f5f5f5;
 }
 
 .departure-table td:nth-child(3) {
@@ -800,4 +844,37 @@ td {
 .departure-table input[type="date"] {
   padding: 6px;
   padding-left: -4px;
+}
+
+.ui-autocomplete {
+  border: none !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: auto !important;
+}
+
+.ui-menu {
+  width: auto !important;
+}
+
+.ui-menu-item {
+  border: none !important;
+  width: 100% !important;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  border: none !important;
+  width: 100% !important;
+}
+
+/* Position the input container for proper autocomplete positioning */
+.departure-table td:nth-child(2) {
+  position: relative;
+  width: 100%;
+}
+
+/* Make sure the autocomplete matches the input width */
+.departure-table td:nth-child(2) .ui-autocomplete {
+  width: 100% !important;
+  left: 0 !important;
+  box-sizing: border-box;
 }
