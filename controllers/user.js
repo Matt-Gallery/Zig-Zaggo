@@ -37,6 +37,30 @@ export const updateProfile = async (req, res) => {
       return res.redirect('/auth/sign-in');
     }
     
+    // Check if any profile information is being changed
+    const isProfileChanged = username !== user.username || 
+                            name !== user.name || 
+                            emailAddress !== user.emailAddress;
+    
+    // Require current password for any profile changes
+    if (isProfileChanged && !currentPassword) {
+      return res.render('user/account', { 
+        user, 
+        error: 'Please enter password to update profile' 
+      });
+    }
+    
+    // Verify current password if provided
+    if (currentPassword) {
+      const validPassword = bcrypt.compareSync(currentPassword, user.password);
+      if (!validPassword) {
+        return res.render('user/account', { 
+          user, 
+          error: 'Current password is incorrect.' 
+        });
+      }
+    }
+    
     // Check if username is being changed and if it's already taken
     if (username !== user.username) {
       const existingUser = await User.findOne({ username });
@@ -50,22 +74,6 @@ export const updateProfile = async (req, res) => {
     
     // Handle password change if provided
     if (newPassword) {
-      // Verify current password
-      if (!currentPassword) {
-        return res.render('user/account', { 
-          user, 
-          error: 'Current password is required to change password.' 
-        });
-      }
-      
-      const validPassword = bcrypt.compareSync(currentPassword, user.password);
-      if (!validPassword) {
-        return res.render('user/account', { 
-          user, 
-          error: 'Current password is incorrect.' 
-        });
-      }
-      
       // Verify password confirmation
       if (newPassword !== confirmPassword) {
         return res.render('user/account', { 

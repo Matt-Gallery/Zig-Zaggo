@@ -29,9 +29,9 @@
     .signup-container {
       width: auto;
       max-width: 90%;
-      height: calc(100vh - 100px); /* Adjust this value based on your footer height */
+      height: calc(100vh - 100px);
       min-height: 600px;
-      aspect-ratio: 3/5; /* Changed from 4/5 to 3/5 to make it 20% narrower */
+      aspect-ratio: 3/5;
       padding: 30px;
       background-color: #d4edb1;
       border-radius: 8px;
@@ -43,27 +43,33 @@
     
     .logo-container {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
     
     .logo-container img {
-      max-width: 80%;
+      max-width: 65%;
       height: auto;
     }
     
+    .title {
+      margin-top: 0;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    
     .form-group {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
     
     .form-group label {
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 1px;
       font-weight: bold;
     }
     
     .form-group input {
       width: 100%;
-      padding: 10px;
+      padding: 6px;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 16px;
@@ -72,8 +78,8 @@
     .form-actions {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-top: 20px;
+      gap: 5px;
+      margin-top: 5px;
     }
     
     .btn {
@@ -99,7 +105,7 @@
     
     .login-link {
       text-align: center;
-      margin-top: 15px;
+      margin-top: 5px;
     }
     
     .login-link a {
@@ -164,7 +170,9 @@
   <main>
     <div class="signup-container">
       <div class="logo-container">
-        <img src="/static-assets/ZigZaggoVertSquareLogo.png" alt="ZigZaggo Logo">
+        <a href="/">
+          <img src="/static-assets/ZigZaggoVertSquareLogo.png" alt="ZigZaggo Logo">
+        </a>
       </div>
       
       <h2 class="title">Sign Up</h2>

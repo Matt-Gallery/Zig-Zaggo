@@ -51,7 +51,7 @@ app.use((req, res, next) => {
 app.use('/search', searchController);
 
 app.get('/', (req, res) => {
-  res.render('index.ejs');
+  res.render('index.ejs', { user: req.session?.user || null });
 });
 
 
