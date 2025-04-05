@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       input.addEventListener('change', () => {
         const daysInput = document.querySelector(`input[name="days[]"][data-index="${index}"]`);
         if (daysInput && !daysInput.value) {
-          daysInput.value = '1'; // Set default days to 1
+          daysInput.placeholder = '3'; // Set placeholder to 3 instead of setting value to 1
         }
       });
     });

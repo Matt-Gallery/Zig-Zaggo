@@ -22,6 +22,7 @@
                   name="departureAirport"
                   class="input"
                   autocomplete="off"
+                  placeholder="Enter city or airport code"
                   value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureAirport ? requestBody.departureAirport : '') %>"
                 />
                 <ul id="departure-suggestions" class="autocomplete-list"></ul>
@@ -37,6 +38,7 @@
               >
                 <option value="economy" <%= typeof clearForm !== 'undefined' && clearForm ? 'selected' : (typeof requestBody !== 'undefined' && requestBody.departureFlightClass === 'economy' ? 'selected' : '') %>>Economy</option>
                 <option value="business" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureFlightClass === 'business' ? 'selected' : '') %>>Business</option>
+                <option value="first" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureFlightClass === 'first' ? 'selected' : '') %>>First Class</option>
               </select>
             </td>
 
@@ -47,6 +49,7 @@
                 id="departureDate"
                 name="departureDate"
                 class="input"
+
                 value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.departureDate ? requestBody.departureDate : '') %>"
               />
             </td>
@@ -62,19 +65,17 @@
                        id="cityStop<%= i %>" 
                        name="cityStops[]" 
                        class="form-control" 
-                       placeholder="Enter airport code"
+                       placeholder="Enter city or airport code"
                        value="<%= requestBody && requestBody.cityStops && requestBody.cityStops[i] ? requestBody.cityStops[i] : '' %>"
                        data-index="<%= i %>">
               </div>
               <div class="form-group">
                 <label for="days<%= i %>">Number of Days</label>
-                <input type="number" 
-                       id="days<%= i %>" 
-                       name="days[]" 
-                       class="form-control" 
-                       min="1" 
-                       value="<%= requestBody && requestBody.days && requestBody.days[i] ? requestBody.days[i] : '1' %>"
-                       data-index="<%= i %>">
+                <div class="days-input-container">
+                  <button type="button" class="days-decrement" data-index="<%= i %>">-</button>
+                  <input type="number" name="days[]" class="days-input" data-index="<%= i %>" data-default="3" min="1" value="">
+                  <button type="button" class="days-increment" data-index="<%= i %>">+</button>
+                </div>
               </div>
               <div class="form-group">
                 <label for="flightClass<%= i %>">Flight Class</label>
@@ -116,6 +117,7 @@
                   name="returnAirport"
                   class="input"
                   autocomplete="off"
+                  placeholder="Enter city or airport code"
                   value="<%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.returnAirport ? requestBody.returnAirport : '') %>"
                 />
                 <ul id="return-suggestions" class="autocomplete-list"></ul>
@@ -131,6 +133,7 @@
               >
                 <option value="economy" <%= typeof clearForm !== 'undefined' && clearForm ? 'selected' : (typeof requestBody !== 'undefined' && requestBody.returnFlightClass === 'economy' ? 'selected' : '') %>>Economy</option>
                 <option value="business" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.returnFlightClass === 'business' ? 'selected' : '') %>>Business</option>
+                <option value="first" <%= typeof clearForm !== 'undefined' && clearForm ? '' : (typeof requestBody !== 'undefined' && requestBody.returnFlightClass === 'first' ? 'selected' : '') %>>First Class</option>
               </select>
             </td>
 

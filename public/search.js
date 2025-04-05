@@ -7,22 +7,76 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.removeItem("zigzaggoSearchParams");
   }
 
-  // Handle city stop inputs to populate days with default value
+  // Handle city stop inputs to show placeholder for days input
   const cityStopInputs = document.querySelectorAll('input[name="cityStops[]"]');
   const daysInputs = document.querySelectorAll('input[name="days[]"]');
+  
+  // First, ensure all days inputs start with no placeholder and no value
+  daysInputs.forEach(input => {
+    input.placeholder = '';
+    input.value = '';
+  });
+  
+  // Set up increment/decrement buttons for days inputs
+  document.querySelectorAll('.days-increment').forEach(button => {
+    button.addEventListener('click', function() {
+      const index = this.dataset.index;
+      const daysInput = document.querySelector(`input[name="days[]"][data-index="${index}"]`);
+      
+      // If the input is empty, set it to the default value
+      if (!daysInput.value) {
+        daysInput.value = daysInput.dataset.default || '3';
+      } else {
+        // Otherwise increment the value
+        daysInput.value = parseInt(daysInput.value) + 1;
+      }
+    });
+  });
+  
+  document.querySelectorAll('.days-decrement').forEach(button => {
+    button.addEventListener('click', function() {
+      const index = this.dataset.index;
+      const daysInput = document.querySelector(`input[name="days[]"][data-index="${index}"]`);
+      
+      // If the input is empty, set it to the default value
+      if (!daysInput.value) {
+        daysInput.value = daysInput.dataset.default || '3';
+      } else {
+        // Otherwise decrement the value, but not below 1
+        const newValue = Math.max(1, parseInt(daysInput.value) - 1);
+        daysInput.value = newValue;
+      }
+    });
+  });
   
   cityStopInputs.forEach((input, index) => {
     // Set up event listeners for input and change events
     input.addEventListener('input', function() {
       const daysInput = daysInputs[index];
-      if (this.value.trim() !== '' && daysInput.value === '') {
-        daysInput.value = daysInput.dataset.defaultValue || '3';
+      if (this.value.trim() !== '') {
+        // If days input is empty, set the value to 3
+        if (daysInput.value === '') {
+          daysInput.value = '3';
+        }
+      } else {
+        // If city stop is empty, clear the value
+        daysInput.value = '';
       }
     });
     
     // Check if city stop already has a value on page load
-    if (input.value.trim() !== '' && daysInputs[index].value === '') {
-      daysInputs[index].value = daysInputs[index].dataset.defaultValue || '3';
+    // Only set value if the city stop has a valid value
+    if (input.value.trim() !== '') {
+      // Check if the city stop is a valid airport code or city name
+      const isValidAirport = window.airportToCityMap && 
+        (window.airportToCityMap[input.value.toUpperCase()] || 
+         Object.values(window.airportToCityMap).includes(input.value));
+      
+      if (isValidAirport) {
+        daysInputs[index].value = '3';
+      } else {
+        daysInputs[index].value = '';
+      }
     }
   });
 
@@ -47,30 +101,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Save all input values to localStorage on submit
-  form.addEventListener("submit", () => {
-    const formData = new FormData(form);
-    const entries = {};
-
-    for (const [key, value] of formData.entries()) {
-      if (!entries[key]) {
-        entries[key] = value;
-      } else if (!Array.isArray(entries[key])) {
-        entries[key] = [entries[key], value];
-      } else {
-        entries[key].push(value);
-      }
+  // Add form validation for Departure and Return Airports
+  form.addEventListener("submit", (event) => {
+    const departureAirportInput = document.getElementById("departureAirport");
+    const returnAirportInput = document.getElementById("returnAirport");
+    let hasError = false;
+    
+    // Create or get error message div
+    let errorDiv = document.querySelector(".search-results-empty");
+    if (!errorDiv) {
+      errorDiv = document.createElement("div");
+      errorDiv.className = "search-results-empty";
+      form.parentNode.insertBefore(errorDiv, form.nextSibling);
     }
+    
+    // Check if departure airport is empty
+    if (!departureAirportInput.value.trim()) {
+      event.preventDefault();
+      hasError = true;
+      errorDiv.innerHTML = "<p>Please choose a departure airport</p>";
+      errorDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+      return false;
+    }
+    
+    // Check if return airport is empty
+    if (!returnAirportInput.value.trim()) {
+      event.preventDefault();
+      hasError = true;
+      errorDiv.innerHTML = "<p>Please choose a return airport</p>";
+      errorDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+      return false;
+    }
+    
+    // If no errors, save form data to localStorage
+    if (!hasError) {
+      const formData = new FormData(form);
+      const entries = {};
 
-    // Save the hotelRatings selections manually
-    document.querySelectorAll('.rating-inputs').forEach((ratingInput, index) => {
-      const selected = ratingInput.querySelector('input[type="checkbox"]:checked');
-      if (selected) {
-        entries[`hotelRatings[${index}]`] = selected.value;
+      for (const [key, value] of formData.entries()) {
+        if (!entries[key]) {
+          entries[key] = value;
+        } else if (!Array.isArray(entries[key])) {
+          entries[key] = [entries[key], value];
+        } else {
+          entries[key].push(value);
+        }
       }
-    });
 
-    localStorage.setItem("zigzaggoSearchParams", JSON.stringify(entries));
+      // Save the hotelRatings selections manually
+      document.querySelectorAll('.rating-inputs').forEach((ratingInput, index) => {
+        const selected = ratingInput.querySelector('input[type="checkbox"]:checked');
+        if (selected) {
+          entries[`hotelRatings[${index}]`] = selected.value;
+        }
+      });
+
+      localStorage.setItem("zigzaggoSearchParams", JSON.stringify(entries));
+    }
   });
 
   // Restore input values from localStorage

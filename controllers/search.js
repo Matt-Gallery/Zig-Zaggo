@@ -72,6 +72,14 @@ router.post("/", async (req, res) => {
       "flightClass[]": rawFlightClass = [],
     } = req.body;
 
+    // Validate return airport
+    if (!returnAirport || returnAirport.trim() === '') {
+      req.session.searchError = "Please choose a return airport";
+      req.session.searchData = req.body;
+      req.session.hasSearched = true;
+      return res.redirect("/search");
+    }
+
     // Extract hotel ratings
     const hotelRatings = [];
     for (let i = 0; i < 4; i++) {

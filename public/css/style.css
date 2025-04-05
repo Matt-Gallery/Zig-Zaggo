@@ -15,8 +15,8 @@ body {
 
 /* ===== Container ===== */
 .container {
-  width: 90%; /* Use 90% of the viewport width */
-  max-width: 1200px; /* Limit the maximum width to 1200px */
+  width: 98%; /* Increase from 95% to 98% of the viewport width */
+  max-width: 1600px; /* Increase from 1400px to 1600px */
   margin: 20px auto; /* Center the container with vertical margin */
   padding: 20px;
   border: 1px solid #ccc;
@@ -179,6 +179,8 @@ td {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: auto;
+  min-width: 200px;
 }
 
 .search-button:hover {
@@ -196,17 +198,36 @@ td {
   padding: 1rem;
   margin-bottom: 2rem;
   background-color: #f9f9f9;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .result-table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
+.result-table th,
 .result-table td {
   padding: 0.5rem;
   border: 1px solid #ddd;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+.result-table th:nth-child(1) { width: 6.25%; }  /* Leg - increased by 25% from 5% */
+.result-table th:nth-child(2) { width: 8%; }  /* From */
+.result-table th:nth-child(3) { width: 8%; }  /* To */
+.result-table th:nth-child(4) { width: 12%; } /* Departure Time */
+.result-table th:nth-child(5) { width: 12%; } /* Arrival Time */
+.result-table th:nth-child(6) { width: 10%; } /* Airline */
+.result-table th:nth-child(7) { width: 10%; } /* Flight Duration */
+.result-table th:nth-child(8) { width: 15%; } /* Hotel */
+.result-table th:nth-child(9) { width: 10%; } /* Flight Price */
+.result-table th:nth-child(10) { width: 10%; } /* Hotel Price */
 
 .price {
   margin-top: 1rem;
@@ -280,19 +301,34 @@ td {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  justify-content: flex-start;
+  margin-bottom: 13.5px;
   width: 100%;
-  gap: 10px;
+  gap: 20px; /* Start with larger gap */
 }
 
 .city-stop .form-group {
-  flex: 1;
-  min-width: 0; /* Prevents flex items from overflowing */
-  margin-right: 10px;
+  margin-right: 20px; /* Start with larger margin */
+}
+
+.city-stop .form-group:first-child {
+  flex: 1 1 200px; /* Larger initial basis */
+  max-width: 225px;
+  min-width: 150px;
+}
+
+.city-stop .form-group:nth-child(2) {
+  flex: 0 0 120px;
+  margin-right: 20px;
+}
+
+.city-stop .form-group:nth-child(3) {
+  flex: 0 0 120px;
+  margin-right: 20px;
 }
 
 .city-stop .form-group:last-child {
+  flex: 0 0 auto;
   margin-right: 0;
 }
 
@@ -305,27 +341,37 @@ td {
 .city-stop input,
 .city-stop select {
   width: 100%;
-  padding: 8px;
+  padding: 6.3px 10.5px; /* 6.3px vertical (25% less), 10.5px horizontal (25% more) */
   border: 1px solid #ddd;
   border-radius: 4px;
+  min-width: 0;
+}
+
+/* Add specific width for the days input to keep it narrow */
+.city-stop input[type="number"] {
+  width: 60px; /* Keep the actual number input narrow */
 }
 
 .city-stop .hotel-rating {
   display: flex;
   flex-wrap: nowrap;
-  gap: 5px;
+  gap: 1.5px; /* Reduced from 3.5px by 2px */
+  width: auto;
+  overflow: visible;
 }
 
 .city-stop .rating-label {
   display: flex;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 1.5px; /* Reduced from 3.5px by 2px */
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 1.8px 3px;
 }
 
-.city-stop .rating-label input[type="checkbox"] {
-  width: auto;
-  margin-right: 3px;
+.city-stop .rating-label:last-child {
+  margin-right: 0;
 }
 
 /* Autocomplete styling for city stops */
@@ -370,4 +416,388 @@ td {
 /* Make sure the form-group has relative positioning for absolute autocomplete */
 .city-stop .form-group {
   position: relative;
+}
+
+/* Add a specific rule to target the right edge of city-stop */
+.city-stop::after {
+  content: none; /* Remove any pseudo-element content */
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Add a specific rule to target the right edge of the last form-group in each city-stop */
+.city-stop .form-group:last-child::after {
+  content: none; /* Remove any pseudo-element content */
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Add a specific rule to target the far right edge of the far right form-group */
+.city-stop .form-group:last-child {
+  margin-right: 0;
+  border-right: none;
+  border: none; /* Remove any border */
+  outline: none; /* Remove any outline */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Add a specific rule to target the far right edge of the hotel-rating in the last form-group */
+.city-stop .form-group:last-child .hotel-rating {
+  border-right: none;
+  border: none; /* Remove any border */
+  outline: none; /* Remove any outline */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Add a specific rule to target the far right edge of the last rating-label in the last hotel-rating */
+.city-stop .form-group:last-child .hotel-rating .rating-label:last-child {
+  margin-right: 0;
+  border-right: none;
+  border: none; /* Remove any border */
+  outline: none; /* Remove any outline */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Add a specific rule to target the far right edge of the last checkbox in the last rating-label */
+.city-stop .form-group:last-child .hotel-rating .rating-label:last-child input[type="checkbox"] {
+  margin-right: 0;
+  border-right: none;
+  border: none; /* Remove any border */
+  outline: none; /* Remove any outline */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+.city-stop .rating-label input[type="checkbox"] {
+  margin-right: 4px; /* Add 2px more space between checkbox and label text */
+}
+
+/* Update media queries for responsive behavior */
+@media screen and (max-width: 1400px) {
+  .city-stop {
+    gap: 15px; /* First reduction in spacing */
+  }
+  
+  .city-stop .form-group {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .city-stop {
+    gap: 10px; /* Second reduction in spacing */
+  }
+  
+  .city-stop .form-group {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .city-stop {
+    gap: 6px; /* Minimum spacing */
+  }
+  
+  .city-stop .form-group {
+    margin-right: 6px;
+  }
+
+  .city-stop .form-group:first-child {
+    flex: 1 1 150px; /* Reduce basis at smallest breakpoint */
+    min-width: 120px;
+  }
+}
+
+/* ===== Mobile Responsive Styles ===== */
+@media screen and (max-width: 768px) {
+  /* General adjustments */
+  body {
+    padding: 0 5px;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+  
+  /* Typography adjustments */
+  h1, .title {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  h3 {
+    font-size: 1.1em;
+  }
+  
+  p, li {
+    font-size: 0.9em;
+  }
+  
+  /* Form elements */
+  .input, select.input, .days {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 8px;
+  }
+  
+  /* Buttons */
+  .btn, .auth-button, .search-btn {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Tables */
+  table {
+    font-size: 0.8em;
+  }
+  
+  /* Make tables scrollable horizontally */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Stack table rows for better mobile viewing */
+  .table-stack td {
+    display: block;
+    text-align: right;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-stack td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+  
+  /* Grid adjustments */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  /* Flex adjustments */
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  /* Card adjustments */
+  .card {
+    margin-bottom: 15px;
+  }
+  
+  /* Image adjustments */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Spacing adjustments */
+  .section {
+    padding: 15px 0;
+  }
+  
+  /* Hide elements that aren't essential on mobile */
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  /* Show elements that are only visible on mobile */
+  .show-on-mobile {
+    display: block;
+  }
+  
+  .search-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  h1, .title {
+    font-size: 1.3em;
+  }
+  
+  h2 {
+    font-size: 1.1em;
+  }
+  
+  h3 {
+    font-size: 1em;
+  }
+  
+  p, li {
+    font-size: 0.85em;
+  }
+  
+  /* Even smaller padding for buttons */
+  .btn, .auth-button, .search-btn {
+    padding: 8px 12px;
+  }
+  
+  .search-button {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .container {
+    margin: 5px auto;
+  }
+  
+  /* Reduce vertical spacing */
+  .section {
+    padding: 10px 0;
+  }
+  
+  /* Make forms more compact */
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Adjust header sizes */
+  h1, .title {
+    margin-bottom: 10px;
+  }
+}
+
+/* High-resolution screens */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .no-print {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+  }
+}
+
+.departure-table td:first-child {
+  padding-left: 0; /* Remove left padding from first cell (Departure Airport label) */
+}
+
+.departure-table td:nth-child(2) {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+#departureAirport {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.departure-table td:nth-child(3) {
+  padding-left: 4px; /* Increased from 2.5px to 4px */
+  padding-right: 2px;
+}
+
+.departure-table td:nth-child(4) {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#departureFlightClass {
+  padding: 3px;
+  width: 120px; /* Match the width of other flight class selectors */
+  min-width: 120px; /* Ensure consistent minimum width */
+}
+
+.days-input-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.days-input {
+  width: 60px;
+  text-align: center;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Remove spinner buttons for Chrome, Safari, Edge, Opera */
+.days-input::-webkit-outer-spin-button,
+.days-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.days-decrement,
+.days-increment {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f5f5f5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.days-decrement:hover,
+.days-increment:hover {
+  background: #e5e5e5;
+}
+
+.days-decrement:active,
+.days-increment:active {
+  background: #d5d5d5;
+}
+
+.departure-table td:nth-child(5) {
+  padding: 0;
+}
+
+.departure-table input[type="date"] {
+  padding: 6px;
+  padding-left: -4px;
 }

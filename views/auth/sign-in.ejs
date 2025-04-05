@@ -21,8 +21,9 @@
     main {
       flex: 1;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 20px;
     }
     
@@ -31,7 +32,7 @@
       max-width: 90%;
       height: calc(100vh - 100px); /* Adjust this value based on your footer height */
       min-height: 500px;
-      aspect-ratio: 4/5; /* Maintain a 4:5 aspect ratio */
+      aspect-ratio: 3/5; /* Changed from 4/5 to 3/5 to make it 20% narrower */
       padding: 30px;
       background-color: #d4edb1;
       border-radius: 8px;
@@ -43,7 +44,7 @@
     
     .logo-container {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     
     .logo-container img {
@@ -51,55 +52,112 @@
       height: auto;
     }
     
-    .login-form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      flex: 1;
-      justify-content: center;
+    .form-group {
+      margin-bottom: 15px;
     }
     
-    .login-form input {
-      padding: 12px;
-      border: 1px solid #aaa;
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 16px;
     }
     
-    .login-button-wrapper {
-      text-align: center;
-      margin-top: 10px;
+    .form-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
     }
     
-    .login-button {
-      padding: 0.75rem 2rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-      background-color: #18683c;
-      color: white;
+    .btn {
+      padding: 10px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
     }
     
-    .login-button:hover {
-      background-color: #d5ecb0;
+    .btn-primary {
+      background-color: #18683c;
+      color: white;
+    }
+    
+    .btn-secondary {
+      background-color: #cceabb;
+      color: #18683c;
     }
     
     .signup-link {
       text-align: center;
-      margin-top: 20px;
-      font-size: 14px;
+      margin-top: 15px;
     }
     
     .signup-link a {
-      color: #007bff;
+      color: #18683c;
       text-decoration: none;
+      font-weight: bold;
     }
     
     .signup-link a:hover {
       text-decoration: underline;
+    }
+    
+    /* Mobile responsive styles */
+    @media screen and (max-width: 768px) {
+      main {
+        padding: 10px;
+      }
+      
+      .login-container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        aspect-ratio: auto;
+        padding: 20px;
+      }
+      
+      .logo-container img {
+        max-width: 70%;
+      }
+      
+      .form-group input {
+        font-size: 16px; /* Prevents zoom on iOS */
+      }
+      
+      .btn {
+        padding: 12px;
+        font-size: 16px;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .login-container {
+        padding: 15px;
+      }
+      
+      .logo-container img {
+        max-width: 60%;
+      }
+      
+      .form-group label {
+        font-size: 14px;
+      }
+      
+      .form-group input {
+        padding: 8px;
+      }
     }
   </style>
 </head>
@@ -110,11 +168,19 @@
         <img src="/static-assets/ZigZaggoVertSquareLogo.png" alt="ZigZaggo Logo">
       </div>
       
-      <form action="/auth/sign-in" method="POST" class="login-form">
-        <input type="text" name="username" placeholder="Username" required />
-        <input type="password" name="password" placeholder="Password" required />
-        <div class="login-button-wrapper">
-          <button type="submit" class="login-button">Login</button>
+      <form action="/auth/sign-in" method="POST">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Login</button>
         </div>
       </form>
       
