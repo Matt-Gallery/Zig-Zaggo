@@ -1,0 +1,485 @@
+<%- include('../partials/_navbar') %>
+
+<link rel="stylesheet" href="/css/style.css" />
+<!-- Add Bootstrap CSS if not already included in your main CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .booking-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #18683c;
+  }
+  
+  .booking-card-summary {
+    height: auto;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .booking-card-summary:hover {
+    transform: translateY(-5px);
+  }
+  
+  .booking-card-summary .card-header {
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #18683c;
+    color: white;
+  }
+  
+  .booking-card-summary .card-body {
+    padding: 15px;
+  }
+  
+  .booking-card-summary .card-footer {
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .booking-card-summary .btn-primary {
+    background-color: #18683c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 0.9em;
+  }
+  
+  .booking-card-summary .btn-primary:hover {
+    background-color: #0f4a2a;
+  }
+  
+  .booking-card-summary .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 0.9em;
+  }
+  
+  .booking-card-summary .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .booking-info {
+    margin-bottom: 10px;
+  }
+  
+  .booking-info p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
+  
+  .booking-info strong {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .city-stops-list {
+    margin-top: 10px;
+  }
+  
+  .city-stops-list .list-group-item {
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+  
+  .city-stops-list .list-group-item strong {
+    color: #18683c;
+  }
+  
+  .booking-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-left: 10px;
+  }
+  
+  .booking-status.pending {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  
+  .booking-status.confirmed {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .booking-status.cancelled {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .no-bookings-message {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .no-bookings-message h4 {
+    color: #18683c;
+    margin-bottom: 15px;
+  }
+  
+  .no-bookings-message p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .no-bookings-message .btn-primary {
+    background-color: #18683c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .no-bookings-message .btn-primary:hover {
+    background-color: #0f4a2a;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal.show {
+    display: block;
+  }
+  
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 1.75rem auto;
+    max-width: 500px;
+    z-index: 1051;
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background-color: #18683c;
+    color: white;
+  }
+  
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+  
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+  
+  .modal-footer .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    margin-right: 0.5rem;
+  }
+  
+  .modal-footer .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .btn-close {
+    background: transparent;
+    border: 0;
+    color: white;
+    opacity: 1;
+  }
+  
+  .btn-close:hover {
+    opacity: 0.75;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+<div class="container">
+  <div class="booking-header">
+    <h2>My Bookings</h2>
+  </div>
+  
+  <% if (bookings && bookings.length > 0) { %>
+    <div class="row">
+      <% console.log(`Rendering ${bookings.length} bookings in template`); %>
+      <% bookings.forEach((booking, index) => { %>
+        <% console.log(`Rendering booking ${index + 1}: ID=${booking._id}`); %>
+        <div class="col-md-6 col-lg-4">
+          <div class="booking-card-summary">
+            <div class="card-header">
+              Booking #<%= booking._id %>
+              <span class="booking-status <%= booking.status %>"><%= booking.status %></span>
+            </div>
+            <div class="card-body">
+              <div class="booking-info">
+                <p><strong>From:</strong> <%= booking.departureAirport %></p>
+                <p><strong>To:</strong> <%= booking.returnAirport %></p>
+                <p><strong>Departure Date:</strong> <%= booking.itinerary && booking.itinerary.length > 0 ? new Date(booking.itinerary[0].departureTime).toLocaleDateString() : new Date(booking.departureDate).toLocaleDateString() %></p>
+                <p><strong>Flight Class:</strong> <%= booking.returnFlightClass %></p>
+                <p><strong>Total Price:</strong> $<%= booking.totalPrice.toLocaleString() %></p>
+                <p><strong>Booking Date:</strong> <%= new Date(booking.bookingDate).toLocaleDateString() %></p>
+              </div>
+              
+              <% if (booking.cityStops && booking.cityStops.length > 0) { %>
+                <div class="booking-info">
+                  <h4>City Stops</h4>
+                  <div class="city-stops-list">
+                    <% booking.cityStops.forEach(stop => { %>
+                      <div class="list-group-item">
+                        <strong><%= stop.city %></strong> - <%= stop.days %> days
+                      </div>
+                    <% }) %>
+                  </div>
+                </div>
+              <% } %>
+            </div>
+            <div class="card-footer">
+              <a href="/booking/view/<%= booking._id %>" class="btn btn-primary">View Details</a>
+              <% if (booking.status === 'pending') { %>
+                <button onclick="openCancelModal('<%= booking._id %>')" class="btn btn-danger">Cancel Booking</button>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <div class="no-bookings-message">
+      <h4>No Bookings Found</h4>
+      <p>You haven't made any bookings yet. Start planning your next adventure!</p>
+      <a href="/search" class="btn btn-primary">Search for Flights</a>
+    </div>
+  <% } %>
+</div>
+
+<!-- Cancel Booking Modal -->
+<div class="modal" id="cancelBookingModal" tabindex="-1" aria-labelledby="cancelBookingModalLabel">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cancelBookingModalLabel">Confirm Cancellation</h5>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to cancel this booking? This action cannot be undone.</p>
+        <p><strong>Booking ID:</strong> <span id="bookingIdDisplay"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="keepBookingBtn">No, Keep Booking</button>
+        <button type="button" class="btn btn-danger" id="confirmCancelBtn">Yes, Cancel Booking</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  let currentBookingId = null;
+  let lastFocusedElement = null;
+  
+  function openCancelModal(bookingId) {
+    currentBookingId = bookingId;
+    document.getElementById('bookingIdDisplay').textContent = bookingId;
+    
+    // Store the currently focused element
+    lastFocusedElement = document.activeElement;
+    
+    // Show the modal using vanilla JavaScript
+    const modal = document.getElementById('cancelBookingModal');
+    modal.classList.add('show');
+    modal.style.display = 'block';
+    
+    // Remove aria-hidden attribute
+    modal.removeAttribute('aria-hidden');
+    
+    // Add backdrop
+    const backdrop = document.createElement('div');
+    backdrop.className = 'modal-backdrop fade show';
+    document.body.appendChild(backdrop);
+    document.body.classList.add('modal-open');
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = '17px'; // Prevent layout shift
+    
+    // Focus the first focusable element in the modal
+    setTimeout(() => {
+      const firstFocusableElement = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+      if (firstFocusableElement) {
+        firstFocusableElement.focus();
+      }
+    }, 100);
+  }
+  
+  function closeModal() {
+    // Hide the modal
+    const modal = document.getElementById('cancelBookingModal');
+    modal.classList.remove('show');
+    modal.style.display = 'none';
+    
+    // Add aria-hidden attribute back
+    modal.setAttribute('aria-hidden', 'true');
+    
+    // Remove backdrop
+    const backdrop = document.querySelector('.modal-backdrop');
+    if (backdrop) {
+      backdrop.remove();
+    }
+    document.body.classList.remove('modal-open');
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+    
+    // Return focus to the element that had focus before the modal was opened
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set up the keep booking button
+    document.getElementById('keepBookingBtn').addEventListener('click', closeModal);
+    
+    // Set up the confirm cancel button
+    document.getElementById('confirmCancelBtn').addEventListener('click', function() {
+      if (currentBookingId) {
+        cancelBooking(currentBookingId);
+      }
+    });
+    
+    // Close modal when clicking outside
+    document.getElementById('cancelBookingModal').addEventListener('click', function(event) {
+      if (event.target === this) {
+        closeModal();
+      }
+    });
+    
+    // Handle keyboard events for accessibility
+    document.getElementById('cancelBookingModal').addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  });
+  
+  function cancelBooking(bookingId) {
+    fetch(`/booking/cancel/${bookingId}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Hide the modal
+      closeModal();
+      
+      if (data.success) {
+        // Show success message
+        const successAlert = document.createElement('div');
+        successAlert.className = 'alert alert-success alert-dismissible fade show';
+        successAlert.role = 'alert';
+        successAlert.innerHTML = `
+          Booking cancelled successfully
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        document.querySelector('.container').insertBefore(successAlert, document.querySelector('.booking-header'));
+        
+        // Reload the page after a short delay
+        setTimeout(() => {
+          window.location.reload();
+        }, 1500);
+      } else {
+        // Show error message
+        const errorAlert = document.createElement('div');
+        errorAlert.className = 'alert alert-danger alert-dismissible fade show';
+        errorAlert.role = 'alert';
+        errorAlert.innerHTML = `
+          ${data.message || 'Failed to cancel booking'}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        document.querySelector('.container').insertBefore(errorAlert, document.querySelector('.booking-header'));
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      
+      // Hide the modal
+      closeModal();
+      
+      // Show error message
+      const errorAlert = document.createElement('div');
+      errorAlert.className = 'alert alert-danger alert-dismissible fade show';
+      errorAlert.role = 'alert';
+      errorAlert.innerHTML = `
+        An error occurred while cancelling the booking
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      `;
+      document.querySelector('.container').insertBefore(errorAlert, document.querySelector('.booking-header'));
+    });
+  }
+</script> 

@@ -1,8 +1,138 @@
 <link rel="stylesheet" href="/css/style.css" />
 
+<style>
+  .book-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-button:hover {
+    background-color: #218838;
+  }
+  
+  .booking-button-container {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .login-to-book {
+    display: inline-block;
+    margin-top: 15px;
+    color: #18683c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .login-to-book:hover {
+    text-decoration: underline;
+  }
+  
+  .booking-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  /* Pagination Styling */
+  .pagination-container {
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pagination li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pagination li a,
+  .pagination li span {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #18683c;
+    background-color: white;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination li:first-child a,
+  .pagination li:first-child span {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .pagination li:last-child a,
+  .pagination li:last-child span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .pagination li a:hover {
+    background-color: #f0f8f3;
+    color: #0d4d26;
+  }
+  
+  .pagination li.active a {
+    background-color: #18683c;
+    color: white;
+    border-color: #18683c;
+  }
+  
+  .pagination li.disabled span {
+    color: #999;
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  /* Results Summary Styling */
+  .results-summary {
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #f0f8f3;
+    border-radius: 4px;
+    color: #18683c;
+    font-weight: 500;
+  }
+</style>
+
+<body 
+  data-user-logged-in="<%= typeof user !== 'undefined' && user ? 'true' : 'false' %>"
+  <% if (searchResults && searchResults.length > 0) { %>
+    data-search-results="<%= JSON.stringify(searchResults) %>"
+    data-total-results="<%= searchResults.length %>"
+    data-current-page="<%= typeof currentPage !== 'undefined' ? currentPage : 1 %>"
+    data-total-pages="<%= Math.ceil(searchResults.length / 10) %>"
+    data-request-body="<%= JSON.stringify(requestBody) %>"
+  <% } %>
+>
+
 <% if (searchResults && searchResults.length > 0) { %>
+  <div class="results-summary">
+    Showing <%= searchResults.length > 10 ? 10 : searchResults.length %> of <%= searchResults.length %> results
+  </div>
+  
   <div class="search-results">
-    <% searchResults.forEach((result, i) => { %>
+    <% searchResults.slice(0, 10).forEach((result, i) => { %>
       <div class="result-card">
         <h3>Option <%= i + 1 %> – Total: $<%= result.totalPrice.toLocaleString() %></h3>
 
@@ -48,9 +178,60 @@
             <% }) %>
           </tbody>
         </table>
+        
+        <!-- Add Book this Trip button only if user is logged in -->
+        <% if (user) { %>
+          <div class="booking-button-container">
+            <button type="button" class="book-button" data-index="<%= i %>">Book This Trip</button>
+            
+            <!-- Hidden form for booking data -->
+            <form id="booking-form-<%= i %>" action="/booking/create" method="POST" style="display: none;">
+              <!-- Basic booking information -->
+              <input type="hidden" name="departureAirport" value="<%= requestBody.departureAirport %>">
+              <input type="hidden" name="returnAirport" value="<%= requestBody.returnAirport %>">
+              <input type="hidden" name="departureDate" value="<%= requestBody.departureDate %>">
+              <input type="hidden" name="returnFlightClass" value="<%= requestBody.returnFlightClass %>">
+              <input type="hidden" name="totalPrice" value="<%= result.totalPrice %>">
+              
+              <!-- City stops data -->
+              <input type="hidden" name="cityStopsData" data-city-stops="<%= JSON.stringify(requestBody.cityStops || []) %>">
+              
+              <!-- Itinerary data -->
+              <input type="hidden" name="itineraryData" data-itinerary="<%= JSON.stringify(result.itinerary) %>">
+            </form>
+          </div>
+        <% } else { %>
+          <div class="booking-button-container">
+            <a href="/auth/sign-in" class="login-to-book">Sign in to book this trip</a>
+          </div>
+        <% } %>
       </div>
     <% }) %>
   </div>
+  
+  <!-- Pagination controls -->
+  <% if (searchResults.length > 10) { %>
+    <div class="pagination-container">
+      <ul class="pagination">
+        <!-- Previous button -->
+        <li class="disabled">
+          <span>Previous</span>
+        </li>
+        
+        <!-- Page numbers -->
+        <% for (let i = 1; i <= Math.ceil(searchResults.length / 10); i++) { %>
+          <li class="<%= i === 1 ? 'active' : '' %>">
+            <a href="#" data-page="<%= i %>"><%= i %></a>
+          </li>
+        <% } %>
+        
+        <!-- Next button -->
+        <li class="<%= searchResults.length <= 10 ? 'disabled' : '' %>">
+          <a href="#" data-page="2">Next</a>
+        </li>
+      </ul>
+    </div>
+  <% } %>
 <% } else if (errorMessage) { %>
   <div class="search-results-empty">
     <p><%= errorMessage %></p>
@@ -70,3 +251,394 @@
     <button type="submit" class="load-more">Load More Results</button>
   </form>
 <% } %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get user authentication status from body data attribute
+    const isUserLoggedIn = document.body.dataset.userLoggedIn === 'true';
+    
+    // Store search results in localStorage if they exist
+    const searchResultsData = document.body.dataset.searchResults;
+    if (searchResultsData) {
+      try {
+        const searchResults = JSON.parse(searchResultsData);
+        console.log('Storing search results in localStorage:', searchResults.length);
+        
+        // Store the complete search results in localStorage
+        localStorage.setItem('searchResults', JSON.stringify(searchResults));
+        localStorage.setItem('totalResults', document.body.dataset.totalResults);
+        localStorage.setItem('currentPage', document.body.dataset.currentPage);
+        localStorage.setItem('totalPages', document.body.dataset.totalPages);
+        localStorage.setItem('requestBody', document.body.dataset.requestBody);
+        
+        // Log confirmation
+        console.log('Search results stored in localStorage successfully');
+        console.log('Total results:', document.body.dataset.totalResults);
+        console.log('Current page:', document.body.dataset.currentPage);
+        console.log('Total pages:', document.body.dataset.totalPages);
+      } catch (error) {
+        console.error('Error storing search results in localStorage:', error);
+      }
+    } else {
+      console.log('No search results data found to store in localStorage');
+    }
+    
+    // Add event listeners to all book buttons
+    const bookButtons = document.querySelectorAll('.book-button');
+    bookButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const index = this.getAttribute('data-index');
+        bookTrip(this, index);
+      });
+    });
+    
+    // Handle pagination clicks
+    const paginationLinks = document.querySelectorAll('.pagination a');
+    paginationLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Get the page number from the data attribute
+        const page = parseInt(this.getAttribute('data-page'));
+        navigateToPage(page);
+      });
+    });
+    
+    // Function to navigate to a specific page
+    function navigateToPage(page) {
+      console.log('Navigating to page:', page);
+      
+      // Get the stored search results
+      let storedResults = [];
+      try {
+        const storedResultsStr = localStorage.getItem('searchResults');
+        console.log('Retrieved from localStorage:', storedResultsStr ? 'Data found' : 'No data');
+        
+        if (storedResultsStr) {
+          storedResults = JSON.parse(storedResultsStr);
+          console.log('Parsed search results:', storedResults.length);
+        }
+      } catch (error) {
+        console.error('Error retrieving search results from localStorage:', error);
+      }
+      
+      const totalResults = parseInt(localStorage.getItem('totalResults') || '0');
+      const totalPages = parseInt(localStorage.getItem('totalPages') || '0');
+      
+      console.log('Total results:', totalResults, 'Total pages:', totalPages);
+      
+      if (storedResults.length === 0) {
+        console.log('No results in localStorage');
+        return;
+      }
+      
+      // Calculate pagination parameters
+      const resultsPerPage = 10;
+      const startIndex = (page - 1) * resultsPerPage;
+      const endIndex = Math.min(startIndex + resultsPerPage, storedResults.length);
+      
+      console.log('Slicing results from', startIndex, 'to', endIndex);
+      
+      // Get the results for the current page
+      const paginatedResults = storedResults.slice(startIndex, endIndex);
+      
+      console.log('Paginated results:', paginatedResults.length);
+      
+      // Update the results display
+      updateResultsDisplay(paginatedResults, page, totalPages, totalResults);
+      
+      // Update the active page in the pagination
+      updatePaginationActive(page);
+    }
+    
+    // Function to update the results display
+    function updateResultsDisplay(results, currentPage, totalPages, totalResults) {
+      console.log('Updating results display with', results.length, 'results');
+      
+      const resultsContainer = document.querySelector('.search-results');
+      const resultsSummary = document.querySelector('.results-summary');
+      
+      if (!resultsContainer || !resultsSummary) {
+        console.error('Results container or summary not found');
+        return;
+      }
+      
+      // Update the results summary
+      resultsSummary.innerHTML = `Showing ${results.length} of ${totalResults} results`;
+      
+      // Clear the current results
+      resultsContainer.innerHTML = '';
+      
+      if (results.length === 0) {
+        console.log('No results to display');
+        return;
+      }
+      
+      // Add the new results
+      results.forEach((result, i) => {
+        const resultIndex = (currentPage - 1) * 10 + i + 1;
+        const resultCard = createResultCard(result, resultIndex, i);
+        resultsContainer.appendChild(resultCard);
+      });
+      
+      // Re-attach event listeners to the new book buttons
+      const newBookButtons = document.querySelectorAll('.book-button');
+      newBookButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const index = this.getAttribute('data-index');
+          bookTrip(this, index);
+        });
+      });
+    }
+    
+    // Function to create a result card
+    function createResultCard(result, resultIndex, i) {
+      console.log('Creating result card for index', i);
+      
+      const card = document.createElement('div');
+      card.className = 'result-card';
+      
+      // Create the card HTML
+      let cardHTML = `
+        <h3>Option ${resultIndex} – Total: $${result.totalPrice.toLocaleString()}</h3>
+        
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Leg</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Departure Time</th>
+              <th>Arrival Time</th>
+              <th>Airline</th>
+              <th>Duration</th>
+              <th>Hotel</th>
+              <th>Flight Price</th>
+              <th>Hotel Price</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+      
+      // Add itinerary rows
+      result.itinerary.forEach((leg, index) => {
+        const legLabel = index === 0 
+          ? "Leg 1" 
+          : (index === result.itinerary.length - 1 
+            ? "Return" 
+            : `Leg ${index + 1}`);
+            
+        cardHTML += `
+          <tr>
+            <td>${legLabel}</td>
+            <td>${leg.departureAirport || "–"}</td>
+            <td>${leg.arrivalAirport || "–"}</td>
+            <td>${new Date(leg.departureTime).toLocaleString()}</td>
+            <td>${new Date(leg.arrivalTime).toLocaleString()}</td>
+            <td>${leg.airline}</td>
+            <td>${leg.flightDuration}</td>
+            <td>${leg.hotelName}</td>
+            <td>$${leg.flightPrice.toLocaleString()}</td>
+            <td>${leg.hotelPrice > 0 ? `$${leg.hotelPrice.toLocaleString()}` : "-"}</td>
+          </tr>
+        `;
+      });
+      
+      cardHTML += `
+          </tbody>
+        </table>
+      `;
+      
+      // Add booking button or login link
+      let requestBody = {};
+      try {
+        const requestBodyStr = localStorage.getItem('requestBody');
+        if (requestBodyStr) {
+          requestBody = JSON.parse(requestBodyStr);
+        }
+      } catch (error) {
+        console.error('Error parsing request body:', error);
+      }
+      
+      if (isUserLoggedIn) {
+        cardHTML += `
+          <div class="booking-button-container">
+            <button type="button" class="book-button" data-index="${i}">Book This Trip</button>
+            
+            <!-- Hidden form for booking data -->
+            <form id="booking-form-${i}" action="/booking/create" method="POST" style="display: none;">
+              <!-- Basic booking information -->
+              <input type="hidden" name="departureAirport" value="${requestBody.departureAirport || ''}">
+              <input type="hidden" name="returnAirport" value="${requestBody.returnAirport || ''}">
+              <input type="hidden" name="departureDate" value="${requestBody.departureDate || ''}">
+              <input type="hidden" name="returnFlightClass" value="${requestBody.returnFlightClass || ''}">
+              <input type="hidden" name="totalPrice" value="${result.totalPrice}">
+              
+              <!-- City stops data -->
+              <input type="hidden" name="cityStopsData" data-city-stops='${JSON.stringify(requestBody.cityStops || [])}'>
+              
+              <!-- Itinerary data -->
+              <input type="hidden" name="itineraryData" data-itinerary='${JSON.stringify(result.itinerary)}'>
+            </form>
+          </div>
+        `;
+      } else {
+        cardHTML += `
+          <div class="booking-button-container">
+            <a href="/auth/sign-in" class="login-to-book">Sign in to book this trip</a>
+          </div>
+        `;
+      }
+      
+      card.innerHTML = cardHTML;
+      return card;
+    }
+    
+    // Function to update the active page in the pagination
+    function updatePaginationActive(currentPage) {
+      const paginationLinks = document.querySelectorAll('.pagination li');
+      paginationLinks.forEach(li => {
+        li.classList.remove('active');
+        const link = li.querySelector('a');
+        if (link) {
+          const page = parseInt(link.getAttribute('data-page'));
+          if (page === currentPage) {
+            li.classList.add('active');
+          }
+        }
+      });
+      
+      // Get total pages from localStorage
+      const totalPages = parseInt(localStorage.getItem('totalPages') || '0');
+      
+      // Update Previous/Next buttons
+      const prevButton = document.querySelector('.pagination li:first-child');
+      const nextButton = document.querySelector('.pagination li:last-child');
+      
+      if (prevButton) {
+        if (currentPage === 1) {
+          prevButton.classList.add('disabled');
+          prevButton.innerHTML = '<span>Previous</span>';
+        } else {
+          prevButton.classList.remove('disabled');
+          prevButton.innerHTML = `<a href="#" data-page="${currentPage - 1}">Previous</a>`;
+        }
+      }
+      
+      if (nextButton) {
+        if (currentPage === totalPages) {
+          nextButton.classList.add('disabled');
+          nextButton.innerHTML = '<span>Next</span>';
+        } else {
+          nextButton.classList.remove('disabled');
+          nextButton.innerHTML = `<a href="#" data-page="${currentPage + 1}">Next</a>`;
+        }
+      }
+      
+      // Re-attach event listeners to the updated pagination links
+      const newPaginationLinks = document.querySelectorAll('.pagination a');
+      newPaginationLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const page = parseInt(this.getAttribute('data-page'));
+          navigateToPage(page);
+        });
+      });
+    }
+  });
+
+  function bookTrip(button, index) {
+    // Get the form
+    const form = document.getElementById(`booking-form-${index}`);
+    
+    // Disable the button to prevent multiple submissions
+    button.disabled = true;
+    button.textContent = 'Booking...';
+    
+    // Create a success message element
+    const successMessage = document.createElement('div');
+    successMessage.className = 'booking-success';
+    successMessage.textContent = 'Booking request sent successfully!';
+    
+    // Add the success message after the button
+    button.parentNode.appendChild(successMessage);
+    
+    // Get form data
+    const formData = new FormData(form);
+    
+    // Get data from data attributes
+    const cityStopsInput = form.querySelector('input[name="cityStopsData"]');
+    const itineraryInput = form.querySelector('input[name="itineraryData"]');
+    
+    // Create a plain object for the request
+    const formDataObj = {};
+    formData.forEach((value, key) => {
+      formDataObj[key] = value;
+    });
+    
+    // Add data from data attributes
+    if (cityStopsInput) {
+      formDataObj.cityStopsData = cityStopsInput.getAttribute('data-city-stops');
+    }
+    
+    if (itineraryInput) {
+      formDataObj.itineraryData = itineraryInput.getAttribute('data-itinerary');
+    }
+    
+    // Log the form data for debugging
+    console.log('Form data being sent:', formDataObj);
+    
+    // Submit the form using fetch
+    fetch('/booking/create', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(formDataObj)
+    })
+    .then(response => {
+      console.log('Response status:', response.status);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Response data:', data);
+      if (data.success) {
+        // Show success message
+        successMessage.style.display = 'block';
+        button.textContent = 'Booked';
+        
+        // Redirect to the booking view page after a short delay
+        setTimeout(() => {
+          window.location.href = `/booking/view/${data.bookingId}`;
+        }, 1500);
+      } else {
+        // Show error message
+        successMessage.textContent = data.error || 'Failed to book trip. Please try again.';
+        successMessage.style.backgroundColor = '#f8d7da';
+        successMessage.style.color = '#721c24';
+        successMessage.style.display = 'block';
+        button.disabled = false;
+        button.textContent = 'Book This Trip';
+        
+        // Log detailed error information
+        if (data.details) {
+          console.error('Booking error details:', data.details);
+        }
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      successMessage.textContent = 'An error occurred. Please try again.';
+      successMessage.style.backgroundColor = '#f8d7da';
+      successMessage.style.color = '#721c24';
+      successMessage.style.display = 'block';
+      button.disabled = false;
+      button.textContent = 'Book This Trip';
+    });
+  }
+</script>
+</body>

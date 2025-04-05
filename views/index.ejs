@@ -11,6 +11,7 @@
       height: 100%;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
     
     body {
@@ -25,15 +26,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 0;
+      margin: 0;
+      width: 100%;
     }
     
     .home-container {
-      width: auto;
-      max-width: 90%;
-      height: calc(100vh - 100px);
-      min-height: 500px;
-      aspect-ratio: 3/5;
+      width: 90%;
+      max-width: 600px;
       padding: 30px;
       background-color: #d4edb1;
       border-radius: 8px;
@@ -42,29 +42,36 @@
       flex-direction: column;
       justify-content: space-between;
       text-align: center;
+      margin: 20px auto;
+      box-sizing: border-box;
     }
     
     .logo-container {
       text-align: center;
       margin-bottom: 20px;
+      width: 100%;
     }
     
     .logo-container img {
-      max-width: 80%;
+      max-width: 70%;
       height: auto;
+      display: block;
+      margin: 0 auto;
     }
     
     .welcome-text {
       font-size: 1.5rem;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #333;
+      width: 100%;
     }
     
     .auth-buttons {
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
+      gap: 10px;
+      margin-top: 10px;
+      width: 100%;
     }
     
     .auth-button {
@@ -78,6 +85,8 @@
       cursor: pointer;
       text-decoration: none;
       text-align: center;
+      width: 100%;
+      box-sizing: border-box;
     }
     
     .auth-button:hover {
@@ -87,21 +96,14 @@
     
     /* Mobile responsive styles */
     @media screen and (max-width: 768px) {
-      main {
-        padding: 10px;
-      }
-      
       .home-container {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        min-height: auto;
-        aspect-ratio: auto;
+        width: 90%;
         padding: 20px;
+        margin: 10px auto;
       }
       
       .logo-container img {
-        max-width: 70%;
+        max-width: 60%;
       }
       
       .welcome-text {
@@ -117,11 +119,13 @@
     
     @media screen and (max-width: 480px) {
       .home-container {
+        width: 95%;
         padding: 15px;
+        margin: 5px auto;
       }
       
       .logo-container img {
-        max-width: 60%;
+        max-width: 50%;
       }
       
       .welcome-text {
@@ -132,10 +136,6 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <%- include('partials/_navbar') %>
-  </div>
-  
   <main>
     <div class="home-container">
       <div class="logo-container">
@@ -143,10 +143,11 @@
       </div>
       
       <div class="welcome-text">
-        Welcome to ZigZaggo - Your Ultimate Travel Planning Platform
+        Plan your multi-city trips based on where you want to go instead of fixed dates!
       </div>
       
       <div class="auth-buttons">
+        <a href="/search" class="auth-button">Go to Search</a>
         <a href="/auth/sign-in" class="auth-button">Sign In</a>
         <a href="/auth/sign-up" class="auth-button">Sign Up</a>
       </div>

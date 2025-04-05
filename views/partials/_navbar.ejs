@@ -8,12 +8,15 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="/search">Search</a></li>
+      <% if (path !== '/search') { %>
+        <li><a href="/search">Search</a></li>
+      <% } %>
 
       <% if (user) { %>
         <% if (path !== '/user/account') { %>
           <li><a href="/user/account">Profile</a></li>
         <% } %>
+        <li><a href="/booking/my-bookings">My Bookings</a></li>
       <% } else { %>
         <li><a href="/auth/sign-in">Login</a></li>
         <li><a href="/auth/sign-up">Sign Up</a></li>
