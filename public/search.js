@@ -129,6 +129,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Add event listeners to hotel rating checkboxes to ensure only one is selected per row
+  document.querySelectorAll('.hotel-rating').forEach((ratingGroup, index) => {
+    const checkboxes = ratingGroup.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          // Uncheck all other checkboxes in this group
+          checkboxes.forEach(otherCheckbox => {
+            if (otherCheckbox !== e.target) {
+              otherCheckbox.checked = false;
+            }
+          });
+        }
+      });
+    });
+  });
+
   // Add form validation for Departure and Return Airports
   form.addEventListener("submit", (event) => {
     const departureAirportInput = document.getElementById("departureAirport");

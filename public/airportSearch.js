@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   preloadAirportCodes();
 
   // Initialize autocomplete for departure and return inputs
-  setupAutocomplete(departureInput, departureResults);
-  setupAutocomplete(returnInput, returnResults);
+  setupAutocomplete(departureInput, departureResults, true);
+  setupAutocomplete(returnInput, returnResults, true);
 
   // Initialize autocomplete for city stop inputs
   setupCityStopAutocomplete();
@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
       suggestionsContainer.id = `city-stop-suggestions-${index}`;
       input.parentNode.appendChild(suggestionsContainer);
 
-      // Setup autocomplete for this input
-      setupAutocomplete(input, suggestionsContainer);
+      // Setup autocomplete for this input with showCityAndCode set to true
+      setupAutocomplete(input, suggestionsContainer, true);
 
       // Update the corresponding days input when a city is selected
       input.addEventListener('change', () => {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function setupAutocomplete(input, results) {
+  function setupAutocomplete(input, results, showCityAndCode) {
     // Use a more aggressive debounce for better performance
     input.addEventListener('input', debounce(() => fetchAirports(input, results), 150));
 
@@ -104,7 +104,18 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (e.key === 'Enter' && activeIndex >= 0) {
         e.preventDefault();
         const selectedItem = suggestions[activeIndex];
-        input.value = selectedItem.dataset.code;
+        const code = selectedItem.dataset.code;
+        
+        // For inputs that should show city + code, store the code in a data attribute and display city + code
+        if (showCityAndCode) {
+          input.dataset.airportCode = code;
+          const city = airportToCityMap[code] || '';
+          input.value = `${city} (${code})`;
+        } else {
+          // For other inputs, keep the original behavior
+          input.value = code;
+        }
+        
         results.innerHTML = '';
         // Trigger change event to update days input
         input.dispatchEvent(new Event('change'));
@@ -119,6 +130,27 @@ document.addEventListener('DOMContentLoaded', () => {
         results.innerHTML = '';
       }
     });
+    
+    // Add a form submit handler to ensure the correct airport code is submitted
+    if (showCityAndCode) {
+      const form = input.closest('form');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          // If the input has a data-airportCode attribute, use that value for submission
+          if (input.dataset.airportCode) {
+            // Create a hidden input with the airport code
+            const hiddenInput = document.createElement('input');
+            hiddenInput.type = 'hidden';
+            hiddenInput.name = input.name;
+            hiddenInput.value = input.dataset.airportCode;
+            form.appendChild(hiddenInput);
+            
+            // Disable the visible input to prevent it from being submitted
+            input.disabled = true;
+          }
+        });
+      }
+    }
   }
 
   function debounce(fn, delay) {
@@ -175,7 +207,12 @@ document.addEventListener('DOMContentLoaded', () => {
         li.dataset.code = code;
         li.style.cursor = 'pointer';
         li.addEventListener('click', () => {
-          input.value = code;
+          // Store the airport code in a data attribute
+          input.dataset.airportCode = code;
+          
+          // Display the city name + airport code in the input field
+          input.value = `${city} (${code})`;
+          
           results.innerHTML = '';
           // Trigger change event to update days input
           input.dispatchEvent(new Event('change'));

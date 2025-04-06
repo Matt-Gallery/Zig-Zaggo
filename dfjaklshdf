@@ -1,0 +1,149 @@
+[33mcommit a9be5e1e2f7959f92f69c6de498b49201d5dcfd1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 19:32:12 2025 -0400
+
+    additional improvements to the autocomplete fucntion:
+
+[33mcommit d9aae54acd7c8cf61f69e30a8f6ba917261b2d9d[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 19:27:13 2025 -0400
+
+    fixed some homepage styling and improved autocomplete performance
+
+[33mcommit dee53d42c7a317659def5080b441ad66fab791da[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 19:13:19 2025 -0400
+
+    added all the booking features and pagination and fixed tons of styling.
+
+[33mcommit 6eeab7a9e73c75abcfb750b2169440cbe6416776[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 13:45:34 2025 -0400
+
+    updated profile and home page styling. updated profile change auth functionality
+
+[33mcommit cacb0fb429c8e28773c61fb09c199019eeb84992[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 13:02:06 2025 -0400
+
+    added more mock data and updated search to account for hotel availability
+
+[33mcommit bce8c017ec73fa1acfa9baef685310209f6fa8c2[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 11:28:12 2025 -0400
+
+    made star selectors dynamically available only after a user adds that leg to their search
+
+[33mcommit 4e54846ffedaaef86d489f8d541bea31ce2bd5ae[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 11:22:34 2025 -0400
+
+    updated search page styling
+
+[33mcommit 3d0d3f31b2481a28e9d57f2bae5403f841f53091[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 10:45:46 2025 -0400
+
+    updates to search page styling and input functionality
+
+[33mcommit 224a3431484b85a114b9a15c33baa9315f835bd1[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Sat Apr 5 08:17:38 2025 -0400
+
+    updated autocomplete fucntion and sign in page styling
+
+[33mcommit 280d8e2c53168cf40a51a835c3983b0ec0a5e949[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Fri Apr 4 17:18:11 2025 -0400
+
+    updated styling and functionality of num of days and star inputs
+
+[33mcommit 21fcd41c5c99c48858d8cffc839da22b8e201b38[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Fri Apr 4 16:43:00 2025 -0400
+
+    search and profile update functions working
+
+[33mcommit c95460ed14c45c298fab03328ad17ee3246935ac[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Fri Apr 4 13:52:18 2025 -0400
+
+    full search functionality is working. autofill inputs are partially working.
+
+[33mcommit f7df86b2f36c19919b4eab7edd52900a6fc80dba[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Fri Apr 4 12:50:42 2025 -0400
+
+    nearly fixed search functionality. still need to fix trip legs being combined to create a full itinerary. updated code to keep search params rendered in UI
+
+[33mcommit 7d534f6a752b5d74ebffa6a26ed05689a7587d00[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Thu Apr 3 15:19:19 2025 -0400
+
+    basic search functionality is working and rendering in the browser
+
+[33mcommit 270ad938c2087f9f039dcb9f70c41acaacfaf3f4[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Wed Apr 2 12:35:02 2025 -0400
+
+    seeded mongoDB with mock hotel and flight data
+
+[33mcommit 02217901abf09210f5ffbd9ed10e1731e4f244a8[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Tue Apr 1 14:14:30 2025 -0400
+
+    fixed navbar, updated sign up styling:
+
+[33mcommit 33d6ecd88cb1bcb8fde0d7ae1cdd017134d9c4a6[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Tue Apr 1 12:13:06 2025 -0400
+
+    added search controller, updated server, tried to fix search page rendering but still in progress
+
+[33mcommit de4c48a470fae7f9765ea028e91345647b7587e2[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Tue Apr 1 10:23:23 2025 -0400
+
+    updates to proposal
+
+[33mcommit 001856aa9297598edb5e6dc02ee6e29c7df8fe0e[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Tue Apr 1 09:51:52 2025 -0400
+
+    further updated styling for search page
+
+[33mcommit 56e706e2d01cef3769bbab17a7a9e3758786b56b[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Tue Apr 1 08:05:13 2025 -0400
+
+    added search page, fixed login function, added css file
+
+[33mcommit 80c5729680a7ab080969e267f2cf2bc60477db56[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Mon Mar 31 16:58:46 2025 -0400
+
+    updated proposal .md with routing table
+
+[33mcommit 9714039855da8b9b96f7834ce1f568d9b8fcdbeb[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Mon Mar 31 15:45:40 2025 -0400
+
+    proposal md complete
+
+[33mcommit 95b62046a49e952d2b03556a8b10d0f1693ec70e[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Mon Mar 31 15:25:44 2025 -0400
+
+    proposal complete?
+
+[33mcommit d607bac652004dc39e4967a1a4120b9aedaa6aac[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Mon Mar 31 14:42:10 2025 -0400
+
+    proposal half done
+
+[33mcommit 338eded7420de018338b452c77e22765cf8a1ac4[m
+Author: matt-gallery <matt.r.gallery@gmail.com>
+Date:   Mon Mar 31 09:17:39 2025 -0400
+
+    init commit
