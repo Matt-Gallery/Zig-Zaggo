@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 import express from 'express';
 import { BookingRequest } from '../models/bookingRequests.js';
 

@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 import express from "express";
 import { Flights, Hotels } from "../models/resOptions.js";
 import mongoose from "mongoose";

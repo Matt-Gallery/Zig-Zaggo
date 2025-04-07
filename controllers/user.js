@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 // controllers/user.js
 import User from '../models/user.js';
 import bcrypt from 'bcrypt';

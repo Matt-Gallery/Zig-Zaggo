@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 // Main server file that initializes the Express application and sets up routes
 import dotenv from 'dotenv';
 dotenv.config();

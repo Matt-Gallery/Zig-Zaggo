@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 // public/js/autocomplete.js
 
 document.addEventListener('DOMContentLoaded', () => {

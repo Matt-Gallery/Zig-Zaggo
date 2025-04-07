@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 // Handles search form functionality including city stops, hotel ratings, and form validation
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".search-form");

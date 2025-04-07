@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 

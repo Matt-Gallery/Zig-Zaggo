@@ -1,3 +1,5 @@
+// ChatGPT and Cursor used extensively throughout
+
 import fs from 'fs';
 import path from 'path';
 import mongoose from 'mongoose';
