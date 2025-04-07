@@ -7,7 +7,6 @@ dotenv.config();
 import express from 'express';
 const app = express();
 
-import mongoose from 'mongoose';
 import methodOverride from 'method-override';
 import morgan from 'morgan';
 import session from 'express-session';
@@ -19,28 +18,18 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import userRoutes from './routes/user.js';
+import connectDB from './db/connection.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const port = process.env.PORT ? process.env.PORT : '3000';
 
-// Connect to MongoDB database
-mongoose.connect(process.env.MONGODB_URI)
-  .then(() => {
-    console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
-  })
+// Connect to MongoDB database using the connection module
+connectDB(process.env.MONGODB_URI)
   .catch(err => {
-    console.error('MongoDB connection error:', err);
+    console.error('Failed to connect to MongoDB:', err);
+    process.exit(1);
   });
-
-// Handle MongoDB connection errors and disconnections
-mongoose.connection.on('error', (err) => {
-  console.error('MongoDB connection error:', err);
-});
-
-mongoose.connection.on('disconnected', () => {
-  console.log('MongoDB disconnected');
-});
 
 // Set up EJS as the view engine
 app.set('view engine', 'ejs');

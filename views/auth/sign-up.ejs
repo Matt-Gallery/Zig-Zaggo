@@ -1,172 +1,11 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/auth.css" />
   <title>Sign Up - ZigZaggo</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-    
-    .signup-container {
-      width: auto;
-      max-width: 90%;
-      height: calc(100vh - 100px);
-      min-height: 600px;
-      aspect-ratio: 3/5;
-      padding: 30px;
-      background-color: #d4edb1;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    
-    .logo-container {
-      text-align: center;
-      margin-bottom: 0;
-    }
-    
-    .logo-container img {
-      max-width: 65%;
-      height: auto;
-    }
-    
-    .title {
-      margin-top: 0;
-      margin-bottom: 5px;
-      text-align: center;
-    }
-    
-    .form-group {
-      margin-bottom: 5px;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 1px;
-      font-weight: bold;
-    }
-    
-    .form-group input {
-      width: 100%;
-      padding: 6px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
-    }
-    
-    .form-actions {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin-top: 5px;
-    }
-    
-    .btn {
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-    }
-    
-    .btn-primary {
-      background-color: #18683c;
-      color: white;
-    }
-    
-    .btn-secondary {
-      background-color: #cceabb;
-      color: #18683c;
-    }
-    
-    .login-link {
-      text-align: center;
-      margin-top: 5px;
-    }
-    
-    .login-link a {
-      color: #18683c;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    .login-link a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Mobile responsive styles */
-    @media screen and (max-width: 768px) {
-      main {
-        padding: 10px;
-      }
-      
-      .signup-container {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        min-height: auto;
-        aspect-ratio: auto;
-        padding: 20px;
-      }
-      
-      .logo-container img {
-        max-width: 70%;
-      }
-      
-      .form-group input {
-        font-size: 16px; /* Prevents zoom on iOS */
-      }
-      
-      .btn {
-        padding: 12px;
-        font-size: 16px;
-      }
-    }
-    
-    @media screen and (max-width: 480px) {
-      .signup-container {
-        padding: 15px;
-      }
-      
-      .logo-container img {
-        max-width: 60%;
-      }
-      
-      .form-group label {
-        font-size: 14px;
-      }
-      
-      .form-group input {
-        padding: 8px;
-      }
-    }
-  </style>
 </head>
 <body>
   <main>
@@ -201,12 +40,12 @@
         </div>
 
         <div class="form-group">
-          <label for="emailAddress">Email:</label>
+          <label for="emailAddress">Email Address:</label>
           <input type="email" id="emailAddress" name="emailAddress" required />
         </div>
 
         <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Create Account</button>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
         </div>
       </form>
       
