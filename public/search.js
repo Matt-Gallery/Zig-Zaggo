@@ -1,3 +1,4 @@
+// Handles search form functionality including city stops, hotel ratings, and form validation
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".search-form");
   if (!form) return;
@@ -7,17 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.removeItem("zigzaggoSearchParams");
   }
 
-  // Handle city stop inputs to show placeholder for days input
+  // Initialize city stop and days inputs
   const cityStopInputs = document.querySelectorAll('input[name="cityStops[]"]');
   const daysInputs = document.querySelectorAll('input[name="days[]"]');
   
-  // First, ensure all days inputs start with no placeholder and no value
+  // Reset days inputs to empty state
   daysInputs.forEach(input => {
     input.placeholder = '';
     input.value = '';
   });
 
-  // Function to disable/enable hotel rating checkboxes
+  // Function to manage hotel rating checkbox state based on city stop validity
   function updateHotelRatingCheckboxes(cityStopInput) {
     const index = cityStopInput.dataset.index;
     const cityStopValue = cityStopInput.value.trim().toUpperCase();
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
-  // Set up increment/decrement buttons for days inputs
+  // Set up increment buttons for days inputs
   document.querySelectorAll('.days-increment').forEach(button => {
     button.addEventListener('click', function() {
       const index = this.dataset.index;
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  // Set up decrement buttons for days inputs
   document.querySelectorAll('.days-decrement').forEach(button => {
     button.addEventListener('click', function() {
       const index = this.dataset.index;
@@ -68,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  // Set up city stop input handlers
   cityStopInputs.forEach((input, index) => {
     // Initially disable hotel rating checkboxes
     updateHotelRatingCheckboxes(input);

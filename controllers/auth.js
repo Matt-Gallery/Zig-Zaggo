@@ -1,20 +1,25 @@
+// Authentication controller that handles user sign-up, sign-in, and sign-out functionality
 import express from 'express';
 const router = express.Router();
 import bcrypt from 'bcrypt';
 
 import User from '../models/user.js';
 
+// Route to display the sign-up form
 router.get('/sign-up', (req, res) => {
   res.render('auth/sign-up');
 });
 
+// Route to handle user sign-in
 router.post('/sign-in', async (req, res) => {
   try {
+    // Find user in database by username
     const userInDatabase = await User.findOne({ username: req.body.username });
     if (!userInDatabase) {
       return res.send('Login failed. Please try again.');
     }
 
+    // Verify password using bcrypt
     const validPassword = bcrypt.compareSync(
       req.body.password,
       userInDatabase.password
@@ -23,6 +28,7 @@ router.post('/sign-in', async (req, res) => {
       return res.send('Login failed. Please try again.');
     }
 
+    // Store user info in session
     req.session.user = {
       username: userInDatabase.username,
       _id: userInDatabase._id,
@@ -36,15 +42,18 @@ router.post('/sign-in', async (req, res) => {
 });
 
 
+// Route to display the sign-in form
 router.get('/sign-in', (req, res) => {
   res.render('auth/sign-in.ejs');
 });
 
+// Route to handle user sign-out
 router.get('/sign-out', (req, res) => {
   req.session.destroy();
   res.redirect('/auth/sign-in');
 });
 
+// Route to handle user sign-up
 router.post('/sign-up', async (req, res) => {
   try {
     const { username, password, confirmPassword, name, emailAddress } = req.body;
