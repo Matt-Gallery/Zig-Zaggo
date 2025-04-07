@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,6 +113,19 @@
       text-decoration: underline;
     }
     
+    .alert {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    
+    .alert-danger {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
     /* Mobile responsive styles */
     @media screen and (max-width: 768px) {
       main {
@@ -167,10 +178,18 @@
   <main>
     <div class="login-container">
       <div class="logo-container">
-        <img src="/static-assets/ZigZaggoVertSquareLogo.png" alt="ZigZaggo Logo">
+        <a href="/">
+          <img src="/static-assets/ZigZaggoVertSquareLogo.png" alt="ZigZaggo Logo">
+        </a>
       </div>
       
       <form action="/auth/sign-in" method="POST">
+        <% if (typeof error !== 'undefined' && error) { %>
+          <div class="alert alert-danger" role="alert">
+            <%= error %>
+          </div>
+        <% } %>
+        
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" required />

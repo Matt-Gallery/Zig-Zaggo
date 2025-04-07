@@ -16,7 +16,7 @@ router.post('/sign-in', async (req, res) => {
     // Find user in database by username
     const userInDatabase = await User.findOne({ username: req.body.username });
     if (!userInDatabase) {
-      return res.send('Login failed. Please try again.');
+      return res.render('auth/sign-in', { error: 'Invalid username or password' });
     }
 
     // Verify password using bcrypt
@@ -25,7 +25,7 @@ router.post('/sign-in', async (req, res) => {
       userInDatabase.password
     );
     if (!validPassword) {
-      return res.send('Login failed. Please try again.');
+      return res.render('auth/sign-in', { error: 'Invalid username or password' });
     }
 
     // Store user info in session
@@ -37,14 +37,14 @@ router.post('/sign-in', async (req, res) => {
     res.redirect('/search');
   } catch (error) {
     console.log(error);
-    res.redirect('/');
+    res.render('auth/sign-in', { error: 'An error occurred. Please try again.' });
   }
 });
 
 
 // Route to display the sign-in form
 router.get('/sign-in', (req, res) => {
-  res.render('auth/sign-in.ejs');
+  res.render('auth/sign-in.ejs', { error: null });
 });
 
 // Route to handle user sign-out
