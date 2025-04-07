@@ -4,13 +4,9 @@
 
 #### ZigZaggo is a travel booking aggregator that is unique in that it optimizes searches based on how many days you want to spend in each location you want to visit instead of searching for individual trip legs one-by-one based on specific dates.
 
-
+https://zig-zaggo-production.up.railway.app/search
 
 The point of the application is to make it easy for travelers who want to visit multiple destinations in a single trip and who don't require a specific itinerary to find the optimally priced trip based on how many days they want to spend at each destination and the class of flights and hotels they desire.  Until now this sort of optimization could only be done manually by searching every possible permutaion of trip legs manually one by one in a legacy traval booking aggregator.
-
-## MVP Assumptions
- - User will be limited to choosing a maximum of 4 city stops in a search
- - Seach will be conducted against a mock MongoDB database containing roughly 1 month of flight and hotel data created by ChatGPT using actual sample data and following normal travel booking conventions
 
 ## Functionality
 - **Create Account**
@@ -22,7 +18,7 @@ The point of the application is to make it easy for travelers who want to visit 
 - **Log In**
     -As a user you can log into your account and book travel, see all your bookings and cancel bookings.
 - **Account Details**
-    - As a user you can see your profile and make edits to it.
+    - As a user you can see your profile and make edits to it or delete your account.
 - **View Search Landing Page & Enter Search Criteria**
     - As a user you can enter and submit search criteria for multi-leg trips with up to 5 total stops using this seach criteria:
         * Initial departure city
@@ -41,6 +37,10 @@ The point of the application is to make it easy for travelers who want to visit 
 
 
 ## Technology Used
+
+## Artificial Intelligence Technologies
+1. ChatGPT for functionality and styling and logo design
+2. Cursor with ChatGPT and Claude for adding advanced functionality and styling
 
 ### Backend Technologies
 1. Node.js - Runtime environment for executing JavaScript on the server
@@ -123,3 +123,8 @@ The point of the application is to make it easy for travelers who want to visit 
 3. DOM API
 4. History API
 5. Event handling
+
+## Next Steps
+1. Add more realistic mock data and refactor search functionality to ensure it can perform under more realistic conditions
+2. Connect to APIs for real travel booking data
+3. Add train, bus, ferry and rental car coverage to allow true optimization of travel options

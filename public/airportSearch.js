@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
   preloadAirportCodes();
 
   // Initialize autocomplete for departure and return inputs
-  setupAutocomplete(departureInput, departureResults);
-  setupAutocomplete(returnInput, returnResults);
+  setupAutocomplete(departureInput, departureResults, true);
+  setupAutocomplete(returnInput, returnResults, true);
 
   // Initialize autocomplete for city stop inputs
   setupCityStopAutocomplete();
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
       input.parentNode.appendChild(suggestionsContainer);
 
       // Setup autocomplete for this input
-      setupAutocomplete(input, suggestionsContainer);
+      setupAutocomplete(input, suggestionsContainer, true);
 
       // Update the corresponding days input when a city is selected
       input.addEventListener('change', () => {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Function to set up autocomplete functionality for an input
-  function setupAutocomplete(input, results) {
+  function setupAutocomplete(input, results, showCityAndCode = false) {
     // Use a more aggressive debounce for better performance
     input.addEventListener('input', debounce(() => fetchAirports(input, results), 150));
 
@@ -110,7 +110,16 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const selectedItem = suggestions[activeIndex];
         const code = selectedItem.dataset.code;
-        input.value = code;
+        const city = airportToCityMap[code] || '';
+        
+        if (showCityAndCode) {
+          input.value = `${city} (${code})`;
+          // Store the airport code in a data attribute for form submission
+          input.dataset.airportCode = code;
+        } else {
+          input.value = code;
+        }
+        
         results.innerHTML = '';
         // Trigger change event to update days input
         input.dispatchEvent(new Event('change'));
@@ -183,7 +192,13 @@ document.addEventListener('DOMContentLoaded', () => {
         li.dataset.code = code;
         li.style.cursor = 'pointer';
         li.addEventListener('click', () => {
-          input.value = code;
+          if (input.id === 'departureAirport' || input.id === 'returnAirport' || input.name === 'cityStops[]') {
+            input.value = `${city} (${code})`;
+            // Store the airport code in a data attribute for form submission
+            input.dataset.airportCode = code;
+          } else {
+            input.value = code;
+          }
           results.innerHTML = '';
           // Trigger change event to update days input
           input.dispatchEvent(new Event('change'));
@@ -193,5 +208,44 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       results.innerHTML = '<li class="no-results">No airports found</li>';
     }
+  }
+  
+  // Add form submit handler to ensure the correct airport code is submitted
+  const searchForm = document.getElementById('searchForm');
+  if (searchForm) {
+    searchForm.addEventListener('submit', (e) => {
+      // Handle departure airport
+      if (departureInput.dataset.airportCode) {
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'departureAirport';
+        hiddenInput.value = departureInput.dataset.airportCode;
+        searchForm.appendChild(hiddenInput);
+        departureInput.disabled = true; // Disable the visible input to prevent it from being submitted
+      }
+      
+      // Handle return airport
+      if (returnInput.dataset.airportCode) {
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'returnAirport';
+        hiddenInput.value = returnInput.dataset.airportCode;
+        searchForm.appendChild(hiddenInput);
+        returnInput.disabled = true; // Disable the visible input to prevent it from being submitted
+      }
+      
+      // Handle city stops
+      const cityStopInputs = document.querySelectorAll('input[name="cityStops[]"]');
+      cityStopInputs.forEach((input, index) => {
+        if (input.dataset.airportCode) {
+          const hiddenInput = document.createElement('input');
+          hiddenInput.type = 'hidden';
+          hiddenInput.name = 'cityStops[]';
+          hiddenInput.value = input.dataset.airportCode;
+          searchForm.appendChild(hiddenInput);
+          input.disabled = true; // Disable the visible input to prevent it from being submitted
+        }
+      });
+    });
   }
 });
