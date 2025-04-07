@@ -108,3 +108,52 @@ export const updateProfile = async (req, res) => {
     res.render('error', { error: 'Unable to update profile' });
   }
 };
+
+/**
+ * POST /delete-account
+ * Delete user account
+ */
+export const deleteAccount = async (req, res) => {
+  try {
+    const userId = req.session.user._id;
+    const { password } = req.body;
+    
+    // Get the current user
+    const user = await User.findById(userId);
+    if (!user) {
+      req.session.destroy();
+      return res.redirect('/auth/sign-in');
+    }
+    
+    // Verify password
+    if (!password) {
+      return res.render('user/account', { 
+        user, 
+        error: 'Please enter your password to delete your account' 
+      });
+    }
+    
+    const validPassword = bcrypt.compareSync(password, user.password);
+    if (!validPassword) {
+      return res.render('user/account', { 
+        user, 
+        error: 'Password is incorrect. Cannot delete account.' 
+      });
+    }
+    
+    // Delete the user
+    await User.findByIdAndDelete(userId);
+    
+    // Destroy the session
+    req.session.destroy();
+    
+    // Redirect to home page
+    res.redirect('/');
+  } catch (err) {
+    console.error('Error deleting account:', err);
+    res.render('user/account', { 
+      user: req.session.user, 
+      error: 'Unable to delete account. Please try again.' 
+    });
+  }
+};
