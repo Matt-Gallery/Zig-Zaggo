@@ -124,7 +124,14 @@ The point of the application is to make it easy for travelers who want to visit 
 4. History API
 5. Event handling
 
+### Deployment
+1. Railway
+
 ## Next Steps
 1. Add more realistic mock data and refactor search functionality to ensure it can perform under more realistic conditions
 2. Connect to APIs for real travel booking data
 3. Add train, bus, ferry and rental car coverage to allow true optimization of travel options
+4. Allow for certain search legs to have set date parameters
+5. Allow for a range of number of days the user wants to stop in each city
+6. Allow a range of start and/or end dates for a search
+7. Allow users to search for a trip within 2 outer bound start and end dates

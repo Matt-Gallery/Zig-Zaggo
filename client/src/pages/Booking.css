@@ -1,0 +1,262 @@
+.booking-page {
+  padding: 0.5rem;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-header {
+  background-color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+  font-size: 0.9rem;
+}
+
+.booking-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f8fafc;
+  padding: 0.3rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #2d3748;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.booking-status {
+  font-size: 0.8em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.booking-status.pending {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.booking-status.confirmed {
+  background-color: #28a745;
+  color: white;
+}
+
+.booking-status.cancelled {
+  background-color: #dc3545;
+  color: white;
+}
+
+.card-body {
+  padding: 0.3rem;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.booking-table th {
+  background-color: #f8fafc;
+  color: #4a5568;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.3rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.booking-table td {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.leg-label {
+  color: #2563eb;
+  font-weight: 600;
+  text-align: center;
+  width: 2rem;
+}
+
+.flight-details, .stay-details {
+  line-height: 1.2;
+}
+
+.flight-route {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.flight-schedule {
+  color: #4a5568;
+  margin: 0.1rem 0;
+}
+
+.flight-info {
+  color: #718096;
+}
+
+.stay-details {
+  color: #4a5568;
+}
+
+.hotel-name {
+  font-weight: 600;
+}
+
+.hotel-rating {
+  color: #eab308;
+  line-height: 1;
+}
+
+.stay-duration {
+  color: #718096;
+}
+
+.price-cell {
+  font-weight: 600;
+  color: #2563eb;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.card-footer {
+  padding: 0.3rem 1rem;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button-group .btn {
+  min-width: 120px;
+  width: max-content;
+}
+
+.btn {
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.85rem;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+.btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-header h5 {
+  margin: 0;
+  color: #2d3748;
+}
+
+.modal-body {
+  margin-bottom: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .booking-table {
+    font-size: 0.8rem;
+  }
+  
+  .card-header h3 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .card-footer {
+    flex-direction: column;
+  }
+} 

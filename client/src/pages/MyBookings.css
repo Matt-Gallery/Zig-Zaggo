@@ -1,0 +1,190 @@
+.booking-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #18683c;
+}
+
+.booking-card-summary {
+  height: auto;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.booking-card-summary:hover {
+  transform: translateY(-5px);
+}
+
+.booking-card-summary .card-header {
+  padding: 10px 15px;
+  font-weight: bold;
+  background-color: #18683c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-card-summary .card-body {
+  padding: 15px;
+}
+
+.booking-card-summary .card-footer {
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.booking-card-summary .btn-primary {
+  background-color: #18683c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.booking-card-summary .btn-primary:hover {
+  background-color: #0f4a2a;
+}
+
+.booking-card-summary .btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.9em;
+}
+
+.booking-card-summary .btn-danger:hover {
+  background-color: #c82333;
+}
+
+.booking-info {
+  margin-bottom: 10px;
+}
+
+.booking-info p {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.booking-info strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.booking-status {
+  font-size: 0.8em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.booking-status.pending {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.booking-status.confirmed {
+  background-color: #28a745;
+  color: white;
+}
+
+.booking-status.cancelled {
+  background-color: #dc3545;
+  color: white;
+}
+
+.city-stops-list {
+  margin-top: 10px;
+}
+
+.city-stops-list .list-group-item {
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;
+}
+
+.no-bookings-message {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.no-bookings-message h4 {
+  color: #18683c;
+  margin-bottom: 15px;
+}
+
+.no-bookings-message p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.modal-dialog {
+  margin: 0;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-content {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 1rem;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin: 20px 0;
+} 

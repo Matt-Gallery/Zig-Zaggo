@@ -2,7 +2,7 @@
 
 // controllers/user.js
 import User from '../models/user.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 /**
  * GET /account
@@ -10,16 +10,15 @@ import bcrypt from 'bcrypt';
  */
 export const getAccount = async (req, res) => {
   try {
-    const user = await User.findById(req.session.user._id).select('-password');
+    const user = await User.findById(req.user._id).select('-password');
     if (!user) {
-      req.session.destroy();
-      return res.redirect('/auth/sign-in');
+      return res.status(404).json({ error: 'User not found' });
     }
 
-    res.render('user/account', { user });
+    res.json({ user });
   } catch (err) {
     console.error('Error fetching account:', err);
-    res.render('error', { error: 'Unable to load account page' });
+    res.status(500).json({ error: 'Unable to load account data' });
   }
 };
 
@@ -29,14 +28,13 @@ export const getAccount = async (req, res) => {
  */
 export const updateProfile = async (req, res) => {
   try {
-    const userId = req.session.user._id;
+    const userId = req.user._id;
     const { username, name, emailAddress, currentPassword, newPassword, confirmPassword } = req.body;
     
     // Get the current user
     const user = await User.findById(userId);
     if (!user) {
-      req.session.destroy();
-      return res.redirect('/auth/sign-in');
+      return res.status(404).json({ error: 'User not found' });
     }
     
     // Check if any profile information is being changed
@@ -46,20 +44,14 @@ export const updateProfile = async (req, res) => {
     
     // Require current password for any profile changes
     if (isProfileChanged && !currentPassword) {
-      return res.render('user/account', { 
-        user, 
-        error: 'Please enter password to update profile' 
-      });
+      return res.status(400).json({ error: 'Please enter password to update profile' });
     }
     
     // Verify current password if provided
     if (currentPassword) {
-      const validPassword = bcrypt.compareSync(currentPassword, user.password);
+      const validPassword = await bcrypt.compare(currentPassword, user.password);
       if (!validPassword) {
-        return res.render('user/account', { 
-          user, 
-          error: 'Current password is incorrect.' 
-        });
+        return res.status(400).json({ error: 'Current password is incorrect' });
       }
     }
     
@@ -67,10 +59,7 @@ export const updateProfile = async (req, res) => {
     if (username !== user.username) {
       const existingUser = await User.findOne({ username });
       if (existingUser) {
-        return res.render('user/account', { 
-          user, 
-          error: 'Username already taken. Please choose another one.' 
-        });
+        return res.status(400).json({ error: 'Username already taken. Please choose another one.' });
       }
     }
     
@@ -78,14 +67,12 @@ export const updateProfile = async (req, res) => {
     if (newPassword) {
       // Verify password confirmation
       if (newPassword !== confirmPassword) {
-        return res.render('user/account', { 
-          user, 
-          error: 'New passwords do not match.' 
-        });
+        return res.status(400).json({ error: 'New passwords do not match' });
       }
       
       // Hash the new password
-      const hashedPassword = bcrypt.hashSync(newPassword, 10);
+      const salt = await bcrypt.genSalt(10);
+      const hashedPassword = await bcrypt.hash(newPassword, salt);
       user.password = hashedPassword;
     }
     
@@ -97,15 +84,12 @@ export const updateProfile = async (req, res) => {
     // Save the updated user
     await user.save();
     
-    // Update session with new username if changed
-    if (username !== req.session.user.username) {
-      req.session.user.username = username;
-    }
-    
-    res.redirect('/user/account');
+    // Return the updated user without password
+    const updatedUser = await User.findById(userId).select('-password');
+    res.json({ user: updatedUser, message: 'Profile updated successfully' });
   } catch (err) {
     console.error('Error updating profile:', err);
-    res.render('error', { error: 'Unable to update profile' });
+    res.status(500).json({ error: 'Unable to update profile' });
   }
 };
 
@@ -115,45 +99,31 @@ export const updateProfile = async (req, res) => {
  */
 export const deleteAccount = async (req, res) => {
   try {
-    const userId = req.session.user._id;
+    const userId = req.user._id;
     const { password } = req.body;
     
     // Get the current user
     const user = await User.findById(userId);
     if (!user) {
-      req.session.destroy();
-      return res.redirect('/auth/sign-in');
+      return res.status(404).json({ error: 'User not found' });
     }
     
     // Verify password
     if (!password) {
-      return res.render('user/account', { 
-        user, 
-        error: 'Please enter your password to delete your account' 
-      });
+      return res.status(400).json({ error: 'Please enter your password to delete your account' });
     }
     
-    const validPassword = bcrypt.compareSync(password, user.password);
+    const validPassword = await bcrypt.compare(password, user.password);
     if (!validPassword) {
-      return res.render('user/account', { 
-        user, 
-        error: 'Password is incorrect. Cannot delete account.' 
-      });
+      return res.status(400).json({ error: 'Password is incorrect. Cannot delete account.' });
     }
     
     // Delete the user
     await User.findByIdAndDelete(userId);
     
-    // Destroy the session
-    req.session.destroy();
-    
-    // Redirect to home page
-    res.redirect('/');
+    res.json({ message: 'Account deleted successfully' });
   } catch (err) {
     console.error('Error deleting account:', err);
-    res.render('user/account', { 
-      user: req.session.user, 
-      error: 'Unable to delete account. Please try again.' 
-    });
+    res.status(500).json({ error: 'Unable to delete account. Please try again.' });
   }
 };

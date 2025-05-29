@@ -1,0 +1,263 @@
+.results-page {
+  padding: 0.5rem;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.results-summary {
+  background-color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+  font-size: 0.9rem;
+}
+
+.search-results {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.result-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.result-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-header {
+  background-color: #f8fafc;
+  padding: 0.3rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.result-header h3 {
+  margin: 0;
+  color: #2d3748;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.total-price {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.itinerary-container {
+  padding: 0.3rem;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.result-table th {
+  background-color: #f8fafc;
+  color: #4a5568;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.3rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.result-table td {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.leg-label {
+  color: #2563eb;
+  font-weight: 600;
+  text-align: center;
+  width: 2rem;
+}
+
+.flight-details, .stay-details {
+  line-height: 1.2;
+}
+
+.flight-route {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.flight-schedule {
+  color: #4a5568;
+  margin: 0.1rem 0;
+}
+
+.flight-info {
+  color: #718096;
+}
+
+.stay-details {
+  color: #4a5568;
+}
+
+.hotel-name {
+  font-weight: 600;
+}
+
+.hotel-rating {
+  color: #eab308;
+  line-height: 1;
+}
+
+.stay-duration {
+  color: #718096;
+}
+
+.no-stay {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.price-cell {
+  font-weight: 600;
+  color: #2563eb;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.price-cell > div {
+  line-height: 1.2;
+}
+
+.booking-button-container {
+  padding: 0.3rem 1rem;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  text-align: right;
+}
+
+.book-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.85rem;
+  width: 20%;
+  min-width: 150px;
+}
+
+.book-button:hover {
+  background-color: #1d4ed8;
+}
+
+.book-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.login-to-book {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.login-to-book:hover {
+  text-decoration: underline;
+}
+
+.pagination-container {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination button {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.85rem;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #f8fafc;
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.pagination .active button {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #f8fafc;
+  border-color: #e2e8f0;
+  color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.search-results-empty {
+  text-align: center;
+  padding: 1.6rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-results-empty p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #b91c1c;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-card {
+    margin-bottom: 0.5rem;
+  }
+} 

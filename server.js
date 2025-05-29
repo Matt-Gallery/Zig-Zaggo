@@ -1,78 +1,91 @@
 // ChatGPT and Cursor used extensively throughout
 
 // Main server file that initializes the Express application and sets up routes
-import dotenv from 'dotenv';
-dotenv.config();
-
 import express from 'express';
-const app = express();
-
 import methodOverride from 'method-override';
 import morgan from 'morgan';
-import session from 'express-session';
-import passUserToViews from './middleware/passUserToViews.js';
-import authRoutes from './controllers/auth.js';
-import searchController from './controllers/search.js';
-import bookingController from './controllers/booking.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import mongoose from 'mongoose';
+
+// Import routes
+import searchController from './controllers/search.js';
+import bookingController from './controllers/booking.js';
+import authRoutes from './controllers/auth.js';
 import userRoutes from './routes/user.js';
-import connectDB from './db/connection.js';
+import bookingRoutes from './routes/bookings.js';
+import profileRoutes from './routes/profile.js';
+import { verifyToken } from './middleware/auth.js';
+
+// Configure environment variables
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const port = process.env.PORT ? process.env.PORT : '3000';
+const port = process.env.PORT || '5001';
 
-// Connect to MongoDB database using the connection module
-connectDB(process.env.MONGODB_URI)
-  .catch(err => {
-    console.error('Failed to connect to MongoDB:', err);
-    process.exit(1);
-  });
+const app = express();
 
-// Set up EJS as the view engine
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+// Configure Mongoose
+mongoose.set('strictQuery', true);
 
-// Middleware setup for parsing request bodies and serving static files
-app.use(express.urlencoded({ extended: false }));
+// Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/zigzaggo', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('MongoDB connection error:', err));
+
+// Middleware setup
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
-app.use(express.static('public'));
-// app.use(morgan('dev'));
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: true,
-  })
-);
-// Middleware to pass user data to all views
-app.use(passUserToViews);
+app.use(morgan('dev')); // HTTP request logger
 
-// Add middleware to pass current path to all views
-app.use((req, res, next) => {
-  res.locals.path = req.path;
-  next();
-});
-
-// Set up routes for search, booking, and user functionality
-app.use('/search', searchController);
-app.use('/booking', bookingController);
-
-// Home page route
-app.get('/', (req, res) => {
-  res.render('index.ejs', { user: req.session?.user || null });
-});
-
-
-// Authentication and user routes
+// API Routes
+app.use('/api/search', searchController);
+app.use('/booking', verifyToken, bookingController);
+app.use('/api/auth', authRoutes);
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);
+app.use('/profile', profileRoutes);
+
+// Protected routes
+app.use('/api/bookings', verifyToken, bookingRoutes);
+app.use('/api/profile', verifyToken, profileRoutes);
+
+// Check authentication status endpoint
+app.get('/api/auth/check', verifyToken, (req, res) => {
+  res.json({ isAuthenticated: true });
+});
+
+// Serve static files from React app in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/build')));
+  
+  // Handle React routing, return all requests to React app
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+} else {
+  // In development, handle the root route
+  app.get('/', (req, res) => {
+    res.json({ message: 'API server is running' });
+  });
+}
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ error: 'Something broke!' });
+});
 
 // Start the server
 app.listen(port, () => {
-  console.log(`The express app is ready on port ${port}!`);
+  console.log(`Server is running on port ${port}`);
 });
